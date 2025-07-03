@@ -82,15 +82,16 @@ footer {
   background: #333;
   color: #fff;
 }
+
 .topnav {
-  background-color: #222;  /* dark background */
+  background-color: #333; /* same dark as header */
   padding: 0.5rem 0;
 }
 
 .topnav ul {
   list-style: none;
   display: flex;
-  justify-content: flex-end; /* align right */
+  justify-content: flex-end;
   gap: 1.5rem;
   margin: 0;
   padding: 0;
