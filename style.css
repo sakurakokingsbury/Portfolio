@@ -83,7 +83,7 @@ header {
 
 /* Big title */
 .main-name {
-  font-size: 4em;
+  font-size: clamp(2rem, 6vw + 1rem, 4em);
   margin: 0;
 }
 
