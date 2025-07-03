@@ -138,7 +138,13 @@ header {
 }
 
 /* MEDIA QUERY: Only stack on *small* screens */
-@media (max-width: 700px) {
+@media (max-width: 810px) {
+  .main-name {
+    font-size: 2.5em;
+  }
+  .subtitle {
+    font-size: 1.5em;
+  }
   .header-content {
     flex-direction: column;
     text-align: center;
