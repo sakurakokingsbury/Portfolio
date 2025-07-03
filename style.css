@@ -57,12 +57,12 @@ header {
 }
 
 .main-name {
-  font-size: 3em;
+  font-size: 4em;
   margin: 0;
 }
 
 .subtitle {
-  font-size: 1em;
+  font-size: 3em;
   color: #ccc;
   margin-top: 0.5em;
 }
