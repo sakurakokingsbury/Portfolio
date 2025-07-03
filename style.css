@@ -40,49 +40,40 @@ header {
   padding: 3rem 0;
 }
 
+/* Container to limit max width and center content */
+.container {
+  max-width: 1200px; /* or 1100px if you prefer */
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Flex layout for header content */
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem; /* or whatever spacing you want */
-  width: 90%;
-  margin: auto;
+  gap: 2rem;
 }
 
-/* Container to limit max width and center content */
-.container {
-  max-width: 1200px; /* or 1000px if you prefer tighter */
-  margin: 0 auto;
-  padding: 0 1rem; /* keeps space on small screens */
-}
-
-.main-name {
-  font-size: 4em;
-  margin: 0;
-}
-
-.subtitle {
-  font-size: 2em;
-  color: #ccc;
-  margin-top: 0.5em;
-}
-
+/* The name block (text) */
 .nameblock {
-  flex: 1 1 50%;
+  flex: 1 1 400px; /* prefer 400px, shrink if needed */
   display: flex;
   flex-direction: column;
+  min-width: 250px; /* prevent collapsing too small */
 }
 
-/* IMAGE CONTAINER controls scaling */
+/* The image container */
 .image-container {
-  flex: 1 1 50%;
+  flex: 1 1 300px; /* prefer 300px, shrink if needed */
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 200px; /* never get smaller than this */
 }
 
-/* IMAGE itself fills the container */
+/* IMAGE itself fills its container */
 .profile-photo {
   width: 100%;
   height: auto;
@@ -90,38 +81,28 @@ header {
   display: block;
 }
 
-/* MEDIA QUERY for stacking */
-@media (max-width: 800px) {
-  .nameblock {
-    flex: 1 1 100%;
-    text-align: left;
-  }
-
-  .image-container {
-    flex: 1 1 100%;
-    justify-content: center;
-    margin-top: 2rem;
-  }
-
-  .profile-photo {
-    width: 80%;
-    /* Remove max-width to let it grow fluidly */
-  }
+/* Big title */
+.main-name {
+  font-size: 4em;
+  margin: 0;
 }
 
-.container {
-  max-width: 1200px; /* or 1100px, or whatever looks good */
-  margin: 0 auto;
-  padding: 0 2rem; /* this keeps some padding on smaller screens */
+/* Subtitle */
+.subtitle {
+  font-size: 2em;
+  color: #ccc;
+  margin-top: 0.5em;
 }
 
+/* Intro paragraph */
 .intro {
   margin-top: 1.5rem;
   max-width: 600px;
   line-height: 1.6;
-  color: #ddd; /* lighter text */
+  color: #ddd;
 }
 
+/* Buttons container */
 .buttons {
   margin-top: 2rem;
   display: flex;
@@ -129,6 +110,7 @@ header {
   flex-wrap: wrap;
 }
 
+/* Buttons base style */
 .button {
   text-decoration: none;
   padding: 0.75rem 1.5rem;
@@ -139,10 +121,9 @@ header {
 
 /* Primary button style */
 .button.primary {
-  background: #007BFF; /* blue */
+  background: #007BFF;
   color: #fff;
 }
-
 .button.primary:hover {
   background: #0056b3;
 }
@@ -152,7 +133,21 @@ header {
   background: #555;
   color: #fff;
 }
-
 .button.secondary:hover {
   background: #333;
+}
+
+/* MEDIA QUERY: Only stack on *small* screens */
+@media (max-width: 700px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nameblock,
+  .image-container {
+    flex: 1 1 100%;
+  }
+  .profile-photo {
+    width: 80%;
+  }
 }
