@@ -83,6 +83,7 @@ header {
 @media (max-width: 600px) {
   .nameblock,
   .profile-photo {
+     margin-top: 2rem;
     flex: 1 1 100%;   /* each takes full width */
     text-align: center; /* optional: center text */
   }
