@@ -107,3 +107,10 @@ header {
     /* Remove max-width to let it grow fluidly */
   }
 }
+
+.container {
+  max-width: 1200px; /* or 1100px, or whatever looks good */
+  margin: 0 auto;
+  padding: 0 2rem; /* this keeps some padding on smaller screens */
+}
+
