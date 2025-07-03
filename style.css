@@ -76,7 +76,7 @@ header {
   height: auto;
   border-radius: 0;
   object-fit: contain;
-  max-width: 600;      /* remove size cap */
+  max-width: 400;      /* remove size cap */
   min-width: 150px;
   margin-top: 1rem;
   margin-left: 2rem;    /* space between text and image on large screens */
