@@ -88,14 +88,13 @@ header {
     text-align: left;   /* keep text left-aligned */
   }
 
-  .profile-photo {
-  flex: 1 1 50%;
-  width: 100%;
+ .profile-photo {
+  flex: 1 1 50%;   /* always take 50% of the row */
+  width: 100%;     /* fill the flex container */
   height: auto;
   border-radius: 0;
   object-fit: contain;
-  max-width: 400px;      /* allow growing */
-  min-width: 150px;
   margin-top: 1rem;
   margin-left: 2rem;
+  max-width: none; /* IMPORTANT: allow scaling */
 }
