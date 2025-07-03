@@ -90,7 +90,7 @@ header {
 }
 
 /* MEDIA QUERY for stacking */
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
   .nameblock {
     flex: 1 1 100%;
     text-align: left;
