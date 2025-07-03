@@ -83,14 +83,16 @@ header {
 }
 
 @media (max-width: 1000px) {
-  .nameblock,
-  .profile-photo {
+  .nameblock {
     flex: 1 1 100%;
-    text-align: center;
+    text-align: left;   /* keep text left-aligned */
   }
 
   .profile-photo {
-    margin-left: 0;       /* remove side margin */
-    margin-top: 2rem;     /* more space between rows */
+    flex: 1 1 100%;
+    margin-left: auto;     /* center horizontally */
+    margin-right: auto;    /* center horizontally */
+    margin-top: 2rem;      /* space above image */
+    display: block;
   }
 }
