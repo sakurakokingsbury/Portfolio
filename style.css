@@ -51,3 +51,10 @@ footer {
   background: #333;
   color: #fff;
 }
+.subtitle {
+  display: block; 
+  font-size: 0.6em;
+  font-weight: normal;
+  color: #ccc;
+  margin-top: 0.2em;
+}
