@@ -8,7 +8,7 @@ body {
 header {
   background: #333;
   color: #fff;
-  padding: 3.5rem 0;
+  padding: 5rem 0;
 }
 
 header nav {
@@ -52,11 +52,13 @@ header h1 {
 }
 
 .profile-photo {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%; /* Makes it a circle */
-  object-fit: cover;
+  width: 200px;         /* larger width */
+  height: auto;         /* keep aspect ratio */
+  border-radius: 0;     /* remove the circle */
+  object-fit: contain;  /* show the full image */
+  border: none;         /* remove border if you want */
   border: 2px solid #fff;
+
 }
 
 main {
