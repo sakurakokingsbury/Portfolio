@@ -89,10 +89,13 @@ header {
   }
 
   .profile-photo {
-    flex: 1 1 100%;
-    margin-left: auto;     /* center horizontally */
-    margin-right: auto;    /* center horizontally */
-    margin-top: 2rem;      /* space above image */
-    display: block;
-  }
+  flex: 1 1 50%;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  object-fit: contain;
+  max-width: 400px;      /* allow growing */
+  min-width: 150px;
+  margin-top: 1rem;
+  margin-left: 2rem;
 }
