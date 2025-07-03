@@ -49,6 +49,13 @@ header {
   margin: auto;
 }
 
+/* Container to limit max width and center content */
+.container {
+  max-width: 1200px; /* or 1000px if you prefer tighter */
+  margin: 0 auto;
+  padding: 0 1rem; /* keeps space on small screens */
+}
+
 .main-name {
   font-size: 3em;
   margin: 0;
