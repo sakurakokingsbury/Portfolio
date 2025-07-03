@@ -81,11 +81,15 @@ header {
   margin-top: 1rem; /* small gap when stacked */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .nameblock,
   .profile-photo {
-    margin-top: 2rem;
-    padding: 2rem 0;
-    flex: 1 1 100%;   /* each takes full width */
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .profile-photo {
+    margin-left: 0;       /* remove side margin */
+    margin-top: 2rem;     /* more space between rows */
   }
 }
