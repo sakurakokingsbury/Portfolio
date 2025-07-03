@@ -45,6 +45,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  gap: 2rem; /* or whatever spacing you want */
   width: 90%;
   margin: auto;
 }
