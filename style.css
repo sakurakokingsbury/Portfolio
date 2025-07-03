@@ -47,14 +47,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;          /* allows wrapping */
   width: 90%;
   margin: auto;
-  flex-wrap: wrap;
-}
-
-.nameblock {
-  display: flex;
-  flex-direction: column;
 }
 
 .main-name {
@@ -68,11 +63,27 @@ header {
   margin-top: 0.2em;
 }
 
+.nameblock {
+  flex: 1 1 50%;   /* grow, shrink, base 50% */
+  display: flex;
+  flex-direction: column;
+}
+
 .profile-photo {
-  width: 20%;          /* 20% of the header width */
-  height: auto;        /* keep proportions */
+  flex: 1 1 50%;   /* grow, shrink, base 50% */
+  width: 100%;     /* fill its flex space */
+  height: auto;
   border-radius: 0;
   object-fit: contain;
-  max-width: 400px;    /* don't get bigger than 300px */
-  min-width: 150px;    /* don't get smaller than 150px */
+  max-width: 300px;
+  min-width: 150px;
+  margin-top: 1rem; /* small gap when stacked */
+}
+
+@media (max-width: 600px) {
+  .nameblock,
+  .profile-photo {
+    flex: 1 1 100%;   /* each takes full width */
+    text-align: center; /* optional: center text */
+  }
 }
