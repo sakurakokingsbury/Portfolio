@@ -40,7 +40,7 @@ img {
 header {
   background: #333;
   color: #fff;
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
 .header-content {
@@ -71,14 +71,15 @@ header {
 }
 
 .profile-photo {
-  flex: 1 1 50%;   /* grow, shrink, base 50% */
-  width: 100%;     /* fill its flex space */
+  flex: 1 1 50%;        /* takes 50% of the row */
+  width: 100%;          /* fills its flex container */
   height: auto;
   border-radius: 0;
   object-fit: contain;
-  max-width: 300px;
+  max-width: 600;      /* remove size cap */
   min-width: 150px;
-  margin-top: 1rem; /* small gap when stacked */
+  margin-top: 1rem;
+  margin-left: 2rem;    /* space between text and image on large screens */
 }
 
 @media (max-width: 1000px) {
