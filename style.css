@@ -53,14 +53,15 @@ header {
 }
 
 .main-name {
-  font-size: 4em;
+  font-size: 3em;      /* or 4em if you want even bigger */
   margin: 0;
+  flex: 1 1 auto;      /* stop flex from shrinking the text */
 }
 
 .subtitle {
-  font-size: 1em;
+  font-size: 1em;       /* stays normal text size */
   color: #ccc;
-  margin-top: 0.2em;
+  margin-top: 0.5em;
 }
 
 .nameblock {
@@ -86,6 +87,5 @@ header {
     margin-top: 2rem;
     padding: 2rem 0;
     flex: 1 1 100%;   /* each takes full width */
-    text-align: center; /* optional: center text */
   }
 }
