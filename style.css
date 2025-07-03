@@ -57,7 +57,8 @@ header h1 {
   border-radius: 0;     /* remove the circle */
   object-fit: contain;  /* show the full image */
   border: none;         /* remove border if you want */
-  border: 2px solid #fff;
+  border: none;
+
 
 }
 
