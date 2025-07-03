@@ -76,13 +76,13 @@ header {
   height: auto;
   border-radius: 0;
   object-fit: contain;
-  max-width: 100px;      /* remove size cap */
-  min-width: 10px;
+  max-width: 400px;      /* remove size cap */
+  min-width: 100px;
   margin-top: 1rem;
   margin-left: 2rem;    /* space between text and image on large screens */
 }
 
-@media (max-width: 100px) {
+@media (max-width: 400px) {
   .nameblock {
     flex: 1 1 100%;
     text-align: left;   /* keep text left-aligned */
