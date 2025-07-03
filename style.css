@@ -69,8 +69,10 @@ header {
 }
 
 .profile-photo {
-  width: 350px;
-  height: auto;
+  width: 20%;          /* 20% of the header width */
+  height: auto;        /* keep proportions */
   border-radius: 0;
   object-fit: contain;
+  max-width: 400px;    /* don't get bigger than 300px */
+  min-width: 150px;    /* don't get smaller than 150px */
 }
