@@ -97,6 +97,6 @@ header {
 
   .profile-photo {
     width: 80%;
-    max-width: 400px;  /* optional: limit size when stacked */
+    /* Remove max-width to let it grow fluidly */
   }
 }
