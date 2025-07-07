@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #111; /* near black */
+  background-color: #202020; /* near black */
   color: #ddd; /* makes default text light so it shows up */
 }
 
@@ -263,4 +263,12 @@ header {
 #contact p {
   font-size: 1.1rem;
   margin-bottom: 2rem;
+}
+
+a {
+  color: #66ccff; /* a bright light blue */
+}
+
+a:hover {
+  color: #99ddff; /* even lighter on hover */
 }
