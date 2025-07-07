@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #5A0202; /* near black */
+  background-color: #4C1111; /* near black */
   color: #ddd;
 }
 
@@ -113,12 +113,12 @@ header {
 }
 
 .button.primary {
-  background: #640101;
+  background: #7D0505;
   color: #fff;
 }
 
 .button.primary:hover {
-  background: #490000;
+  background: #5D0505;
 }
 
 .button.secondary {
@@ -216,7 +216,7 @@ header {
 #contact form button {
   width: fit-content;
   padding: 0.75rem 1.5rem;
-  background: #640101;
+  background: #7D0505;
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -227,7 +227,7 @@ header {
 }
 
 #contact form button:hover {
-  background: #490000;
+  background: #5D0505;
 }
 
 #contact h2 {
@@ -328,7 +328,7 @@ a:hover {
 /* Background colors for sections */
 /* Section backgrounds */
 section#about {
-  background-color: #5A0202;
+  background-color: #4C1111;
 }
 
 section#projects {
@@ -336,7 +336,7 @@ section#projects {
 }
 
 section#resume {
-  background-color: #5A0202;
+  background-color: #4C1111;
 }
 
 section#contact {
