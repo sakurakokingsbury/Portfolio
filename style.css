@@ -325,22 +325,17 @@ a:hover {
 }
 
 /* About Me section - dark grey */
-#about {
+/* Background colors for sections */
+section#about {
   background-color: #5A0202;
 }
-
-/* Projects section - dark red */
-#projects {
+section#projects {
   background-color: #202020;
 }
-
-/* Resume section - dark grey */
-#resume {
+section#resume {
   background-color: #5A0202;
 }
-
-/* Contact section - dark red */
-#contact {
+section#contact {
   background-color: #202020;
 }
 
