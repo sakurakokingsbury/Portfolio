@@ -113,21 +113,21 @@ header {
 }
 
 .button.primary {
-  background: #007BFF;
+  background: #640101;
   color: #fff;
 }
 
 .button.primary:hover {
-  background: #0056b3;
+  background: #490000;
 }
 
 .button.secondary {
-  background: #555;
+  background: #717171;
   color: #fff;
 }
 
 .button.secondary:hover {
-  background: #333;
+  background: #515151;
 }
 
 /* Media Query */
@@ -216,7 +216,7 @@ header {
 #contact form button {
   width: fit-content;
   padding: 0.75rem 1.5rem;
-  background: #007BFF;
+  background: #640101;
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -227,7 +227,7 @@ header {
 }
 
 #contact form button:hover {
-  background: #0056b3;
+  background: #490000;
 }
 
 #contact h2 {
@@ -287,7 +287,7 @@ a:hover {
   top: 0.3rem;
   width: 0.75rem;
   height: 0.75rem;
-  background: #007BFF;
+  background: #000000;
   border-radius: 50%;
 }
 
