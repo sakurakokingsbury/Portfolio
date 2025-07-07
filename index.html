@@ -61,25 +61,54 @@
     </section>
 
     <section id="contact">
-  <h2>Let’s get in touch.</h2>
-    <form action="https://formspree.io/f/xrbkwzpn" method="POST">
-      <label for="name">Name *</label>
-      <input type="text" id="name" name="name" required>
-    
-      <label for="email">Email *</label>
-      <input type="email" id="email" name="email" required>
-    
-      <label for="message">Message *</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-    
-      <button type="submit">Send</button>
-    </form>
-  </section>
+  <h2>Let's get in touch.</h2>
+  <p>If you’d like to connect, you can email me directly or use the form below. I look forward to working with you!</p>
+
+  <div class="contact-info">
+    <div class="contact-item">
+      <span class="contact-icon">📍</span>
+      <div>
+        <strong>Location:</strong><br>
+        Hoboken NJ & NYC Metropolitan Area
+      </div>
+    </div>
+    <div class="contact-item">
+      <span class="contact-icon">✉️</span>
+      <div>
+        <strong>Email:</strong><br>
+        <a href="mailto:your@email.com">contact.kingsbury@gmail.com</a>
+      </div>
+    </div>
+    <div class="contact-item">
+      <span class="contact-icon">🔗</span>
+      <div>
+        <strong>LinkedIn:</strong><br>
+        <a href="https://www.linkedin.com/in/sakurakokingsbury/" target="_blank">Connect with me on LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <form action="https://formspree.io/f/yourformid" method="POST">
+    <label>
+      Your name:
+      <input type="text" name="name" required>
+    </label>
+    <label>
+      Your email:
+      <input type="email" name="email" required>
+    </label>
+    <label>
+      Your message:
+      <textarea name="message" required></textarea>
+    </label>
+    <button type="submit">Send</button>
+  </form>
+</section>
  </div>
 </main>
 
   <footer>
-    <p>&copy; 2025 Sakurako Kingsbury</p>
+    <p>&copy;  2025 Sakurako Kingsbury</p>
   </footer>
 </body>
 </html>
