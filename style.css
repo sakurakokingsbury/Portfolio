@@ -192,6 +192,8 @@ header {
   flex-direction: column;
   gap: 1rem;
   max-width: 550px;
+  padding-right: 1rem;  /* Add space inside the form */
+  box-sizing: border-box; /* Make sure padding doesn't overflow */
 }
 
 #contact form label {
