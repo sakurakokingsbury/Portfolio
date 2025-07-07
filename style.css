@@ -36,7 +36,7 @@ img {
 
 /* Header */
 header {
-  background: #333;
+  background: #890101;
   color: #fff;
   padding: 3rem 0;
 }
@@ -322,4 +322,29 @@ a:hover {
 
 .resume-item ul li {
   margin-bottom: 0.3rem;
+}
+
+/* About Me section - dark grey */
+#about {
+  background-color: #272727;
+}
+
+/* Projects section - dark red */
+#projects {
+  background-color: #890101;
+}
+
+/* Resume section - dark grey */
+#resume {
+  background-color: #272727;
+}
+
+/* Contact section - dark red */
+#contact {
+  background-color: #890101;
+}
+
+/* Optional: Add padding to all sections for spacing */
+section {
+  padding: 3rem 0;
 }
