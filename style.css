@@ -4,10 +4,9 @@ body {
   padding: 0;
   line-height: 1.6;
   background-color: #202020; /* near black */
-  color: #ddd; /* makes default text light so it shows up */
+  color: #ddd;
 }
 
-/* Make sure there is no border on any image */
 img {
   border: none;
 }
@@ -42,14 +41,14 @@ header {
   padding: 3rem 0;
 }
 
-/* Container to limit max width and center content */
+/* Container */
 .container {
-  max-width: 1200px; /* or 1100px if you prefer */
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 }
 
-/* Flex layout for header content */
+/* Flex layout for header */
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -58,24 +57,21 @@ header {
   gap: 2rem;
 }
 
-/* The name block (text) */
 .nameblock {
-  flex: 1 1 400px; /* prefer 400px, shrink if needed */
+  flex: 1 1 400px;
   display: flex;
   flex-direction: column;
-  min-width: 250px; /* prevent collapsing too small */
+  min-width: 250px;
 }
 
-/* The image container */
 .image-container {
-  flex: 1 1 300px; /* prefer 300px, shrink if needed */
+  flex: 1 1 300px;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 200px; /* never get smaller than this */
+  min-width: 200px;
 }
 
-/* IMAGE itself fills its container */
 .profile-photo {
   width: 100%;
   height: auto;
@@ -83,20 +79,17 @@ header {
   display: block;
 }
 
-/* Big title */
 .main-name {
   font-size: clamp(2rem, 6vw, 4em);
   margin: 0;
 }
 
-/* Subtitle */
 .subtitle {
   font-size: clamp(1rem, 3vw, 2em);
   color: #ccc;
   margin-top: 0.5em;
 }
 
-/* Intro paragraph */
 .intro {
   margin-top: 1.5rem;
   max-width: 600px;
@@ -104,7 +97,6 @@ header {
   color: #ddd;
 }
 
-/* Buttons container */
 .buttons {
   margin-top: 2rem;
   display: flex;
@@ -112,7 +104,6 @@ header {
   flex-wrap: wrap;
 }
 
-/* Buttons base style */
 .button {
   text-decoration: none;
   padding: 0.75rem 1.5rem;
@@ -121,25 +112,25 @@ header {
   transition: background 0.3s, color 0.3s;
 }
 
-/* Primary button style */
 .button.primary {
   background: #007BFF;
   color: #fff;
 }
+
 .button.primary:hover {
   background: #0056b3;
 }
 
-/* Secondary button style */
 .button.secondary {
   background: #555;
   color: #fff;
 }
+
 .button.secondary:hover {
   background: #333;
 }
 
-/* MEDIA QUERY: Only stack on *small* screens */
+/* Media Query */
 @media (max-width: 810px) {
   .main-name {
     font-size: 2.5em;
@@ -149,7 +140,6 @@ header {
   }
   .header-content {
     flex-direction: column;
-    /* REMOVE text-align: center; */
   }
   .nameblock,
   .image-container {
@@ -158,18 +148,50 @@ header {
   .profile-photo {
     width: 80%;
   }
-  /* Make sure buttons align left too */
   .buttons {
     justify-content: flex-start;
   }
 }
 
+/* Contact wrapper layout */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Contact info styling */
+.contact-info {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.contact-icon {
+  font-size: 1.8rem;
+}
+
+/* Form styling */
 #contact form {
+  flex: 1 1 400px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   max-width: 500px;
-  margin-top: 2rem;
 }
 
 #contact form label {
@@ -184,8 +206,7 @@ header {
   padding: 0.75rem;
   border: 1px solid #444;
   border-radius: 0.5rem;
-  font-size: 1rem;
-  font: inherit;
+  font-size: 1.1rem;
   background: #222;
   color: #eee;
 }
@@ -200,61 +221,13 @@ header {
   font-weight: 600;
   cursor: pointer;
   transition: background 0.3s;
+  font-size: 1.1rem;
 }
 
 #contact form button:hover {
   background: #0056b3;
 }
-/* Contact wrapper layout */
-.contact-wrapper {
-  display: flex;
-  gap: 3rem;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
 
-/* Left info column */
-.contact-info {
-  flex: 1 1 250px;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-/* Each contact item */
-.contact-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
-  font-size: 1.1rem; /* Bigger text */
-  color: #ddd;
-}
-
-/* Contact icon */
-.contact-icon {
-  font-size: 1.8rem;
-}
-
-/* Form styling */
-#contact form {
-  flex: 1 1 400px;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-/* Make input and textarea text bigger */
-#contact form input,
-#contact form textarea {
-  font-size: 1.1rem;
-}
-
-/* Make button text bigger */
-#contact form button {
-  font-size: 1.1rem;
-}
-
-/* Make headings bigger */
 #contact h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -265,25 +238,11 @@ header {
   margin-bottom: 2rem;
 }
 
+/* Link colors */
 a {
-  color: #66ccff; /* a bright light blue */
+  color: #66ccff;
 }
 
 a:hover {
-  color: #99ddff; /* even lighter on hover */
-}
-
-.contact-content {
-  display: flex;
-  justify-content: center;  /* centers the two columns */
-  gap: 3rem;                /* space between the columns */
-  max-width: 1000px;        /* limit total width */
-  margin: 0 auto;           /* center horizontally */
-  flex-wrap: wrap;          /* stack on small screens */
-}
-
-/* Optional: limit form width if it looks too wide */
-#contact form {
-  flex: 1 1 400px;           /* allow shrinking */
-  max-width: 500px;          /* you can adjust */
+  color: #99ddff;
 }
