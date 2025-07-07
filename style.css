@@ -359,3 +359,9 @@ h2 {
   margin-bottom: 1.5rem;
   font-weight: 700;
 }
+
+footer {
+  background-color: #202020;
+  padding: 1rem;
+  text-align: center;
+}
