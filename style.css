@@ -201,3 +201,62 @@ header {
 #contact form button:hover {
   background: #0056b3;
 }
+/* Contact wrapper layout */
+.contact-wrapper {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Left info column */
+.contact-info {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Each contact item */
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 1.1rem; /* Bigger text */
+  color: #ddd;
+}
+
+/* Contact icon */
+.contact-icon {
+  font-size: 1.8rem;
+}
+
+/* Form styling */
+#contact form {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Make input and textarea text bigger */
+#contact form input,
+#contact form textarea {
+  font-size: 1.1rem;
+}
+
+/* Make button text bigger */
+#contact form button {
+  font-size: 1.1rem;
+}
+
+/* Make headings bigger */
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
