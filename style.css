@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #202020; /* near black */
+  background-color: #5A0202; /* near black */
   color: #ddd;
 }
 
@@ -36,7 +36,7 @@ img {
 
 /* Header */
 header {
-  background: #5A0202;
+  background: #202020;
   color: #fff;
   padding: 3rem 0;
 }
@@ -326,22 +326,22 @@ a:hover {
 
 /* About Me section - dark grey */
 #about {
-  background-color: #272727;
+  background-color: #5A0202;
 }
 
 /* Projects section - dark red */
 #projects {
-  background-color: #5A0202;
+  background-color: #202020;
 }
 
 /* Resume section - dark grey */
 #resume {
-  background-color: #272727;
+  background-color: #5A0202;
 }
 
 /* Contact section - dark red */
 #contact {
-  background-color: #5A0202;
+  background-color: #202020;
 }
 
 /* Optional: Add padding to all sections for spacing */
