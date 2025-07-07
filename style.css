@@ -122,12 +122,12 @@ header {
 }
 
 .button.secondary {
-  background: #717171;
+  background: #544B4B;
   color: #fff;
 }
 
 .button.secondary:hover {
-  background: #515151;
+  background: #383232;
 }
 
 /* Media Query */
@@ -242,11 +242,11 @@ header {
 
 /* Link colors */
 a {
-  color: #66ccff;
+  color: #7D0505;
 }
 
 a:hover {
-  color: #99ddff;
+  color: #5D0505;
 }
 
 @media (max-width: 810px) {
