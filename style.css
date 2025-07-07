@@ -242,11 +242,11 @@ header {
 
 /* Link colors */
 a {
-  color: #7D0505;
+  color: #9D0000;
 }
 
 a:hover {
-  color: #5D0505;
+  color: #8D0E0E;
 }
 
 @media (max-width: 810px) {
