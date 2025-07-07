@@ -147,7 +147,7 @@ header {
   }
   .header-content {
     flex-direction: column;
-    text-align: center;
+    /* REMOVE text-align: center; */
   }
   .nameblock,
   .image-container {
@@ -155,5 +155,9 @@ header {
   }
   .profile-photo {
     width: 80%;
+  }
+  /* Make sure buttons align left too */
+  .buttons {
+    justify-content: flex-start;
   }
 }
