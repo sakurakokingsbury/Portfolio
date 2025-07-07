@@ -326,20 +326,29 @@ a:hover {
 
 /* About Me section - dark grey */
 /* Background colors for sections */
+/* Section backgrounds */
 section#about {
   background-color: #5A0202;
 }
+
 section#projects {
   background-color: #202020;
 }
+
 section#resume {
   background-color: #5A0202;
 }
+
 section#contact {
   background-color: #202020;
 }
 
-/* Optional: Add padding to all sections for spacing */
+/* Make sections fill the viewport width */
 section {
-  padding: 3rem 0;
+  width: 100%;
+}
+
+/* Ensure container itself has no background */
+section > .container {
+  background: transparent;
 }
