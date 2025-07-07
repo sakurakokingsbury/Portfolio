@@ -272,3 +272,18 @@ a {
 a:hover {
   color: #99ddff; /* even lighter on hover */
 }
+
+.contact-content {
+  display: flex;
+  justify-content: center;  /* centers the two columns */
+  gap: 3rem;                /* space between the columns */
+  max-width: 1000px;        /* limit total width */
+  margin: 0 auto;           /* center horizontally */
+  flex-wrap: wrap;          /* stack on small screens */
+}
+
+/* Optional: limit form width if it looks too wide */
+#contact form {
+  flex: 1 1 400px;           /* allow shrinking */
+  max-width: 500px;          /* you can adjust */
+}
