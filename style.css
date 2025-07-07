@@ -258,3 +258,68 @@ a:hover {
     max-width: 100%;
   }
 }
+
+/* Container with two columns */
+.resume-container {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap; /* Stack on mobile */
+}
+
+/* Each column */
+.resume-column {
+  flex: 1 1 400px; /* Allow to shrink and grow */
+}
+
+/* Each resume entry */
+.resume-item {
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: 2px solid #007BFF;
+  margin-bottom: 2rem;
+}
+
+/* The circle "bullet" */
+.resume-item::before {
+  content: "";
+  position: absolute;
+  left: -0.45rem;
+  top: 0.3rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  background: #007BFF;
+  border-radius: 50%;
+}
+
+/* Entry titles */
+.resume-item h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Date style */
+.resume-date {
+  display: block;
+  font-weight: 500;
+  margin: 0.2rem 0;
+  color: #aaa;
+}
+
+/* Institution / company italic */
+.resume-item em {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+  color: #bbb;
+}
+
+/* Bullet list */
+.resume-item ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.resume-item ul li {
+  margin-bottom: 0.3rem;
+}
