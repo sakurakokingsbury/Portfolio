@@ -4,47 +4,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sakurako Kingsbury | Portfolio</title>
+  <meta name="description" content="Sakurako Kingsbury - Mechanical Engineering Student Portfolio. Projects, Resume, and Contact.">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <nav class="topnav">
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#resume">Resume</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-<header>
-  <div class="container">
-    <div class="header-content">
-      <div class="nameblock">
-        <h1 class="main-name">Hello World - I'm Sakurako Kingsbury</h1>
-        <div class="subtitle">also known as Ash</div>
-        <p class="intro">
-          I’m a mechanical engineering student based in the NYC metropolitan area. I’m passionate about robotics, biomechanics, and creating products that make a difference.
-        </p>
-        <div class="buttons">
-          <a href="images/CV.pdf" class="button primary" target="_blank">View CV</a>
-          <a href="#contact" class="button secondary">Let's Get in Touch</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="nameblock">
+          <h1 class="main-name">Hello World – I'm Sakurako Kingsbury</h1>
+          <div class="subtitle">also known as Ash</div>
+          <p class="intro">
+            I’m a mechanical engineering student based in the NYC metropolitan area. I’m passionate about robotics, biomechanics, and creating products that make a difference.
+          </p>
+          <div class="buttons">
+            <a href="images/CV.pdf" class="button primary" target="_blank">View CV</a>
+            <a href="#contact" class="button secondary">Let's Get in Touch</a>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="images/yourphoto.jpg" alt="Photo of Sakurako" class="profile-photo">
         </div>
       </div>
-      <div class="image-container">
-        <img src="images/yourphoto.jpg" alt="Photo of Sakurako" class="profile-photo">
-      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-
-  <main>
-  <div class="container">
+  <main class="container">
     <section id="about">
       <h2>About me.</h2>
-      <p>I’m a second-year Mechanical Engineering student at Stevens Institute of Technology with a strong interest in robotics, biomechanics, and product design. I’m passionate about turning ideas into tangible solutions that improve people’s lives. I enjoy working on hands-on projects that blend engineering and creativity, and I’m always looking to learn new skills and collaborate on innovative designs.
-
-</p>
+      <p>
+        I’m a second-year Mechanical Engineering student at Stevens Institute of Technology with a strong interest in robotics, biomechanics, and product design. I’m passionate about turning ideas into tangible solutions that improve people’s lives. I enjoy working on hands-on projects that blend engineering and creativity, and I’m always looking to learn new skills and collaborate on innovative designs.
+      </p>
     </section>
 
     <section id="projects">
@@ -61,57 +61,55 @@
     </section>
 
     <section id="contact">
-  <h2>Contact Me</h2>
-  <p>If you’d like to connect, you can email me directly or use the form below. I’m always happy to hear about interesting projects and collaborations.</p>
-  
-  <div class="contact-wrapper">
-    <div class="contact-info">
-      <div class="contact-item">
-        <span class="contact-icon">📍</span>
-        <div>
-          <strong>Location:</strong><br>
-          NYC Metropolitan Area
-        </div>
-      </div>
-      <div class="contact-item">
-        <span class="contact-icon">✉️</span>
-        <div>
-          <strong>Email:</strong><br>
-          <a href="mailto:your@email.com">your@email.com</a>
-        </div>
-      </div>
-      <div class="contact-item">
-        <span class="contact-icon">🔗</span>
-        <div>
-          <strong>LinkedIn:</strong><br>
-          <a href="https://www.linkedin.com/in/yourprofile" target="_blank">View my LinkedIn</a>
-        </div>
-      </div>
-    </div>
+      <h2>Contact Me</h2>
+      <p>If you’d like to connect, you can email me directly or use the form below. I’m always happy to hear about interesting projects and collaborations.</p>
 
-    <form action="https://formspree.io/f/xrbkwzpn" method="POST">
-      <label>
-        Your Name:
-        <input type="text" name="name" required>
-      </label>
-      <label>
-        Your Email:
-        <input type="email" name="email" required>
-      </label>
-      <label>
-        Message:
-        <textarea name="message" rows="5" required></textarea>
-      </label>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-</section>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Location:</strong><br>
+              NYC Metropolitan Area
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <strong>Email:</strong><br>
+              <a href="mailto:contact.kingsbury@gmail.com">your@email.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🔗</span>
+            <div>
+              <strong>LinkedIn:</strong><br>
+              <a href="https://www.linkedin.com/in/sakurakokingsbury/" target="_blank">View my LinkedIn</a>
+            </div>
+          </div>
+        </div>
 
- </div>
-</main>
+        <form action="https://formspree.io/f/xrbkwzpn" method="POST">
+          <label>
+            Your Name:
+            <input type="text" name="name" placeholder="Your Name" required>
+          </label>
+          <label>
+            Your Email:
+            <input type="email" name="email" placeholder="Your Email" required>
+          </label>
+          <label>
+            Message:
+            <textarea name="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </label>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy;  2025 Sakurako Kingsbury</p>
+    <p>&copy; 2025 Sakurako Kingsbury</p>
   </footer>
 </body>
 </html>
