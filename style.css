@@ -358,7 +358,7 @@ section#contact {
 /* Make sections fill the viewport width */
 section {
   width: 100%;
-  padding: 4rem 0; /* More space above and below */
+  padding: 3rem 0; /* More space above and below */
 }
 
 /* Ensure container itself has no background */
@@ -367,7 +367,7 @@ section > .container {
 }
 
 h2 {
-  font-size: 2rem; /* Larger headings */
+  font-size: 2.5rem; /* Larger headings */
   margin: 0 0 2rem 0;
   font-weight: 700;
 }
