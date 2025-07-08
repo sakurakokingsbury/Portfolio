@@ -159,15 +159,15 @@ header {
 }
 
 .contact-item strong {
-  font-size: 1.1rem; /* larger label */
+  font-size: 1.3rem; /* larger label */
 }
 
 .contact-item a {
-  font-size: 0.95rem; /* smaller link text */
+  font-size: 1.1rem; /* smaller link text */
 }
 
 .contact-item div {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
 }
 
 /* Contact wrapper layout */
@@ -225,7 +225,7 @@ header {
   padding: 0.75rem;
   border: 1.5px solid #7D0505;
   border-radius: 0.5rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   background: #191818;
   color: #eee;
 }
@@ -381,4 +381,10 @@ footer {
   background-color: #202020;
   padding: 1rem;
   text-align: center;
+}
+
+@media (max-width: 810px) {
+  .contact-wrapper {
+    gap: 1.5rem; /* reduce vertical spacing between contact info and form */
+  }
 }
