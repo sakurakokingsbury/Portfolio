@@ -153,6 +153,18 @@ header {
   }
 }
 
+.contact-item strong {
+  font-size: 1.1rem; /* larger label */
+}
+
+.contact-item a {
+  font-size: 0.95rem; /* smaller link text */
+}
+
+.contact-item div {
+  font-size: 0.95rem;
+}
+
 /* Contact wrapper layout */
 .contact-wrapper {
   display: flex;
