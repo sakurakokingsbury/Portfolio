@@ -388,3 +388,41 @@ footer {
     gap: 1.5rem; /* reduce vertical spacing between contact info and form */
   }
 }
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-item {
+  background-color: #191818;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+.project-item img,
+.project-item video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-item h3 {
+  margin: 0.5rem 0 0.3rem 0;
+  font-size: 1.2rem;
+}
+
+.project-item p {
+  font-size: 1rem;
+  color: #ccc;
+}
