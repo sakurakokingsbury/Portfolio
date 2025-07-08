@@ -55,6 +55,86 @@ img {
 
 .sidebar a:hover {
   background-color: #333;
+  
+}
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background: #202020;
+  padding-top: 2rem;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+/* Sidebar links */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin: 1rem 0;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Hamburger hidden by default */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+/* Shift main content to avoid overlapping */
+body {
+  margin-left: 200px;
+}
+
+/* Small screens */
+@media (max-width: 810px) {
+  /* Hide sidebar by default */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    background: #202020;
+    position: relative;
+    margin-left: 0;
+    padding-top: 0.5rem;
+  }
+
+  /* Show hamburger */
+  .hamburger {
+    display: block;
+  }
+
+  /* Hide menu items initially */
+  .sidebar ul {
+    display: none;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  /* Show menu when active */
+  .sidebar.active ul {
+    display: flex;
+  }
+
+  body {
+    margin-left: 0;
+  }
 }
 
 /* Push page content to the right of the sidebar */
