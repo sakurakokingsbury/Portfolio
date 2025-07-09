@@ -80,6 +80,13 @@ img {
   white-space: nowrap;
 }
 
+/* Expand width and align text on hover */
+.sidebar a:hover {
+  width: 150px;              /* Make button expand wider */
+  justify-content: flex-start; /* Align label to the left */
+  padding-left: 1rem;        /* Space between left edge and text */
+}
+
 /* Hover: hide icon, show label */
 .sidebar a:hover .icon {
   opacity: 0;
