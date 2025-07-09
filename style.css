@@ -521,21 +521,21 @@ footer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: auto;
-  height: auto;
-  background: #544B4B; /* same as .button.secondary */
+  height: 2.8rem; /* Same as your .button height */
+  width: 2.8rem;  /* Make it square, adjust if needed */
   border-radius: 0.5rem;
-  padding: 0.75rem 1.5rem; /* same as your other buttons */
-  transition: background 0.3s;
+  background: transparent; /* No background so it's clean */
+  padding: 0; /* No padding */
   text-decoration: none;
+  vertical-align: middle; /* Align with text buttons */
+}
+
+.linkedin-button img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .linkedin-button:hover {
   background: #383232; /* same hover color */
-}
-
-.linkedin-button img {
-  width: 20px;
-  height: 20px;
-  display: block;
 }
