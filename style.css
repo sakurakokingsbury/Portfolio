@@ -70,10 +70,12 @@ img {
   position: absolute;
   left: 70px;
   top: 50%;
+  color: #ddd;
   transform: translateY(-50%);
   white-space: nowrap;
   font-size: 1.1rem;
   transition: opacity 0.2s ease, left 0.2s ease;
+  will-change: opacity, left;
 }
 
 /* Show label and hide icon on hover */
