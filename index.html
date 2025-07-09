@@ -213,5 +213,28 @@
   });
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".sidebar a");
+
+  function activateNavLink() {
+    let index = sections.length;
+
+    while (--index >= 0) {
+      if (window.scrollY + 100 >= sections[index].offsetTop) {
+        navLinks.forEach((link) => link.classList.remove("active"));
+        const id = sections[index].getAttribute("id");
+        const activeLink = document.querySelector(`.sidebar a[href="#${id}"]`);
+        if (activeLink) activeLink.classList.add("active");
+        break;
+      }
+    }
+  }
+
+  activateNavLink();
+  window.addEventListener("scroll", activateNavLink);
+});
+</script>
 </body>
 </html>
