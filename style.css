@@ -45,61 +45,58 @@ img {
   margin: 1rem 0;
 }
 
+/* Sidebar link default state */
 .sidebar a {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem 0;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  margin: 1rem auto;
   background-color: #191818;
   border-radius: 0.5rem;
   transition: all 0.3s ease;
-  position: relative;
   overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
 }
 
-/* Hide the label by default */
+/* The icon (emoji), always visible */
+.sidebar a .icon {
+  font-size: 1.4rem;
+}
+
+/* The label, hidden by default */
 .sidebar a .label {
-  opacity: 0;
-  position: absolute;
-  left: 60px;
+  display: none;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
   white-space: nowrap;
-  font-size: 1.1rem;
-  transition: opacity 0.3s, left 0.3s;
 }
 
-/* Show the label and hide icon on hover */
+/* Hover: expand width and show label */
 .sidebar a:hover {
   width: 150px;
   justify-content: flex-start;
   padding-left: 1rem;
 }
 
+/* Hover: show the label next to icon */
 .sidebar a:hover .label {
-  opacity: 1;
-  left: 60px;
+  display: inline;
 }
 
-.sidebar a:hover .icon {
-  opacity: 0;
-}
-
-/* Show the label and hide icon when active */
+/* Active: darker background, but NO expanding */
 .sidebar a.active {
-  background-color: #100E0E; /* darker background when active */
+  background-color: #555;
 }
 
+/* Active: no label shown automatically (only on hover) */
 .sidebar a.active .label {
-  opacity: 1;
-  left: 60px;
-}
-
-.sidebar a.active .icon {
-  opacity: 0;
+  display: none;
 }
 
 /* Hamburger hidden by default */
@@ -112,7 +109,6 @@ img {
   cursor: pointer;
   margin-left: 1rem;
 }
-
 
 /* Make main content clear sidebar */
 .container {
