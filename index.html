@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let index = sections.length;
 
     while (--index >= 0) {
-      if (window.scrollY + 100 >= sections[index].offsetTop) {
+      if (window.scrollY + 200 >= sections[index].offsetTop) {
         navLinks.forEach((link) => link.classList.remove("active"));
         const id = sections[index].getAttribute("id");
         const activeLink = document.querySelector(`.sidebar a[href="#${id}"]`);
