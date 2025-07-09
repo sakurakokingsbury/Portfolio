@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #4C1111; /* near black */
+  background-color: #4C1111;
   color: #ddd;
 }
 
@@ -24,11 +24,10 @@ img {
   width: 60px;
   height: 100vh;
   background-color: #202020;
-  padding-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* centers vertically */
+  justify-content: center;
   box-sizing: border-box;
   z-index: 1000;
 }
@@ -38,27 +37,14 @@ img {
   padding: 0;
   margin: 0;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sidebar li {
-  width: 100%;
   margin: 1rem 0;
-}
-
-.sidebar a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem 0;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.9rem;
-  transition: background 0.3s;
-}
-
-.sidebar a:hover {
-  background-color: #333;
+  width: 100%;
 }
 
 .sidebar a {
@@ -68,16 +54,19 @@ img {
   flex-direction: column;
   width: 40px;
   height: 40px;
-  margin: 1rem auto;
+  margin: 0.5rem auto;
   background-color: #191818;
   border-radius: 0.5rem;
   font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
   transition: all 0.3s ease;
   overflow: hidden;
-  position: relative;
 }
 
-.sidebar a::before {
+/* The label text (hidden by default) */
+.sidebar a::after {
   content: attr(data-label);
   position: absolute;
   left: 50px;
@@ -88,13 +77,20 @@ img {
   transition: opacity 0.3s, left 0.3s;
 }
 
+/* When hovered, expand and show label */
 .sidebar a:hover {
   width: 150px;
   justify-content: flex-start;
   padding-left: 1rem;
 }
 
-.sidebar a:hover::before {
+/* Hide the emoji when hovered */
+.sidebar a:hover span {
+  opacity: 0;
+}
+
+/* Show label when hovered */
+.sidebar a:hover::after {
   opacity: 1;
   left: 60px;
 }
@@ -115,7 +111,7 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
-  padding-left: 80px; /* 60px sidebar + 20px gap */
+  padding-left: 80px; /* sidebar width + gap */
 }
 
 /* Header */
@@ -415,15 +411,12 @@ a:hover {
 section#about {
   background-color: #4C1111;
 }
-
 section#projects {
   background-color: #202020;
 }
-
 section#resume {
   background-color: #4C1111;
 }
-
 section#contact {
   background-color: #202020;
 }
@@ -433,7 +426,6 @@ section {
   width: 100%;
   padding: 3rem 0;
 }
-
 section > .container {
   background: transparent;
 }
@@ -450,14 +442,26 @@ footer {
   text-align: center;
 }
 
-/* Small screens: sidebar becomes top bar */
+/* Small screens */
 @media (max-width: 810px) {
   .sidebar {
     position: relative;
     width: 100%;
     height: auto;
-    background: #202020;
-    padding-top: 0.5rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0.5rem;
+  }
+
+  .sidebar a {
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    flex-direction: row;
+  }
+
+  .sidebar a::after {
+    display: none;
   }
 
   .hamburger {
