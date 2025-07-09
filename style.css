@@ -534,8 +534,8 @@ footer {
 /* Make the image fill the button fully, respecting the padding illusion */
 .linkedin-button img {
   display: block;
-  height: 1.6rem;
-  width: 1.6rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 .linkedin-button:hover {
