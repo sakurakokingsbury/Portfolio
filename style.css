@@ -521,20 +521,21 @@ footer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 2.8rem;            /* Match the .button height exactly */
-  width: 2.8rem;             /* Square */
+  height: 2.8rem;
+  width: 2.8rem;
   border-radius: 0.5rem;
-  background: transparent;   /* No background */
+  background: transparent;
   padding: 0;
   margin: 0;
-  vertical-align: middle;    /* Align to text middle */
-  box-sizing: border-box;    /* So sizing is consistent */
+  vertical-align: middle;
+  box-sizing: border-box;
 }
 
+/* Make the image fill the button fully, respecting the padding illusion */
 .linkedin-button img {
   display: block;
-  height: 1.4rem;  /* Control icon height */
-  width: auto;
+  height: 1.6rem;
+  width: 1.6rem;
 }
 
 .linkedin-button:hover {
