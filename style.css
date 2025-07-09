@@ -515,3 +515,14 @@ footer {
     justify-content: flex-start;
   }
 }
+
+.linkedin-button {
+  display: inline-block;
+  line-height: 0; /* removes whitespace gap below image */
+}
+
+.linkedin-button img {
+  display: block; /* removes inline spacing */
+  width: 40px; /* or whatever size you want (default PNG size) */
+  height: 40px;
+}
