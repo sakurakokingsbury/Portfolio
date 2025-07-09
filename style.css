@@ -67,23 +67,24 @@ img {
 
 /* Icon always visible by default */
 .sidebar a .icon {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   transition: opacity 0.3s;
 }
 
 /* Label hidden by default */
 .sidebar a .label {
   opacity: 0;
-  position: absolute;
   font-size: 0.95rem;
   transition: opacity 0.3s;
   white-space: nowrap;
+  margin-left: 0.5rem; /* spacing between edge and text */
 }
 
 /* Expand width and align text on hover */
 .sidebar a:hover {
   width: 150px;              /* Make button expand wider */
   justify-content: flex-start; /* Align label to the left */
+  align-items: center; /* centers label vertically */
   padding-left: 1rem;        /* Space between left edge and text */
 }
 
