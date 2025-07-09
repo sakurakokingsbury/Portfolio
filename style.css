@@ -74,10 +74,10 @@ img {
 /* Label hidden by default */
 .sidebar a .label {
   opacity: 0;
+  align-items: center;
   font-size: 0.95rem;
   transition: opacity 0.3s;
   white-space: nowrap;
-  margin-left: 0.5rem; /* spacing between edge and text */
 }
 
 /* Expand width and align text on hover */
