@@ -28,7 +28,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* centers vertically */
+  justify-content: center;
   box-sizing: border-box;
   z-index: 1000;
 }
@@ -51,22 +51,24 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   margin: 1rem auto;
   background-color: #191818;
   border-radius: 0.5rem;
-  font-size: 1.4rem; /* bigger emoji */
+  font-size: 1.6rem; /* bigger emoji */
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
+  color: white;
 }
 
 /* Hide the label by default */
 .sidebar a .label {
   opacity: 0;
   position: absolute;
-  left: 60px;
+  left: 70px;
   top: 50%;
   transform: translateY(-50%);
   white-space: nowrap;
@@ -76,13 +78,13 @@ img {
 
 /* Show label and hide icon on hover */
 .sidebar a:hover {
-  width: 150px;
+  width: 160px;
   background-color: #333;
 }
 
 .sidebar a:hover .label {
   opacity: 1;
-  left: 60px;
+  left: 70px;
 }
 
 .sidebar a:hover .icon {
@@ -91,13 +93,17 @@ img {
 
 /* Active state (darker background) */
 .sidebar a.active {
-  background-color: #100E0E;
+  background-color: #555;
 }
 
-/* When active AND hovered, show label and hide icon */
+/* Active + hover state: show label and hide icon */
+.sidebar a.active:hover {
+  width: 160px;
+}
+
 .sidebar a.active:hover .label {
   opacity: 1;
-  left: 60px;
+  left: 70px;
 }
 
 .sidebar a.active:hover .icon {
@@ -313,6 +319,7 @@ header {
 /* Links */
 a {
   color: #9D0000;
+  text-decoration: none;
 }
 
 a:hover {
@@ -417,20 +424,11 @@ a:hover {
 }
 
 /* Section backgrounds */
-section#about {
-  background-color: #4C1111;
-}
-section#projects {
-  background-color: #202020;
-}
-section#resume {
-  background-color: #4C1111;
-}
-section#contact {
-  background-color: #202020;
-}
+section#about { background-color: #4C1111; }
+section#projects { background-color: #202020; }
+section#resume { background-color: #4C1111; }
+section#contact { background-color: #202020; }
 
-/* Section padding */
 section {
   width: 100%;
   padding: 3rem 0;
@@ -469,22 +467,15 @@ footer {
     flex-direction: row;
   }
 
-  .sidebar a::after {
-    display: none;
+  .sidebar a .label {
+    opacity: 1;
+    position: static;
+    transform: none;
   }
 
-  .hamburger {
-    display: block;
-  }
-
-  .sidebar ul {
-    display: none;
-    flex-direction: column;
-    padding: 0 1rem;
-  }
-
-  .sidebar.active ul {
-    display: flex;
+  .sidebar a .icon {
+    opacity: 1;
+    margin-right: 0.5rem;
   }
 
   .container {
@@ -521,9 +512,4 @@ footer {
   .buttons {
     justify-content: flex-start;
   }
-}
-
-/* Active sidebar link */
-.sidebar a.active {
-  background-color: #555; /* Darker background */
 }
