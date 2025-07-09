@@ -23,7 +23,7 @@ img {
   left: 0;
   width: 60px;
   height: 100vh;
-  background-color: #202020;
+  background-color: transparent;
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
@@ -90,7 +90,7 @@ img {
 
 /* Show the label and hide icon when active */
 .sidebar a.active {
-  background-color: #555; /* darker background when active */
+  background-color: #100E0E; /* darker background when active */
 }
 
 .sidebar a.active .label {
