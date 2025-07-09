@@ -48,56 +48,69 @@ img {
 /* Sidebar link default state */
 .sidebar a {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   margin: 1rem auto;
   background-color: #191818;
   border-radius: 0.5rem;
-  font-size: 1.4rem;
-  transition: all 0.3s ease;
+  font-size: 1.6rem; /* bigger emoji */
+  transition: width 0.3s ease, background-color 0.4s ease;
+  position: relative;
   overflow: hidden;
+  text-decoration: none;
+  color: white;
 }
 
-/* Make the label inline, hidden by default */
+/* Hide the label by default */
 .sidebar a .label {
   opacity: 0;
-  margin-left: 0.5rem;
+  position: absolute;
+  left: 70px;
+  top: 50%;
+  color: #ddd;
+  transform: translateY(-50%);
   white-space: nowrap;
   font-size: 1.1rem;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.1s ease, left 0.2s ease;
+  will-change: opacity, left;
 }
 
-/* Hover: expand and show label */
+/* Show label and hide icon on hover */
 .sidebar a:hover {
-  width: 150px;
-  justify-content: flex-start;
-  padding-left: 1rem;
+  width: 160px;
+  background-color: #333;
 }
 
-/* When hovered, show the label and hide the icon */
 .sidebar a:hover .label {
   opacity: 1;
+  left: 70px;
 }
 
 .sidebar a:hover .icon {
   opacity: 0;
 }
 
-/* Active: darker background */
+/* Active state (darker background) */
 .sidebar a.active {
-  background-color: #100E0E;
+  background-color: #555;
 }
 
-/* Active + hover: same behavior as hover */
+/* Active + hover state: show label and hide icon */
+.sidebar a.active:hover {
+  width: 160px;
+}
+
 .sidebar a.active:hover .label {
   opacity: 1;
+  left: 70px;
 }
+
 .sidebar a.active:hover .icon {
   opacity: 0;
 }
-
 
 /* Hamburger hidden by default */
 .hamburger {
