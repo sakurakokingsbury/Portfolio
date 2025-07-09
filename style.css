@@ -46,67 +46,61 @@ img {
 }
 
 /* Sidebar link default state */
-/* Sidebar link default state */
 .sidebar a {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   margin: 1rem auto;
   background-color: #191818;
   border-radius: 0.5rem;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 500;
-  position: relative;
+  font-size: 1.4rem; /* bigger emoji */
   transition: all 0.3s ease;
+  position: relative;
   overflow: hidden;
 }
 
-/* Icon always visible by default */
-.sidebar a .icon {
-  font-size: 1.8rem;
-  transition: opacity 0.3s;
-}
-
-/* Label hidden by default */
+/* Hide the label by default */
 .sidebar a .label {
   opacity: 0;
-  align-items: center;
-  font-size: 0.95rem;
-  transition: opacity 0.3s;
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
   white-space: nowrap;
+  font-size: 1.1rem;
+  transition: opacity 0.3s, left 0.3s;
 }
 
-/* Expand width and align text on hover */
+/* Show label and hide icon on hover */
 .sidebar a:hover {
-  width: 150px;              /* Make button expand wider */
-  justify-content: flex-start; /* Align label to the left */
-  align-items: center; /* centers label vertically */
-  padding-left: 1rem;        /* Space between left edge and text */
-}
-
-/* Hover: hide icon, show label */
-.sidebar a:hover .icon {
-  opacity: 0;
+  width: 150px;
+  background-color: #333;
 }
 
 .sidebar a:hover .label {
   opacity: 1;
+  left: 60px;
 }
 
-/* Active: darker background, icon visible, label hidden */
+.sidebar a:hover .icon {
+  opacity: 0;
+}
+
+/* Active state (darker background) */
 .sidebar a.active {
-  background-color: #444;
+  background-color: #100E0E;
 }
 
-.sidebar a.active .icon {
+/* When active AND hovered, show label and hide icon */
+.sidebar a.active:hover .label {
   opacity: 1;
+  left: 60px;
 }
 
-.sidebar a.active .label {
+.sidebar a.active:hover .icon {
   opacity: 0;
 }
 
