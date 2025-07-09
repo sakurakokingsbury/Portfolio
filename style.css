@@ -68,7 +68,7 @@ img {
   position: absolute;
   left: 60px;
   white-space: nowrap;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   transition: opacity 0.3s, left 0.3s;
 }
 
