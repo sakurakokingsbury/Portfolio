@@ -6,6 +6,7 @@
   --gray-light: #555;
   --link: #9D0000;
   --link-hover: #8D0E0E;
+  --radius: 0.5rem;
 }
 
 body {
@@ -64,7 +65,7 @@ img {
   height: 60px;
   margin: 1rem auto;
   background-color: #191818;
-  border-radius: 0.5rem;
+  border-radius: var(--radius);
   font-size: 1.6rem;
   transition: width 0.3s ease, background-color 0.4s ease;
   position: relative;
@@ -166,6 +167,7 @@ header {
   height: auto;
   object-fit: contain;
   display: block;
+  border-radius: var(--radius);
 }
 
 .main-name {
@@ -197,7 +199,7 @@ header {
 .button {
   text-decoration: none;
   padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: var(--radius);
   font-weight: 600;
   transition: background 0.3s, color 0.3s;
 }
@@ -282,7 +284,7 @@ header {
   width: 100%;
   padding: 0.75rem;
   border: 1.5px solid var(--red);
-  border-radius: 0.5rem;
+  border-radius: var(--radius);
   font-size: 1.2rem;
   background: #191818;
   color: #eee;
@@ -294,7 +296,7 @@ header {
   background: var(--red);
   color: white;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: var(--radius);
   font-weight: 600;
   cursor: pointer;
   transition: background 0.3s;
@@ -393,7 +395,7 @@ a:hover {
 
 .project-item {
   background-color: #191818;
-  border-radius: 0.5rem;
+  border-radius: var(--radius);
   padding: 1rem;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -408,7 +410,7 @@ a:hover {
 .project-item video {
   max-width: 100%;
   height: auto;
-  border-radius: 0.5rem;
+  border-radius: var(--radius);
   margin-bottom: 0.75rem;
 }
 
@@ -456,7 +458,7 @@ footer {
   justify-content: center;
   height: 2.8rem;
   width: 2.8rem;
-  border-radius: 0.5rem;
+  border-radius: var(--radius);
   background: transparent;
   padding: 0;
   margin: 0;
@@ -468,6 +470,7 @@ footer {
   display: block;
   height: 2.9rem;
   width: 2.9rem;
+  border-radius: var(--radius);
 }
 
 .linkedin-button:hover {
@@ -494,11 +497,11 @@ footer {
 .mobile-menu {
   display: none;
   position: fixed;
-  top: 60px; 
+  top: 60px;
   right: 0;
   width: 200px;
   background-color: #0D0D0D;
-  border-radius: 0 0 0.5rem 0.5rem;
+  border-radius: 0 0 var(--radius) var(--radius);
   box-shadow: 0 4px 8px rgba(0,0,0,0.5);
   z-index: 999;
 }
@@ -529,16 +532,17 @@ footer {
   background-color: #333;
 }
 
-/* When menu is active */
 .mobile-menu.active {
   display: block;
 }
 
+/* Responsive adjustments */
 @media (max-width: 790px) {
-   .header-content {
+  .header-content {
     flex-wrap: wrap;
+    flex-direction: column;
   }
-  
+
   .sidebar {
     display: none;
   }
@@ -569,35 +573,17 @@ footer {
     font-size: 1.5em;
   }
 
-  .header-content {
-    flex-direction: column;
-  }
-
   .nameblock,
   .image-container {
     flex: 1 1 100%;
-  }
-
-  .profile-photo {
-    width: 80%;
   }
 
   .buttons {
     justify-content: flex-start;
   }
 
-  .contact-wrapper {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 1.5rem;
-  }
-
   #contact form {
     max-width: 100%;
-    padding-right: 0;
-  }
-
-  #contact form {
-  padding: 0 1rem;
+    padding: 0 1rem;
   }
 }
