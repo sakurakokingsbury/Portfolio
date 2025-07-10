@@ -112,14 +112,17 @@ img {
 
 /* Hamburger */
 .hamburger {
-  display: none;
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 2rem;
-  cursor: pointer;
-  margin-left: 1rem;
-}
+    display: block !important;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
 
 /* Main container */
 .container {
