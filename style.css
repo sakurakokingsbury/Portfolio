@@ -534,7 +534,7 @@ footer {
   display: block;
 }
 
-@media (max-width: 810px) {
+@media (max-width: 790px) {
    .header-content {
     flex-wrap: wrap;
   }
