@@ -19,6 +19,15 @@
     <li><a href="#contact"><span class="icon">✉️</span><span class="label">Contact</span></a></li>
   </ul>
 </nav>
+<nav class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
 
 <header>
   <div class="container">
@@ -238,6 +247,16 @@ document.addEventListener("DOMContentLoaded", function() {
   activateNavLink();
   window.addEventListener("scroll", activateNavLink);
 });
+  
 </script>
+  <script>
+  const mobileMenu = document.getElementById('mobileMenu');
+  const hamburgerBtn = document.getElementById('hamburger');
+
+  hamburgerBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+  });
+</script>
+
 </body>
 </html>
