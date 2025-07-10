@@ -110,18 +110,18 @@ img {
   background-color: var(--gray-light);
 }
 
-/* Hamburger */
 .hamburger {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 1000;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-  }
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
 
 /* Main container */
 .container {
@@ -494,7 +494,7 @@ footer {
 .mobile-menu {
   display: none;
   position: fixed;
-  top: 60px; /* below the header/hamburger */
+  top: 60px; 
   right: 0;
   width: 200px;
   background-color: #191818;
@@ -539,6 +539,10 @@ footer {
     display: none;
   }
 
+  .hamburger {
+    display: block;
+  }
+
   .container {
     padding-left: 1rem;
   }
@@ -574,3 +578,4 @@ footer {
     justify-content: flex-start;
   }
 }
+
