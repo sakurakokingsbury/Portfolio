@@ -241,12 +241,32 @@ document.addEventListener("DOMContentLoaded", function() {
 });
   
 </script>
-  <script>
+<script>
   const mobileMenu = document.getElementById('mobileMenu');
   const hamburgerBtn = document.getElementById('hamburger');
 
-  hamburgerBtn.addEventListener('click', () => {
+  // Toggle menu when clicking the hamburger
+  hamburgerBtn.addEventListener('click', (e) => {
+    e.stopPropagation(); // Prevent the document click from firing
     mobileMenu.classList.toggle('active');
+  });
+
+  // Close menu when clicking a link inside it
+  const menuLinks = mobileMenu.querySelectorAll('a');
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+    });
+  });
+
+  // Close menu when clicking anywhere else
+  document.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+  });
+
+  // Prevent clicks inside the menu from closing it
+  mobileMenu.addEventListener('click', (e) => {
+    e.stopPropagation();
   });
 </script>
 
