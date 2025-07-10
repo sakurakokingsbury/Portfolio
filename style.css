@@ -540,7 +540,7 @@ footer {
   }
 
   .hamburger {
-    display: block;
+    display: block !important;
   }
 
   .container {
