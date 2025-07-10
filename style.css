@@ -112,7 +112,6 @@ img {
 
 /* Hamburger */
 .hamburger {
-    display: block !important;
     position: fixed;
     top: 10px;
     right: 10px;
@@ -537,30 +536,7 @@ footer {
 
 @media (max-width: 810px) {
   .sidebar {
-    position: relative;
-    width: 100%;
-    height: auto;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding: 0.5rem;
-  }
-
-  .sidebar a {
-    width: auto;
-    height: auto;
-    padding: 0.5rem 1rem;
-    flex-direction: row;
-  }
-
-  .sidebar a .label {
-    opacity: 1;
-    position: static;
-    transform: none;
-  }
-
-  .sidebar a .icon {
-    opacity: 1;
-    margin-right: 0.5rem;
+    display: none;
   }
 
   .container {
