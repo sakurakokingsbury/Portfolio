@@ -581,5 +581,19 @@ footer {
   .buttons {
     justify-content: flex-start;
   }
-}
 
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+
+  #contact form {
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  #contact form {
+  padding: 0 1rem;
+  }
+}
