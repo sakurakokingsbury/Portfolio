@@ -545,7 +545,6 @@ footer {
 }
 
 /* Responsive adjustments */
-/* Responsive adjustments */
 @media (max-width: 790px) {
   .header-content {
     flex-wrap: wrap;
@@ -568,21 +567,27 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 1.5rem; /* This is the only spacing between contact-info and form */
+    gap: 1.5rem;
   }
 
   .contact-info {
-    margin: 0; /* Remove any margin */
+    margin: 0;
   }
 
   #contact form {
     max-width: 100%;
     padding: 0 1rem;
-    margin: 0; /* Remove all margins */
+    margin: 0; /* reset any top/bottom margin */
   }
 
-  #contact form > * {
-    margin-top: 0; /* Remove any top margins from children */
+  /* Remove any margin from the first label inside the form */
+  #contact form > label:first-child {
+    margin-top: 0;
+  }
+
+  /* Ensure no phantom spacing before the form */
+  #contact form::before {
+    content: none;
   }
 
   .profile-photo {
@@ -606,3 +611,4 @@ footer {
     justify-content: flex-start;
   }
 }
+
