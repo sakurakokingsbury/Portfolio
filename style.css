@@ -587,3 +587,12 @@ footer {
     margin: 0;
   }
 }
+
+@media (min-width: 791px) {
+  .contact-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem; /* adjust if you prefer a different spacing */
+  }
+}
