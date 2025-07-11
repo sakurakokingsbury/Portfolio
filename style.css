@@ -74,7 +74,6 @@ img {
   color: white;
 }
 
-/* Hide label by default */
 .sidebar a .label {
   opacity: 0;
   position: absolute;
@@ -88,7 +87,6 @@ img {
   will-change: opacity, left;
 }
 
-/* Hover and active hover states */
 .sidebar a:hover,
 .sidebar a.active:hover {
   width: 160px;
@@ -106,7 +104,6 @@ img {
   opacity: 0;
 }
 
-/* Active state */
 .sidebar a.active {
   background-color: var(--gray-light);
 }
@@ -232,12 +229,13 @@ header {
   font-size: 1.1rem;
 }
 
+/* 💡 Clean contact-wrapper definition */
 .contact-wrapper {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  flex-direction: row; /* side by side by default */
+  flex-direction: row;
   gap: 3rem;
   max-width: 1000px;
   margin: 0 auto;
@@ -537,14 +535,6 @@ footer {
   display: block;
 }
 
-/* Medium screens (<975px) */
-@media (max-width: 975px) {
-  #contact form {
-    max-width: 100%;
-    padding: 0 1rem;
-  }
-}
-
 /* Responsive adjustments */
 @media (max-width: 790px) {
   .header-content {
@@ -565,30 +555,9 @@ footer {
   }
 
   .contact-wrapper {
-    display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 1.5rem;
-  }
-
-  .contact-info {
-    margin: 0;
-  }
-
-  #contact form {
-    max-width: 100%;
-    padding: 0 1rem;
-    margin: 0; /* reset any top/bottom margin */
-  }
-
-  /* Remove any margin from the first label inside the form */
-  #contact form > label:first-child {
-    margin-top: 0;
-  }
-
-  /* Ensure no phantom spacing before the form */
-  #contact form::before {
-    content: none;
+    gap: 2rem;
   }
 
   .profile-photo {
@@ -611,28 +580,10 @@ footer {
   .buttons {
     justify-content: flex-start;
   }
-}
-
-.contact-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 1.5rem;
-}
-
-@media (max-width: 790px) {
-  .contact-wrapper {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 2rem; /* slightly smaller gap when stacked */
-  }
-
-  .contact-info {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-  }
 
   #contact form {
-    margin-top: 0 !important;
+    max-width: 100%;
+    padding: 0 1rem;
+    margin: 0;
   }
 }
