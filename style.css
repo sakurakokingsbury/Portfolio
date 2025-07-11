@@ -592,7 +592,6 @@ footer {
   .contact-wrapper {
     flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
-    gap: 3rem; /* adjust if you prefer a different spacing */
+    gap: 3rem; /* or your preferred spacing */
   }
 }
