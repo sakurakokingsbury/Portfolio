@@ -536,7 +536,15 @@ footer {
   display: block;
 }
 
-/* Responsive adjustments */
+/* Medium screens (<975px) */
+@media (max-width: 975px) {
+  #contact form {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+/* Responsive adjustments for small screens (<790px) */
 @media (max-width: 790px) {
   .header-content {
     flex-wrap: wrap;
