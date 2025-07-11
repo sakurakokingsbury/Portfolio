@@ -236,12 +236,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 1.5rem;
   flex-wrap: wrap;
+  flex-direction: row; /* side by side by default */
+  gap: 3rem;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 1rem 0;
-  flex-direction: row;
+  padding: 2rem 0;
 }
 
 .contact-info {
@@ -624,7 +624,7 @@ footer {
   .contact-wrapper {
     flex-direction: column;
     align-items: stretch;
-    gap: 1.5rem; /* SMALL gap between email info and form */
+    gap: 2rem; /* slightly smaller gap when stacked */
   }
 
   .contact-info {
