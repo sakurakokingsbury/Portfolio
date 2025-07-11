@@ -535,6 +535,15 @@ footer {
   display: block;
 }
 
+@media (max-width: 975px) {
+  .container {
+    padding: 0 1rem;
+  }
+  #contact form {
+    max-width: 100%;
+  }
+}
+
 /* Responsive adjustments */
 @media (max-width: 790px) {
   .header-content {
