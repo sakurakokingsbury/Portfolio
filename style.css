@@ -612,3 +612,26 @@ footer {
   }
 }
 
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+@media (max-width: 790px) {
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem; /* SMALL gap between email info and form */
+  }
+
+  .contact-info {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  #contact form {
+    margin-top: 0 !important;
+  }
+}
