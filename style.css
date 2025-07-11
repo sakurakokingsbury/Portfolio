@@ -544,7 +544,7 @@ footer {
   }
 }
 
-/* Responsive adjustments for small screens (<790px) */
+/* Responsive adjustments */
 @media (max-width: 790px) {
   .header-content {
     flex-wrap: wrap;
@@ -566,6 +566,17 @@ footer {
   .contact-wrapper {
     flex-direction: column;
     align-items: stretch;
+    gap: 3rem; /* keep consistent spacing between sections */
+  }
+
+  .contact-info {
+    margin-bottom: 0; /* remove any extra spacing that might cause big gaps */
+  }
+
+  #contact form {
+    max-width: 100%;
+    padding: 0 1rem;
+    margin-top: 0; /* remove any unintended top margin */
   }
 
   .profile-photo {
@@ -587,10 +598,5 @@ footer {
 
   .buttons {
     justify-content: flex-start;
-  }
-
-  #contact form {
-    max-width: 100%;
-    padding: 0 1rem;
   }
 }
