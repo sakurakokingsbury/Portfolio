@@ -241,6 +241,7 @@ header {
   max-width: 1000px;
   margin: 0 auto;
   padding: 1rem 0;
+  flex-direction: row;
 }
 
 .contact-info {
