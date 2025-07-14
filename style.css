@@ -546,5 +546,24 @@ footer {
 @media (max-width: 790px) {
   .contact-wrapper {
     gap: 1rem; /* or 0 if you want no space */
+    padding: 0; /* remove extra vertical padding */
+
+  }
+}
+
+@media (max-width: 790px) {
+  .contact-wrapper {
+    padding: 0;       /* Remove extra padding around wrapper */
+    gap: 1rem;        /* Small gap between items */
+  }
+  #contact form {
+    margin: 0;        /* Remove default margin */
+    padding: 0 1rem;  /* Optional horizontal padding for breathing room */
+  }
+  #contact p {
+    margin-bottom: 1rem; /* Reduce paragraph margin if needed */
+  }
+  #contact form label {
+    margin: 0;        /* Ensure no extra space from labels */
   }
 }
