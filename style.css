@@ -592,7 +592,12 @@ footer {
   .buttons {
     justify-content: flex-start;
   }
-
+  
+ .contact-info {
+    margin: 0;
+    padding: 0;
+  }
+  
   #contact form {
     max-width: 100%;
     padding: 0 1rem;
