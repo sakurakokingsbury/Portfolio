@@ -229,7 +229,6 @@ header {
   font-size: 1.1rem;
 }
 
-/* 💡 Clean contact-wrapper definition */
 .contact-wrapper {
   display: flex;
   justify-content: center;
@@ -270,6 +269,7 @@ header {
   max-width: 550px;
   padding-right: 1rem;
   box-sizing: border-box;
+  margin: 0; /* reset any default margin */
 }
 
 #contact form label {
@@ -450,48 +450,6 @@ footer {
   text-align: center;
 }
 
-/* LinkedIn Button Styling */
-.linkedin-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.8rem;
-  width: 2.8rem;
-  border-radius: var(--radius);
-  background: transparent;
-  padding: 0;
-  margin: 0;
-  vertical-align: middle;
-  box-sizing: border-box;
-}
-
-.linkedin-button img {
-  display: block;
-  height: 2.9rem;
-  width: 2.9rem;
-  border-radius: var(--radius);
-}
-
-.linkedin-button:hover {
-  background: #383232;
-}
-
-.contact-linkedin {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-.contact-linkedin .linkedin-button {
-  width: 3rem;
-  height: 3rem;
-}
-
-.contact-linkedin .linkedin-button img {
-  width: 1.8rem;
-  height: 1.8rem;
-}
-
 /* Mobile Menu Base */
 .mobile-menu {
   display: none;
@@ -538,74 +496,45 @@ footer {
 /* Medium screens (<975px) */
 @media (max-width: 975px) {
   .container {
-    /* Keep space for sidebar on medium screens */
-    padding-right: 1rem;
-    padding-left: 80px;
+    padding: 0 1rem;
   }
   #contact form {
     max-width: 100%;
   }
 }
 
-/* Responsive adjustments for small screens (<790px) */
+/* Small screens (<790px) */
 @media (max-width: 790px) {
   .header-content {
     flex-wrap: wrap;
     flex-direction: column;
   }
-
   .sidebar {
     display: none;
   }
-
   .hamburger {
     display: block !important;
   }
-
   .container {
     padding: 0 1rem;
   }
-
   .contact-wrapper {
     flex-direction: column;
     align-items: stretch;
-    gap: 2rem;
+    gap: 1.5rem;
   }
-
-  .profile-photo {
-    width: 80%;
-  }
-
-  .main-name {
-    font-size: 2.5em;
-  }
-
-  .subtitle {
-    font-size: 1.5em;
-  }
-
-  .nameblock,
-  .image-container {
-    flex: 1 1 100%;
-  }
-
-  .buttons {
-    justify-content: flex-start;
-  }
-  
- .contact-info {
+  .contact-info {
     margin: 0;
     padding: 0;
   }
-  
   #contact form {
     max-width: 100%;
-    padding: 0 1rem;
+    padding: 0;
     margin: 0;
   }
 }
 
-/* Restore horizontal layout when screen is wide enough (>790px) */
+/* Restore row layout when wider */
 @media (min-width: 791px) {
   .contact-wrapper {
     flex-direction: row;
