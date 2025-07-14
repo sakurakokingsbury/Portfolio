@@ -535,16 +535,19 @@ footer {
   display: block;
 }
 
+/* Medium screens (<975px) */
 @media (max-width: 975px) {
   .container {
-    padding: 0 1rem;
+    /* Keep space for sidebar on medium screens */
+    padding-right: 1rem;
+    padding-left: 80px;
   }
   #contact form {
     max-width: 100%;
   }
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments for small screens (<790px) */
 @media (max-width: 790px) {
   .header-content {
     flex-wrap: wrap;
@@ -560,7 +563,7 @@ footer {
   }
 
   .container {
-    padding-left: 1rem;
+    padding: 0 1rem;
   }
 
   .contact-wrapper {
@@ -597,10 +600,11 @@ footer {
   }
 }
 
+/* Restore horizontal layout when screen is wide enough (>790px) */
 @media (min-width: 791px) {
   .contact-wrapper {
     flex-direction: row;
     align-items: flex-start;
-    gap: 3rem; /* or your preferred spacing */
+    gap: 3rem;
   }
 }
