@@ -542,3 +542,9 @@ footer {
     gap: 3rem;
   }
 }
+
+@media (max-width: 790px) {
+  .contact-wrapper {
+    gap: 1rem; /* or 0 if you want no space */
+  }
+}
