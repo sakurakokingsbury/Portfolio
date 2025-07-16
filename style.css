@@ -495,11 +495,35 @@ footer {
 
 /* Medium screens (<975px) */
 @media (max-width: 975px) {
+  /* Hide sidebar on smaller screens */
+  .sidebar {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: block !important;
+  }
+
+  /* Add left and right padding so content doesn't touch edges */
   .container {
     padding: 0 1rem;
   }
+
   #contact form {
     max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.5rem;
+  }
+
+  .contact-info {
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -509,24 +533,31 @@ footer {
     flex-wrap: wrap;
     flex-direction: column;
   }
+
+  /* Sidebar stays hidden */
   .sidebar {
-    display: none;
+    display: none !important;
   }
+
   .hamburger {
     display: block !important;
   }
+
   .container {
     padding: 0 1rem;
   }
+
   .contact-wrapper {
     flex-direction: column;
     align-items: stretch;
     gap: 1.5rem;
   }
+
   .contact-info {
     margin: 0;
     padding: 0;
   }
+
   #contact form {
     max-width: 100%;
     padding: 0;
@@ -541,4 +572,9 @@ footer {
     align-items: flex-start;
     gap: 3rem;
   }
+
+  .container {
+    padding-left: 80px;
+  }
 }
+
