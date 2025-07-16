@@ -74,6 +74,7 @@ img {
   color: white;
 }
 
+/* Hide label by default */
 .sidebar a .label {
   opacity: 0;
   position: absolute;
@@ -87,6 +88,7 @@ img {
   will-change: opacity, left;
 }
 
+/* Hover and active hover states */
 .sidebar a:hover,
 .sidebar a.active:hover {
   width: 160px;
@@ -104,6 +106,7 @@ img {
   opacity: 0;
 }
 
+/* Active state */
 .sidebar a.active {
   background-color: var(--gray-light);
 }
@@ -233,9 +236,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  flex-wrap: wrap;
-  flex-direction: row;
   gap: 3rem;
+  flex-wrap: wrap;
   max-width: 1000px;
   margin: 0 auto;
   padding: 2rem 0;
@@ -269,7 +271,6 @@ header {
   max-width: 550px;
   padding-right: 1rem;
   box-sizing: border-box;
-  margin: 0; /* reset any default margin */
 }
 
 #contact form label {
@@ -450,6 +451,48 @@ footer {
   text-align: center;
 }
 
+/* LinkedIn Button Styling */
+.linkedin-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.8rem;
+  width: 2.8rem;
+  border-radius: var(--radius);
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.linkedin-button img {
+  display: block;
+  height: 2.9rem;
+  width: 2.9rem;
+  border-radius: var(--radius);
+}
+
+.linkedin-button:hover {
+  background: #383232;
+}
+
+.contact-linkedin {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.contact-linkedin .linkedin-button {
+  width: 3rem;
+  height: 3rem;
+}
+
+.contact-linkedin .linkedin-button img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
 /* Mobile Menu Base */
 .mobile-menu {
   display: none;
@@ -493,50 +536,24 @@ footer {
   display: block;
 }
 
+/* Responsive adjustments */
 /* Medium screens (<975px) */
 @media (max-width: 975px) {
-  /* Hide sidebar on smaller screens */
-  .sidebar {
-    display: none !important;
-  }
-
-  .hamburger {
-    display: block !important;
-  }
-
-  /* Add left and right padding so content doesn't touch edges */
-  .container {
-    padding: 0 1rem;
-  }
-
   #contact form {
     max-width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-
-  .contact-wrapper {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 1.5rem;
-  }
-
-  .contact-info {
-    margin: 0;
-    padding: 0;
+    padding: 0 1rem;
   }
 }
 
-/* Small screens (<790px) */
+/* Responsive adjustments for small screens (<790px) */
 @media (max-width: 790px) {
   .header-content {
     flex-wrap: wrap;
     flex-direction: column;
   }
 
-  /* Sidebar stays hidden */
   .sidebar {
-    display: none !important;
+    display: none;
   }
 
   .hamburger {
@@ -544,7 +561,7 @@ footer {
   }
 
   .container {
-    padding: 0 1rem;
+    padding-left: 1rem;
   }
 
   .contact-wrapper {
@@ -553,27 +570,29 @@ footer {
     gap: 1.5rem;
   }
 
-  .contact-info {
-    margin: 0;
-    padding: 0;
+  .profile-photo {
+    width: 80%;
+  }
+
+  .main-name {
+    font-size: 2.5em;
+  }
+
+  .subtitle {
+    font-size: 1.5em;
+  }
+
+  .nameblock,
+  .image-container {
+    flex: 1 1 100%;
+  }
+
+  .buttons {
+    justify-content: flex-start;
   }
 
   #contact form {
     max-width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-}
-
-/* Restore row layout when wider */
-@media (min-width: 791px) {
-  .contact-wrapper {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 3rem;
-  }
-
-  .container {
-    padding-left: 80px;
+    padding: 0 1rem;
   }
 }
