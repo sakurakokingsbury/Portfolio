@@ -1,7 +1,8 @@
 .project-page {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 24px;
+  padding: 3rem 2rem;
+  padding-left: 80px;
   font-family: 'Franklin Gothic Medium', Arial, sans-serif;
   color: #ddd;
 }
@@ -9,17 +10,17 @@
 .project-hero {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 2rem;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 4rem;
 }
 
 .project-hero-text {
-  flex: 1 1 500px;
+  flex: 1 1 400px;
 }
 
 .project-hero-image {
-  flex: 1 1 400px;
+  flex: 1 1 300px;
   display: flex;
   justify-content: center;
 }
@@ -30,64 +31,62 @@
   width: 100%;
   height: auto;
   display: block;
-  border-radius: var(--radius, 0.5rem);
+  border-radius: var(--radius);
 }
 
 .project-label {
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  font-size: clamp(0.85rem, 2vw, 1rem);
+  font-size: 0.8rem;
   opacity: 0.7;
   margin-bottom: 10px;
 }
 
 .project-hero h1 {
-  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-size: clamp(2rem, 6vw, 3.5em);
+  margin: 0 0 0.5em 0;
   line-height: 1.1;
-  margin-bottom: 18px;
 }
 
 .project-subtitle {
-  font-size: clamp(1.15rem, 2.5vw, 1.7rem);
-  line-height: 1.7;
-  max-width: 700px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  color: #ddd;
 }
 
 .project-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 22px;
+  margin-top: 2rem;
 }
 
 .project-tags span {
   padding: 8px 14px;
   border: 1px solid rgba(255,255,255,0.2);
   border-radius: 999px;
-  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  font-size: 1rem;
 }
 
 .project-section {
-  margin-bottom: 70px;
+  margin-bottom: 4rem;
 }
 
 .project-section h2 {
-  font-size: clamp(2rem, 4vw, 2.7rem);
-  margin-bottom: 18px;
+  font-size: 2.5rem;
+  margin: 0 0 2rem 0;
+  font-weight: 700;
 }
 
 .project-section p,
-.project-list li,
-.challenge-item p,
-.iteration-card p,
-.result-card p,
-.project-links a {
-  font-size: clamp(1.1rem, 2.2vw, 1.25rem);
-  line-height: 1.8;
+.project-section li {
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 .project-section p {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .results-grid,
@@ -95,96 +94,106 @@
 .challenge-list,
 .project-gallery {
   display: grid;
-  gap: 20px;
-}
-
-.results-grid {
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-}
-
-.iteration-grid,
-.challenge-list {
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-}
-
-.project-gallery {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .result-card,
 .iteration-card,
 .challenge-item {
-  padding: 22px;
-  border-radius: var(--radius, 0.5rem);
-  background: rgba(25, 24, 24, 0.6);
-  border: 1px solid rgba(255,255,255,0.08);
+  background-color: #191818;
+  border-radius: var(--radius);
+  padding: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.result-card:hover,
+.iteration-card:hover,
+.challenge-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
 }
 
 .result-card h3,
 .iteration-card h3,
 .challenge-item h3 {
-  font-size: clamp(1.4rem, 3vw, 2rem);
-  margin-bottom: 8px;
+  margin: 0.5rem 0 0.3rem 0;
+  font-size: 1.2rem;
+}
+
+.result-card p,
+.iteration-card p,
+.challenge-item p {
+  font-size: 1rem;
+  color: #ccc;
 }
 
 .project-two-column {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 2rem;
   align-items: center;
 }
 
 .project-two-column > div:first-child {
-  flex: 1 1 500px;
+  flex: 1 1 400px;
 }
 
 .project-image-block {
-  flex: 1 1 350px;
+  flex: 1 1 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .project-list {
-  padding-left: 20px;
-  line-height: 1.8;
+  padding-left: 1.2rem;
+  line-height: 1.6;
 }
 
 .image-caption {
-  margin-top: 10px;
-  font-size: clamp(0.95rem, 2vw, 1.1rem);
-  opacity: 0.75;
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  color: #ccc;
   text-align: center;
 }
 
 .project-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .project-links a {
   display: inline-block;
-  padding: 12px 18px;
-  border-radius: var(--radius, 0.5rem);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
   text-decoration: none;
   border: 1px solid rgba(255,255,255,0.15);
   transition: 0.2s ease;
+  font-size: 1.1rem;
 }
 
 .project-links a:hover {
   transform: translateY(-2px);
 }
 
-@media (max-width: 800px) {
+/* Medium screens */
+@media (max-width: 975px) {
   .project-page {
-    padding: 40px 20px;
+    padding-right: 1rem;
+  }
+}
+
+/* Small screens */
+@media (max-width: 790px) {
+  .project-page {
+    padding: 3rem 1rem;
   }
 
   .project-hero {
     flex-direction: column;
-    gap: 28px;
-    margin-bottom: 60px;
+    align-items: stretch;
   }
 
   .project-hero-text,
@@ -204,7 +213,7 @@
 
   .project-two-column {
     flex-direction: column;
-    gap: 24px;
+    align-items: stretch;
   }
 
   .results-grid,
@@ -212,19 +221,24 @@
   .challenge-list,
   .project-gallery {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .result-card,
   .iteration-card,
   .challenge-item {
-    padding: 24px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
   }
 
-  .project-section {
-    margin-bottom: 55px;
+  .project-section h2 {
+    font-size: 2.5rem;
   }
 
-  .project-tags span {
-    padding: 10px 16px;
+  .project-section p,
+  .project-section li,
+  .project-subtitle {
+    font-size: 1.1rem;
   }
 }
