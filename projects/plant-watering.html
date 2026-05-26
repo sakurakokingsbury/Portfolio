@@ -177,63 +177,80 @@
 
   <!-- Iteration -->
   <section class="project-section">
-    <h2>Design Iteration</h2>
+  <h2>Design Iteration</h2>
 
-    <p>
-      The project followed an iterative design process that moved from hand sketches to CAD
-      modeling, 3D printing, component fitting, electronics integration, and final deployment.
-      Each revision was driven by physical testing and the need to satisfy real constraints such
-      as pot size, print time, component packaging, water exposure, and system reliability.
-    </p>
+  <p>
+    The project followed an iterative development process that combined mechanical redesign,
+    embedded software refinement, electronics integration, and deployment testing. Each
+    revision addressed issues discovered during physical assembly, sensor testing, and live
+    operation, gradually improving reliability, manufacturability, and autonomous watering
+    performance.
+  </p>
 
-    <div class="iteration-grid">
+  <div class="iteration-grid">
 
-      <div class="iteration-card">
-        <h3>Initial Concepts</h3>
-        <p>
-          Each team member created a concept sketch exploring different ways to mount the device,
-          hold the water supply, position the sensors, and package the electronics around the plant.
-        </p>
-      </div>
-
-      <div class="iteration-card">
-        <h3>Concept Selection</h3>
-        <p>
-          The selected design was chosen because it best met the project constraints. It was more
-          compact than a full-pot design and provided a better foundation for holding the required
-          hardware within the allotted print time.
-        </p>
-      </div>
-
-      <div class="iteration-card">
-        <h3>Prototype Redesign</h3>
-        <p>
-          After the first print, the CAD model was revised to correct component-fit issues and add
-          space for the water container. The clamp geometry and component layout were adjusted
-          to better match the actual hardware dimensions.
-        </p>
-      </div>
-
-      <div class="iteration-card">
-        <h3>Valve Integration</h3>
-        <p>
-          The valve and servo motor required additional tuning because the original valve
-          resistance was too high for reliable actuation. The valve was modified and the servo
-          angles were determined experimentally through trial-and-error testing.
-        </p>
-      </div>
-
-      <div class="iteration-card">
-        <h3>Final Deployment</h3>
-        <p>
-          The final assembly integrated the printed structure, sensors, servo-actuated valve,
-          water supply, wiring, and IoT publishing code into a working system that successfully
-          collected multi-day plant data.
-        </p>
-      </div>
-
+    <div class="iteration-card">
+      <h3>Initial Concepts</h3>
+      <p>
+        Early development began with hand sketches exploring different mounting strategies,
+        component layouts, and water delivery approaches. The selected concept was chosen
+        because it best satisfied the project constraints while providing space for the required
+        sensors, electronics, and water reservoir.
+      </p>
     </div>
-  </section>
+
+    <div class="iteration-card">
+      <h3>Mechanical Prototype Development</h3>
+      <p>
+        The first CAD prototype established the overall clamp-on structure and component
+        packaging strategy. Initial prints revealed fit issues and insufficient space for the
+        water container, leading to redesigns that improved the clamp fit, hardware integration,
+        and protection of the electronics from water exposure.
+      </p>
+    </div>
+
+    <div class="iteration-card">
+      <h3>Sensor and Control System Development</h3>
+      <p>
+        The embedded software was developed incrementally by testing each subsystem
+        independently before integrating the full control logic. Sensor validation included
+        testing the DHT sensor with temperature changes, submerging the soil sensor to verify
+        moisture readings, and calibrating the photocell illuminance conversion.
+      </p>
+    </div>
+
+    <div class="iteration-card">
+      <h3>Servo and Watering Logic Refinement</h3>
+      <p>
+        The servo-controlled valve system required repeated tuning to achieve reliable
+        watering behavior. Servo open and close angles were experimentally calibrated
+        through physical testing, while the valve mechanism itself was modified to reduce
+        resistance and improve consistency during operation.
+      </p>
+    </div>
+
+    <div class="iteration-card">
+      <h3>IoT Integration and Debugging</h3>
+      <p>
+        Later iterations focused on integrating MQTT-based data publishing and deployment
+        reliability. During final testing, the system successfully collected sensor data locally
+        but initially failed to publish readings online. Debugging identified the missing
+        <code>mqtt_loop();</code> call required to maintain MQTT communication, resolving
+        the issue and enabling stable long-term data collection.
+      </p>
+    </div>
+
+    <div class="iteration-card">
+      <h3>Final Deployment</h3>
+      <p>
+        The final iteration integrated the completed mechanical structure, environmental
+        sensing system, servo-actuated valve, and IoT publishing architecture into a fully
+        functional autonomous watering platform capable of multi-day deployment.
+      </p>
+    </div>
+
+  </div>
+</section>
 
   <!-- Electronics -->
   <section class="project-section">
@@ -252,7 +269,7 @@
 
         <p>
           The system architecture centered on a microcontroller that collected environmental
-          data, evaluated the soil moisture level, and actuated the watering valve when needed.
+          data, evaluated the soil moisture level, and actuated the valve when needed.
           The device used sensor feedback rather than a fixed watering schedule, allowing the
           system to respond to the actual condition of the plant.
         </p>
@@ -414,7 +431,7 @@
     <h2>Final Engineering Takeaways</h2>
 
     <p>
-      This project provided early experience designing a complete electromechanical product where
+      This project provided experience designing a complete electromechanical product where
       the mechanical structure, sensor layout, wiring, software, and physical actuation all depended
       on one another. Small mechanical decisions, such as valve placement and electronics location,
       directly affected the reliability of the software-controlled watering behavior.
