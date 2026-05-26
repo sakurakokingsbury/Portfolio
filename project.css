@@ -110,13 +110,34 @@
   font-size: 2rem;
   margin-bottom: 8px;
 }
-
 .project-two-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+}
+
+.project-two-column > div:first-child {
+  flex: 1 1 500px;
+}
+
+.project-image-block {
+  flex: 1 1 350px;
+}
+
+.project-image-block img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+}
+
+/*.project-two-column {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   gap: 30px;
   align-items: start;
-}
+}*/
 
 .project-list {
   padding-left: 20px;
