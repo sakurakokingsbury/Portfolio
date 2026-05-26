@@ -1,19 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Interactive Robotic Pet | Sakurako Kingsbury</title>
-  <link rel="stylesheet" href="../style.css" />
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Interactive Robotic Toy Pet | Sakurako Kingsbury</title>
+
+  <link rel="stylesheet" href="../style.css?v=4">
+  <link rel="stylesheet" href="../project.css?v=4">
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
 </head>
+
 <body>
-  <section>
-    <div class="container">
-      <a href="../index.html" class="button secondary">← Back to Portfolio</a>
-      <h2>Interactive Robotic Pet</h2>
-      <img src="../images/pet assembly.jpg" alt="Interactive Robotic Pet" style="max-width: 600px; width: 100%; border-radius: 0.5rem; margin-bottom: 1.5rem;">
-      <p>Write your full project details here.</p>
+
+  <button class="hamburger" id="hamburger">&#9776;</button>
+<nav class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="../index.html#about">About</a></li>
+    <li><a href="../index.html#projects">Projects</a></li>
+    <li><a href="../index.html#resume">Resume</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="project-page">
+
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../project.css">
+
+  <a href="../index.html#projects" class="button secondary">← Back to All Projects</a>
+
+  <!-- Hero -->
+  <section class="project-hero">
+    <div class="project-hero-text">
+      <p class="project-label">Featured Project</p>
+      <h1>Interactive Robotic Toy Pet</h1>
+      <p class="project-subtitle">
+        Designed and prototyped an autonomous robotic toy pet capable of movement,
+        emotional expression, and interactive user responses through integrated sensors,
+        embedded electronics, and a fully custom 3D-printed chassis.
+      </p>
+    </div>
+
+    <div class="project-hero-image">
+     <figure class="project-hero-figure">
+       <img src="../images/toy-pet/final-assembly.png" alt="Final robotic toy pet assembly">
+       <figcaption class="image-caption">Final assembly of the interactive robotic toy pet.</figcaption>
+     </figure>
     </div>
   </section>
+
+  <!-- Overview -->
+  <section class="project-section">
+  <h2>Project Overview</h2>
+  <p>
+    This project focused on the design, manufacturing, and integration of an autonomous
+    robotic toy pet intended to simulate companionship through movement, emotional
+    expression, and user interaction. The system combined custom mechanical design,
+    embedded electronics, sensor integration, and Arduino-based behavior logic into
+    a compact consumer-style prototype.
+  </p>
+
+  <p>
+    The toy pet continuously interpreted user inputs and environmental conditions
+    through push buttons, a photoresistor, and ultrasonic sensing to transition
+    between emotional states such as happiness, sadness, loneliness, and hunger.
+    A major focus of the project was balancing expressive behavior, compact packaging,
+    manufacturability, electronics integration, structural durability, and autonomous movement.
+  </p>
+
+  <p>
+    Throughout development, the design underwent multiple mechanical and electrical
+    iterations to improve component packaging, button supports, sensor integration,
+    drivetrain stability, and overall system reliability. The final prototype successfully
+    integrated autonomous movement, emotional state simulation, LCD facial expressions,
+    obstacle detection, and interactive user feedback into a fully functional robotic pet.
+  </p>
+</section>
+
+  <!-- Key Results -->
+<section class="project-section">
+  <h2>Key Results</h2>
+
+  <div class="results-grid">
+    <div class="result-card">
+      <h3>6</h3>
+      <p>Main 3D-printed structural bodies integrated into the final assembly</p>
+    </div>
+
+    <div class="result-card">
+      <h3>4</h3>
+      <p>Dynamic emotional states simulated through software and hardware outputs</p>
+    </div>
+
+    <div class="result-card">
+      <h3>7.19 hr</h3>
+      <p>Estimated battery life determined through power consumption analysis</p>
+    </div>
+
+    <div class="result-card">
+      <h3>Custom</h3>
+      <p>Integrated CAD, electronics, sensor systems, and autonomous behavior platform</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Contributions -->
+  <section class="project-section">
+    <h2>Personal Contributions</h2>
+    <ul class="project-list">
+      <li>Led the complete mechanical design and CAD development of the final toy pet assembly in SolidWorks.</li>
+      <li>Designed and iterated the chassis, face assembly, back panels, button mounts, sensor openings, and internal structural supports.</li>
+      <li>Developed integrated mounting features for the Arduino, motors, LCD screen, battery, sensors, and supporting electronics.</li>
+      <li>Contributed to approximately half of the electronics integration, including wiring layout, component placement, and physical system testing.</li>
+      <li>Helped integrate and test the final sensor systems, emotional response hardware, and autonomous movement platform.</li>
+    </ul>
+  </section>
+
+  <!-- Mechanical Design -->
+  <section class="project-section">
+    <h2>Mechanical Design</h2>
+    <div class="project-two-column">
+    <div>
+      <p>
+        The toy pet chassis was designed in SolidWorks as a compact integrated platform
+        capable of housing the mechanical, electrical, and sensing systems required for
+        autonomous interaction and movement. A major design goal was minimizing overall
+        size while maintaining structural durability, organized component packaging,
+        accessible electronics, and an approachable consumer-friendly appearance.
+      </p>
+
+      <p>
+        The final assembly consisted of multiple interconnected PLA body sections,
+        including the chassis, face assembly, articulated tail, rear panels, and
+        wheel support components. Custom mounting geometry was integrated directly
+        into the chassis to securely house the Arduino, breadboard, DC motors,
+        battery, ultrasonic sensor, LCD display, buttons, and supporting hardware
+        while minimizing the need for additional brackets.
+      </p>
+
+      <p>
+        Multiple design iterations were required to balance component spacing,
+        structural integrity, manufacturability, wire routing, and consistently
+        reliable operation. Internal supports and reinforced button brackets were
+        added to improve durability during repeated interaction and testing.
+      </p>
+
+      <p>
+        The final design incorporated improved electronics packaging, reinforced
+        mounting geometry, enclosed wiring, integrated sensor openings, and
+        improved drivetrain stability while maintaining a compact and aesthetically
+        cohesive robotic pet platform.
+      </p>
+    </div>
+
+      <div class="project-image-block">
+        <img src="../images/toy-pet/chassis-cad.png" alt="Engineering drawing of final toy pet chassis" />
+        <p class="image-caption">Final chassis geometry and integrated mounting features.</p>
+      </div>
+    </div>
+  </section>
+
+ <!-- Iteration -->
+<section class="project-section">
+  <h2>Design Iteration</h2>
+  <p>
+    A major focus of this project was iterative mechanical refinement. The toy pet
+    underwent multiple redesigns throughout development to improve structural durability,
+    electronics integration, manufacturability, drivetrain performance, and overall
+    system reliability. Each iteration addressed issues discovered during physical testing
+    and full system integration.
+  </p>
+
+  <div class="iteration-grid">
+
+    <div class="iteration-card">
+      <h3>Initial Prototype</h3>
+      <p>
+        Early iterations focused on establishing the overall body shape, chassis dimensions,
+        and initial component layout. These versions helped visualize the product concept,
+        but lacked the mounting geometry and internal packaging required for a functional system.
+      </p>
+    </div>
+
+    <div class="iteration-card">
+      <h3>Internal Packaging Redesign</h3>
+      <p>
+        The chassis was redesigned around the physical dimensions of the electronics,
+        including the Arduino, breadboard, battery, LCD display, motors, and sensors.
+        Additional integrated supports and retention geometry were added to improve
+        component stability and organization.
+      </p>
+    </div>
+
+    <div class="iteration-card">
+      <h3>Structural and Mobility Improvements</h3>
+      <p>
+        Later revisions reinforced the body shell, improved motor mounting geometry,
+        and redesigned the rear wheel system to improve turning performance and
+        reduce resistance during autonomous movement.
+      </p>
+    </div>
+
+    <div class="iteration-card">
+      <h3>Sensor and Interaction Integration</h3>
+      <p>
+        Additional iterations focused on integrating the ultrasonic sensor, LCD screen,
+        RGB LED, push buttons, and photoresistor into the outer shell while maintaining
+        a clean appearance and preserving user accessibility.
+      </p>
+    </div>
+
+    <div class="iteration-card">
+      <h3>Final Assembly Refinement</h3>
+      <p>
+        The final iteration introduced enclosed electronics packaging, reinforced
+        button supports, improved structural alignment between body panels,
+        integrated mounting geometry, and a more refined external appearance
+        suitable for repeated testing and interaction.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Electronics -->
+  <section class="project-section">
+    <h2>Electronics and System Architecture</h2>
+    <div class="project-two-column">
+      <div>
+        <ul class="project-list">
+          <li>Arduino microcontroller for autonomous behavior and emotional state control</li>
+          <li>Ultrasonic sensor for obstacle detection and autonomous movement</li>
+          <li>LCD display for facial expressions and emotional feedback</li>
+          <li>RGB LED for additional emotional state indication</li>
+          <li>Push buttons and photoresistor for interactive user input</li>
+          <li>DC motors and drivetrain system for autonomous roaming behavior</li>
+        </ul>
+
+        <p>
+          The system architecture was designed to balance compact packaging,
+          maintainability, electrical reliability, and structural protection
+          within the limited body volume of the toy pet. Component placement
+          was carefully arranged to reduce wire interference, improve accessibility,
+          and maintain a clean overall system layout.
+        </p>
+
+        <p>
+          The electronics system was initially mapped and simulated in Tinkercad
+          before being physically integrated into the prototype. Wiring organization,
+          component placement, and system packaging were refined throughout development
+          to improve reliability and simplify troubleshooting during repeated testing.
+         </p>
+
+      </div>
+
+      <div class="project-image-block">
+        <img src="../images/toy-pet/wiring-diagram.png" alt="Toy pet wiring diagram" />
+        <p class="image-caption">System wiring and electronics integration layout.</p>
+      </div>
+    </div>
+  </section>
+
+ <!-- Software -->
+<section class="project-section">
+  <h2>Autonomous Behavior Logic</h2>
+
+  <p>
+    The toy pet’s software architecture was designed to simulate an evolving
+    emotional personality through randomized emotional states, user interaction,
+    timed behavior loops, and environmental sensing. Using programmed state logic,
+    the system continuously transitioned between emotional conditions such as
+    happiness, sadness, loneliness, and hunger.
+  </p>
+
+  <p>
+    User interaction played a major role in modifying the pet’s emotional state.
+    Push buttons and the photoresistor were used to simulate actions such as feeding,
+    petting, and attention, allowing the user to directly influence the toy pet’s
+    mood and behavior. Emotional state changes triggered different outputs through
+    the LCD display, RGB LED colors, sound behavior, and movement speed.
+  </p>
+
+  <p>
+    The autonomous roaming system used ultrasonic sensing to detect nearby obstacles
+    and redirect movement during operation. Movement behavior was further influenced
+    by the emotional state logic, allowing the robot to behave differently depending
+    on whether it was happy, lonely, hungry, or sad.
+  </p>
+
+  <p>
+    Additional software refinement focused on improving emotional transitions,
+    balancing interaction timing, stabilizing autonomous movement behavior,
+    and creating smoother interaction between the sensor systems, emotional state
+    loops, and physical outputs.
+  </p>
+</section>
+
+  <!-- Challenges -->
+<section class="project-section">
+  <h2>Challenges and Engineering Decisions</h2>
+  <div class="challenge-list">
+
+    <div class="challenge-item">
+      <h3>Initial CAD Packaging Constraints</h3>
+      <p>
+        Early chassis concepts did not properly account for the real dimensions
+        of the electronic components or the required mounting geometry. The design
+        was completely rebuilt around the physical hardware to improve packaging,
+        structural stability, and manufacturability.
+      </p>
+    </div>
+
+    <div class="challenge-item">
+      <h3>Button and Shell Durability</h3>
+      <p>
+        Initial button mounting geometry allowed excessive movement during repeated
+        interaction, creating risk of structural damage to the shell. Reinforced
+        internal support brackets and tighter mounting tolerances were added to
+        improve long-term durability.
+      </p>
+    </div>
+
+    <div class="challenge-item">
+      <h3>Rear Wheel Movement Resistance</h3>
+      <p>
+        The original rear axle configuration created excessive resistance during
+        turning and reduced the effectiveness of autonomous movement. The rear
+        support system was redesigned using a ball-and-socket wheel configuration
+        to improve maneuverability and drivetrain consistency.
+      </p>
+    </div>
+
+    <div class="challenge-item">
+      <h3>Electronics Integration and Wire Routing</h3>
+      <p>
+        Packaging a large number of electronic components into a compact chassis
+        created challenges involving wire routing, accessibility, and component
+        interference. Multiple layout revisions were required to organize the
+        internal system while maintaining reliable operation.
+      </p>
+    </div>
+
+    <div class="challenge-item">
+      <h3>Balancing Emotional Logic and Autonomous Behavior</h3>
+      <p>
+        One of the largest software challenges was balancing the interaction
+        between emotional state transitions, user input, and autonomous movement
+        behavior. Extensive testing and tuning were required to create stable
+        behavior loops that felt responsive while maintaining consistent operation.
+      </p>
+    </div>
+
+    <div class="challenge-item">
+      <h3>Limited Hardware Constraints</h3>
+      <p>
+        The provided electronics kit imposed limitations on available motors,
+        displays, and component options. Several system decisions, including
+        changing the LCD configuration and refining drivetrain behavior,
+        were made to maximize functionality within the available hardware.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Future Improvements -->
+<section class="project-section">
+  <h2>Future Improvements</h2>
+
+  <p>
+    Although the final prototype successfully demonstrated autonomous interaction,
+    emotional simulation, and integrated movement behavior, several future
+    improvements could further increase realism, reliability, movement capability,
+    and overall user experience.
+  </p>
+
+  <div class="challenge-list">
+
+    <div class="challenge-item">
+      <h3>Improved Drivetrain Performance</h3>
+      <p>
+        Future iterations could incorporate stronger motors and improved wheel
+        traction to increase movement speed, improve maneuverability, and allow
+        more reliable operation across different floor surfaces.
+      </p>
+    </div>
+
+    <div class="challenge-item">
+      <h3>Expanded Sensor Coverage</h3>
+      <p>
+        Additional sensors could improve environmental awareness, obstacle
+        avoidance accuracy, and responsiveness during autonomous movement
+        and user interaction.
+      </p>
+    </div>
+
+    <div class="challenge-item">
+      <h3>More Advanced Emotional Behavior</h3>
+      <p>
+        Future software improvements could include more dynamic emotional
+        transitions, expanded interaction behaviors, memory-based responses,
+        and more advanced autonomous personality simulation.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Reflection -->
+  <section class="project-section">
+    <h2>Final Engineering Takeaways</h2>
+    <p>
+      This project provided extensive experience in electromechanical product
+      design, embedded system integration, rapid prototyping, and cross-disciplinary
+      engineering problem solving. Developing a fully interactive robotic system
+      required balancing manufacturability, structural stability, electronics packaging,
+      sensor integration, autonomous behavior, and user interaction within a compact platform.
+    </p>
+
+    <p>
+      The project also reinforced the importance of iterative testing and the close
+      relationship between mechanical and electrical design. Small physical changes
+      to component placement, mounting geometry, wheel configuration, wiring layout,
+      and structural supports often had direct impacts on system reliability and
+      autonomous behavior.
+    </p>
+
+    <p>
+      Beyond the technical work, the project strengthened collaborative engineering
+      skills through rapid prototyping, debugging, hardware integration, and adapting
+      to shifting project responsibilities throughout development.
+    </p>
+  </section>
+
+ <!-- Gallery -->
+  <section class="project-section">
+    <h2>Project Gallery</h2>
+    <div class="project-gallery">
+      <img src="../images/toy-pet/iteration-1.jpg" alt="Early toy pet prototype" />
+      <img src="../images/toy-pet/chassis-cad.png" alt="Toy pet CAD chassis" />
+      <img src="../images/toy-pet/final-assembly.png" alt="Final toy pet assembly" />
+      <img src="../images/toy-pet/wiring-diagram.png" alt="Toy pet wiring diagram" />
+    </div>
+  </section>
+
+  <a href="../index.html#projects" class="button secondary">← Back to All Projects</a>
+
+</main>
+
+<script>
+  const mobileMenu = document.getElementById('mobileMenu');
+  const hamburgerBtn = document.getElementById('hamburger');
+
+  if (mobileMenu && hamburgerBtn) {
+    hamburgerBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      mobileMenu.classList.toggle('active');
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+      });
+    });
+
+    document.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+    });
+
+    mobileMenu.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+  }
+</script>
+
 </body>
 </html>
