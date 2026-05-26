@@ -2,6 +2,8 @@
   max-width: 1100px;
   margin: 0 auto;
   padding: 60px 24px;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+  color: #ddd;
 }
 
 .project-hero {
@@ -18,6 +20,8 @@
 
 .project-hero-image {
   flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
 }
 
 .project-hero-image img,
@@ -26,24 +30,25 @@
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 14px;
+  border-radius: var(--radius, 0.5rem);
 }
 
 .project-label {
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  font-size: 0.8rem;
+  font-size: clamp(0.85rem, 2vw, 1rem);
   opacity: 0.7;
   margin-bottom: 10px;
 }
 
 .project-hero h1 {
-  font-size: 3rem;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.1;
   margin-bottom: 18px;
 }
 
 .project-subtitle {
-  font-size: 2rem;
+  font-size: clamp(1.15rem, 2.5vw, 1.7rem);
   line-height: 1.7;
   max-width: 700px;
 }
@@ -59,7 +64,7 @@
   padding: 8px 14px;
   border: 1px solid rgba(255,255,255,0.2);
   border-radius: 999px;
-  font-size: 0.95rem;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
 }
 
 .project-section {
@@ -67,12 +72,21 @@
 }
 
 .project-section h2 {
-  font-size: 2rem;
+  font-size: clamp(2rem, 4vw, 2.7rem);
   margin-bottom: 18px;
 }
 
-.project-section p {
+.project-section p,
+.project-list li,
+.challenge-item p,
+.iteration-card p,
+.result-card p,
+.project-links a {
+  font-size: clamp(1.1rem, 2.2vw, 1.25rem);
   line-height: 1.8;
+}
+
+.project-section p {
   margin-bottom: 16px;
 }
 
@@ -101,15 +115,18 @@
 .iteration-card,
 .challenge-item {
   padding: 22px;
-  border-radius: 16px;
-  background: rgba(255,255,255,0.04);
+  border-radius: var(--radius, 0.5rem);
+  background: rgba(25, 24, 24, 0.6);
   border: 1px solid rgba(255,255,255,0.08);
 }
 
-.result-card h3 {
-  font-size: 2rem;
+.result-card h3,
+.iteration-card h3,
+.challenge-item h3 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
   margin-bottom: 8px;
 }
+
 .project-two-column {
   display: flex;
   flex-wrap: wrap;
@@ -123,21 +140,10 @@
 
 .project-image-block {
   flex: 1 1 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.project-image-block img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 14px;
-}
-
-/*.project-two-column {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 30px;
-  align-items: start;
-}*/
 
 .project-list {
   padding-left: 20px;
@@ -146,8 +152,9 @@
 
 .image-caption {
   margin-top: 10px;
-  font-size: 0.95rem;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
   opacity: 0.75;
+  text-align: center;
 }
 
 .project-links {
@@ -159,7 +166,7 @@
 .project-links a {
   display: inline-block;
   padding: 12px 18px;
-  border-radius: 10px;
+  border-radius: var(--radius, 0.5rem);
   text-decoration: none;
   border: 1px solid rgba(255,255,255,0.15);
   transition: 0.2s ease;
@@ -170,11 +177,54 @@
 }
 
 @media (max-width: 800px) {
-  .project-hero h1 {
-    font-size: 2.3rem;
+  .project-page {
+    padding: 40px 20px;
+  }
+
+  .project-hero {
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 60px;
+  }
+
+  .project-hero-text,
+  .project-hero-image,
+  .project-two-column > div:first-child,
+  .project-image-block {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .project-hero-image img,
+  .project-image-block img,
+  .project-gallery img {
+    width: 100%;
+    max-width: 100%;
   }
 
   .project-two-column {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .results-grid,
+  .iteration-grid,
+  .challenge-list,
+  .project-gallery {
     grid-template-columns: 1fr;
+  }
+
+  .result-card,
+  .iteration-card,
+  .challenge-item {
+    padding: 24px;
+  }
+
+  .project-section {
+    margin-bottom: 55px;
+  }
+
+  .project-tags span {
+    padding: 10px 16px;
   }
 }
