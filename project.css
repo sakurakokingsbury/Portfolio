@@ -46,6 +46,13 @@
   margin: 0.75rem 0 0 0;
 }
 
+@media (max-width: 790px) {
+  .project-hero-figure {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
 .project-hero-image img,
 .project-image-block img,
 .project-gallery img {
