@@ -12,7 +12,16 @@
 </head>
 
 <body>
-
+  
+<button class="hamburger" id="hamburger">&#9776;</button>
+<nav class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="../index.html#about">About</a></li>
+    <li><a href="../index.html#projects">Projects</a></li>
+    <li><a href="../index.html#resume">Resume</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+</nav>
 <main class="project-page">
 
   <a href="../index.html#projects" class="button secondary">← Back to All Projects</a>
@@ -429,6 +438,31 @@
   <a href="../index.html#projects" class="button secondary">← Back to All Projects</a>
 
 </main>
+<script>
+  const mobileMenu = document.getElementById('mobileMenu');
+  const hamburgerBtn = document.getElementById('hamburger');
 
+  if (mobileMenu && hamburgerBtn) {
+    hamburgerBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      mobileMenu.classList.toggle('active');
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+      });
+    });
+
+    document.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+    });
+
+    mobileMenu.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+  }
+</script>
+  
 </body>
 </html>
