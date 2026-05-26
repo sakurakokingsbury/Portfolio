@@ -22,8 +22,27 @@
 .project-hero-image {
   flex: 1 1 300px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.project-hero-figure {
+  width: 100%;
+  max-width: 420px;
+  margin: 0;
+}
+
+.project-hero-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+}
+
+.project-hero-figure .image-caption {
+  width: 100%;
+  text-align: center;
+  margin: 0.75rem 0 0 0;
 }
 
 .project-hero-image img,
