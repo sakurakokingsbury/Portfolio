@@ -89,13 +89,18 @@
   margin-bottom: 1rem;
 }
 
-.results-grid,
+.results-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .iteration-grid,
 .challenge-list,
 .project-gallery {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .result-card,
@@ -178,14 +183,20 @@
   transform: translateY(-2px);
 }
 
-/* Medium screens */
+/* Tablet */
 @media (max-width: 975px) {
   .project-page {
     padding-right: 1rem;
   }
+
+  .iteration-grid,
+  .challenge-list,
+  .project-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
-/* Small screens */
+/* Phone */
 @media (max-width: 790px) {
   .project-page {
     padding: 3rem 1rem;
@@ -216,12 +227,11 @@
     align-items: stretch;
   }
 
-  .results-grid,
   .iteration-grid,
   .challenge-list,
   .project-gallery {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
   }
 
   .result-card,
@@ -230,15 +240,5 @@
     width: 100%;
     box-sizing: border-box;
     padding: 1rem;
-  }
-
-  .project-section h2 {
-    font-size: 2.5rem;
-  }
-
-  .project-section p,
-  .project-section li,
-  .project-subtitle {
-    font-size: 1.1rem;
   }
 }
