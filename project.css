@@ -17,6 +17,7 @@
 
 .project-hero-text {
   flex: 1 1 400px;
+  min-width: 0;
 }
 
 .project-hero-image {
