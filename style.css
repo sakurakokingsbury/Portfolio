@@ -165,19 +165,22 @@ img {
 .sidebar a.active:hover {
   width: max-content;
   min-width: 160px;
-  padding: 0 1.25rem;
+  padding-right: 1.25rem;
   background-color: var(--gray);
 }
 
 .sidebar a:hover .label,
 .sidebar a.active:hover .label {
   opacity: 1;
-  left: 70px;
 }
 
-.sidebar a:hover .icon,
-.sidebar a.active:hover .icon {
-  opacity: 0;
+.sidebar a .icon {
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Active state */
