@@ -153,6 +153,11 @@ img {
   opacity: 0;
   white-space: nowrap;
   margin-right: 1.25rem;
+  
+  color: #ddd;
+  font-size: 1.1rem;
+  font-weight: normal;
+  
   transition: opacity 0.2s ease;
 }
 
