@@ -376,11 +376,6 @@ header {
   background: var(--red-dark);
 }
 
-#contact h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
 #contact p {
   margin-bottom: 2rem;
 }
@@ -506,7 +501,7 @@ section > .container {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 0 0 2rem 0;
   font-weight: 700;
 }
