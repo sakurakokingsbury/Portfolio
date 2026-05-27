@@ -296,6 +296,14 @@ header {
   background: #383232;
 }
 
+#background .back-button-wrapper {
+  margin-bottom: 2rem;
+}
+
+#background .back-button-wrapper .button.secondary {
+  display: inline-block;
+}
+
 .button.tertiary {
   background: #544B4B;
   color: #fff;
