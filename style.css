@@ -302,7 +302,7 @@ header {
 }
 
 .button.tertiary {
-  background: #282a2b;
+  background: var(--red);
   color: #fff;
   
   display: block;
@@ -311,7 +311,7 @@ header {
 }
 
 .button.tertiary:hover {
-  background: #1a1b1c;
+  background: var(--red-dark);
 }
 
 /* Contact info */
