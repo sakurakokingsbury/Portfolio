@@ -683,4 +683,9 @@ footer {
   #contact form {
     max-width: 100%;
   }
+
+  #background .back-button-wrapper {
+  top: 1rem;
+  left: 1rem;
+  }
 }
