@@ -1,11 +1,11 @@
 :root {
   --red: #7D0505;
   --red-dark: #5D0505;
-  --gray-dark: #202020;
+  --gray-dark: #121314;
   --gray: #333;
   --gray-light: #555;
-  --link: #ddd;
-  --link-hover: #555;
+  --link: #cf2919;
+  --link-hover: #991609;
   --radius: 0.5rem;
 }
  
@@ -15,7 +15,7 @@ body {
   padding: 0;
   font-size: 1.05rem;
   line-height: 1.6;
-  background-color: #4C1111;
+  background-color: var(--gray-dark);
   color: #ddd;
 }
 
@@ -512,10 +512,10 @@ a:hover {
 }
 
 /* Section backgrounds */
-section#about { background-color: #4C1111; }
+section#about { background-color: var(--gray-dark); }
 section#projects { background-color: var(--gray-dark); }
-section#resume { background-color: #4C1111; }
-section#contact { background-color: #4C1111; }
+section#resume { background-color: var(--gray-dark); }
+section#contact { background-color: var(--gray-dark); }
 
 section {
   width: 100%;
