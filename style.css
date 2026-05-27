@@ -133,7 +133,7 @@ img {
 
 .sidebar a {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 60px;
@@ -152,21 +152,20 @@ img {
 /* Hide label by default */
 .sidebar a .label {
   opacity: 0;
-  position: absolute;
-  left: 70px;
-  top: 50%;
+  position: static;
+  margin-left: 0.75rem;
   color: #ddd;
-  transform: translateY(-50%);
   white-space: nowrap;
   font-size: 1.1rem;
-  transition: opacity 0s, left 0.2s ease;
-  will-change: opacity, left;
+  transition: opacity 0.2s ease;
 }
 
 /* Hover and active hover states */
 .sidebar a:hover,
 .sidebar a.active:hover {
-  width: 160px;
+  width: max-content;
+  min-width: 160px;
+  padding: 0 1.25rem;
   background-color: var(--gray);
 }
 
