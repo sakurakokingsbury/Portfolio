@@ -258,7 +258,6 @@ header {
 .subtitle {
   font-size: clamp(1rem, 3vw, 2em);
   color: #ccc;
-  margin-top: 0.5em;
 }
 
 .buttons {
