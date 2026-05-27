@@ -135,7 +135,7 @@
   gap: 2rem;
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
-
+ 
 .result-card,
 .iteration-card,
 .challenge-item {
