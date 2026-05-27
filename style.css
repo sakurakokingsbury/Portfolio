@@ -329,7 +329,7 @@ header {
   flex-wrap: wrap;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 2rem 0;
+/*  padding: 2rem 0; */
 }
 
 .contact-info {
@@ -536,7 +536,6 @@ h2 {
 /* Footer */
 footer {
   background-color: var(--gray-dark);
-  padding: 0.5rem;
   text-align: center;
 }
 
