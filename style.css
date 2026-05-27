@@ -151,14 +151,17 @@ img {
 /* Hide label by default */
 .sidebar a .label {
   opacity: 0;
+  visibility: hidden;
+
+  font-size: 1.1rem !important;
+  color: #ddd !important;
+
   white-space: nowrap;
   margin-right: 1.25rem;
-  
-  color: #ddd;
-  font-size: 1.1rem;
-  font-weight: normal;
-  
-  transition: opacity 0.2s ease;
+
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
 }
 
 /* Hover and active hover states */
