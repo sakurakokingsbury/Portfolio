@@ -17,8 +17,8 @@
 .project-page .result-card p,
 .project-page .iteration-card p,
 .project-page .challenge-item p {
-  font-size: inherit;
-  line-height: inherit;
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 
 .project-hero {
@@ -118,7 +118,7 @@
 }
 
 .project-section h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 0 0 2rem 0;
   font-weight: 700;
 }
@@ -264,7 +264,7 @@
   }
 
   .project-section h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .project-hero-image img,
