@@ -329,7 +329,7 @@ header {
   flex: 1 1 500px;
   display: flex;
   flex-direction: column;
-  /*gap: 1rem;*/
+  gap: 1rem;
   max-width: 550px;
   padding-right: 1rem;
   box-sizing: border-box;
@@ -374,7 +374,7 @@ header {
 }
 
 #contact p {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* Links */
