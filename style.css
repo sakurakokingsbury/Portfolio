@@ -4,8 +4,8 @@
   --gray-dark: #202020;
   --gray: #333;
   --gray-light: #555;
-  --link: #9D0000;
-  --link-hover: #8D0E0E;
+  --link: #191818;
+  --link-hover: #000000;
   --radius: 0.5rem;
 }
  
@@ -323,7 +323,7 @@ header {
   flex: 1 1 300px;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .contact-item {
