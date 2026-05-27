@@ -326,7 +326,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 2rem;
   flex-wrap: wrap;
   max-width: 1000px;
   margin: 0 auto;
@@ -337,6 +337,7 @@ header {
   flex: 1 1 300px;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 }
 
 .contact-item {
