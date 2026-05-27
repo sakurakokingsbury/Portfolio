@@ -217,25 +217,6 @@ header {
   color: #fff;
   padding: 2rem 0;
 }
-/*
-.header-content {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "name"
-    "photo"
-    "buttons";
-}
-
-.buttons {
-  justify-content: flex-start;
-}
-
-.image-container {
-  width: 100%;
-}
-
-*/
 
 .header-content {
   display: flex;
@@ -245,43 +226,12 @@ header {
   gap: 2rem;
 }
 
-/*
 .nameblock {
   flex: 1 1 400px;
   display: flex;
   flex-direction: column;
   min-width: 250px;
 }
-
-.header-content {
-  display: grid;
-  grid-template-columns: 1fr 340px;
-  grid-template-areas:
-    "name photo"
-    "buttons photo";
-  gap: 2rem;
-  align-items: center;
-}
-
-.nameblock {
-  grid-area: name;
-}
-
-
-.buttons {
-  grid-area: buttons;
-  margin-top: 0;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.image-container {
-  grid-area: photo;
-}
-
-
 
 .image-container {
   flex: 1 1 300px;
@@ -290,7 +240,6 @@ header {
   justify-content: center;
   min-width: 150px;
 }
-*/
 
 .profile-photo {
   width: 100%;
@@ -310,8 +259,6 @@ header {
   color: #ccc;
 }
 
-
-/*
 .buttons {
   margin-top: 2rem;
   display: flex;
@@ -319,8 +266,6 @@ header {
   flex-wrap: wrap;
   align-items: center;
 }
-*/
-
 
 .button {
   text-decoration: none;
