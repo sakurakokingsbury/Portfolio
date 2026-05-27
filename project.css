@@ -139,7 +139,7 @@
 .result-card,
 .iteration-card,
 .challenge-item {
-  background-color: #191818;
+  background-color: #121314;
   border-radius: var(--radius);
   padding: 1rem;
   transition: transform 0.3s, box-shadow 0.3s;
