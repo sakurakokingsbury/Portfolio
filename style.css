@@ -13,14 +13,31 @@ body {
   font-family: 'Franklin Gothic Medium', Arial, sans-serif;
   margin: 0;
   padding: 0;
+  font-size: 1.05rem;
   line-height: 1.6;
   background-color: #4C1111;
   color: #ddd;
 }
 
+/* Global body text */
+p,
+li,
+.contact-item,
+.resume-item,
+.project-item p,
 section p,
 section li {
-  font-size: 1.1rem;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Intro */
+.intro {
+  margin-top: 1.5rem;
+  max-width: 600px;
+  font-size: inherit;
+  line-height: inherit;
+  color: #ddd;
 }
 
 img {
@@ -285,11 +302,6 @@ header {
   font-size: 1.3rem;
 }
 
-.contact-item a,
-.contact-item div {
-  font-size: 1.1rem;
-}
-
 .contact-wrapper {
   display: flex;
   justify-content: center;
@@ -312,7 +324,6 @@ header {
   display: flex;
   align-items: flex-start;
   gap: 0.75rem;
-  font-size: 1.1rem;
   color: #ddd;
 }
 
@@ -371,7 +382,6 @@ header {
 }
 
 #contact p {
-  font-size: 1.1rem;
   margin-bottom: 2rem;
 }
 
@@ -478,7 +488,6 @@ a:hover {
 }
 
 .project-item p {
-  font-size: 1rem;
   color: #ccc;
 }
 
