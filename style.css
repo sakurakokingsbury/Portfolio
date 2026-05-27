@@ -626,6 +626,10 @@ footer {
   display: block;
 }
 
+#background {
+  padding-top: 6rem;
+}
+
 /* Responsive adjustments */
 /* Medium screens (<975px) */
 @media (max-width: 975px) {
