@@ -501,7 +501,7 @@ a:hover {
 section#about { background-color: #4C1111; }
 section#projects { background-color: var(--gray-dark); }
 section#resume { background-color: #4C1111; }
-section#contact { background-color: var(--gray-dark); }
+section#contact { background-color: #4C1111; }
 
 section {
   width: 100%;
