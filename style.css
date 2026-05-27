@@ -218,29 +218,6 @@ header {
   padding: 2rem 0;
 }
 
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 2rem;
-}
-
-.nameblock {
-  flex: 1 1 400px;
-  display: flex;
-  flex-direction: column;
-  min-width: 250px;
-}
-
-.image-container {
-  flex: 1 1 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 150px;
-}
-
 .profile-photo {
   width: 100%;
   height: auto;
@@ -259,12 +236,29 @@ header {
   color: #ccc;
 }
 
-.buttons {
-  margin-top: 2rem;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+.header-content {
+  display: grid;
+  grid-template-areas:
+    "name"
+    "image"
+    "buttons";
+  gap: 2rem;
   align-items: center;
+}
+
+.nameblock {
+  grid-area: name;
+}
+
+.image-container {
+  grid-area: image;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  grid-area: buttons;
+  margin-top: 0;
 }
 
 .button {
@@ -642,9 +636,16 @@ footer {
 /* Responsive adjustments for small screens (<790px) */
 @media (max-width: 790px) {
   .header-content {
-    flex-wrap: wrap;
-    flex-direction: column;
+    grid-template-areas:
+      "name"
+      "image"
+      "buttons";
   }
+
+  .profile-photo {
+    width: 80%;
+  }
+}
 
   .sidebar {
     display: none;
@@ -661,10 +662,6 @@ footer {
   .contact-wrapper {
     flex-direction: column;
     align-items: stretch;
-  }
-
-  .profile-photo {
-    width: 80%;
   }
 
   .main-name {
@@ -691,5 +688,23 @@ footer {
   #background .back-button-wrapper {
   top: 1rem;
   left: 1rem;
+  }
+}
+
+@media (min-width: 791px) {
+  .header-content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "name image"
+      "buttons image";
+    column-gap: 4rem;
+  }
+
+  .profile-photo {
+    max-width: 420px;
+  }
+
+  .buttons {
+    justify-content: flex-start;
   }
 }
