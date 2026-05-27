@@ -287,12 +287,12 @@ header {
 }
 
 .button.secondary {
-  background: #544B4B;
+  background: #282a2b;
   color: #fff;
 }
 
 .button.secondary:hover {
-  background: #383232;
+  background: #1a1b1c;
 }
 
 #background .back-button-wrapper {
@@ -304,7 +304,7 @@ header {
 }
 
 .button.tertiary {
-  background: #544B4B;
+  background: #282a2b;
   color: #fff;
   
   display: block;
@@ -314,7 +314,7 @@ header {
 }
 
 .button.tertiary:hover {
-  background: #383232;
+  background: #1a1b1c;
 }
 
 /* Contact info */
