@@ -294,7 +294,10 @@ header {
 }
 
 #background .back-button-wrapper {
-  margin-bottom: 2rem;
+  position: fixed;
+  top: 2rem;
+  left: 90px;
+  z-index: 2000;
 }
 
 #background .back-button-wrapper .button.secondary {
