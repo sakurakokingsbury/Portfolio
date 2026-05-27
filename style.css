@@ -175,6 +175,7 @@ img {
 .sidebar a:hover .label,
 .sidebar a.active:hover .label {
   opacity: 1;
+  visibility: visible;
 }
 
 .sidebar a .icon {
