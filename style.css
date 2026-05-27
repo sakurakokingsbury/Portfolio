@@ -217,7 +217,7 @@ header {
   color: #fff;
   padding: 2rem 0;
 }
-
+/*
 .header-content {
   display: grid;
   grid-template-columns: 1fr;
@@ -235,7 +235,7 @@ header {
   width: 100%;
 }
 
-/*
+*/
 
 .header-content {
   display: flex;
@@ -245,6 +245,7 @@ header {
   gap: 2rem;
 }
 
+/*
 .nameblock {
   flex: 1 1 400px;
   display: flex;
@@ -261,12 +262,12 @@ header {
   gap: 2rem;
   align-items: center;
 }
-*/
+
 .nameblock {
   grid-area: name;
 }
 
-/*
+
 .buttons {
   grid-area: buttons;
   margin-top: 0;
