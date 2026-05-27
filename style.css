@@ -27,16 +27,16 @@ li,
 .project-item p,
 section p,
 section li {
-  font-size: inherit;
-  line-height: inherit;
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 
 /* Intro */
 .intro {
   margin-top: 1.5rem;
   max-width: 600px;
-  font-size: inherit;
-  line-height: inherit;
+  font-size: 1.05rem;
+  line-height: 1.6;
   color: #ddd;
 }
 
@@ -254,13 +254,6 @@ header {
   font-size: clamp(1rem, 3vw, 2em);
   color: #ccc;
   margin-top: 0.5em;
-}
-
-.intro {
-  margin-top: 1.5rem;
-  max-width: 600px;
-  line-height: 1.6;
-  color: #ddd;
 }
 
 .buttons {
