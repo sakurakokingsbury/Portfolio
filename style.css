@@ -376,6 +376,10 @@ header {
   background: var(--red-dark);
 }
 
+#contact h2 {
+  font-size: 2rem;
+}
+
 #contact p {
   margin-bottom: 2rem;
 }
