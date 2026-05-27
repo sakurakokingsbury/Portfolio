@@ -44,20 +44,6 @@ img {
   border: none;
 }
 
-.intro-button-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-.background-button {
-  font-size: 1.2rem;
-  padding: 1rem 2.5rem;
-  border-radius: var(--radius);\  
-  min-width: 260px;
-  text-align: center;
-}
-
 .resume-toggle {
   flex: 0 0 100%;
   width: 100%;
@@ -301,6 +287,20 @@ header {
 }
 
 .button.secondary:hover {
+  background: #383232;
+}
+
+.button.tertiary {
+  background: #544B4B;
+  color: #fff;
+  
+  display: block;
+  width: 320px;
+  margin: 2rem auto 0 auto;
+  text-align: center;
+}
+
+.button.tertiary:hover {
   background: #383232;
 }
 
