@@ -4,8 +4,8 @@
   --gray-dark: #121314;
   --gray: #333;
   --gray-light: #555;
-  --link: #cf2919;
-  --link-hover: #991609;
+  --link: #7D0505;
+  --link-hover: #590707;
   --radius: 0.5rem;
 }
  
@@ -533,7 +533,7 @@ h2 {
 
 /* Footer */
 footer {
-  background-color: #4C1111;
+  background-color: var(--gray-dark);
   padding: 0.5rem;
   text-align: center;
 }
