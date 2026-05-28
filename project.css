@@ -1,7 +1,7 @@
 .project-page {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 6rem 2rem 3rem 2rem;
   padding-left: 80px;
   font-family: 'Franklin Gothic Medium', Arial, sans-serif;
   font-size: 1.05rem;
@@ -26,7 +26,6 @@
   flex-wrap: wrap;
   gap: 2rem;
   align-items: center;
-  margin-bottom: 1.5rem;
 }
 
 .project-hero-text {
@@ -238,7 +237,7 @@
 
 @media (max-width: 790px) {
   .project-page {
-    padding: 3rem 1rem;
+    padding: 5rem 1rem 3rem 1rem;
     padding-left: 1rem;
   }
 
