@@ -624,8 +624,38 @@ footer {
   padding-top: 6rem;
 }
 
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  flex-wrap: nowrap;
+}
+
+.buttons .button {
+  height: 58px;
+  min-width: 190px;
+  padding: 0 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+.linkedin-button {
+  width: 58px;
+  height: 58px;
+  min-width: 58px;
+  flex: 0 0 58px;
+}
+
+.linkedin-button img {
+  width: 58px;
+  height: 58px;
+}
+
 /* Responsive adjustments */
-/* Medium screens (<975px) */
 @media (max-width: 975px) {
   #contact form {
     max-width: 100%;
@@ -633,7 +663,6 @@ footer {
   }
 }
 
-/* Responsive adjustments for small screens (<790px) */
 @media (max-width: 790px) {
   .header-content {
     grid-template-areas:
@@ -645,7 +674,6 @@ footer {
   .profile-photo {
     width: 80%;
   }
-}
 
   .sidebar {
     display: none;
@@ -657,6 +685,7 @@ footer {
 
   .container {
     padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .contact-wrapper {
@@ -678,7 +707,37 @@ footer {
   }
 
   .buttons {
-    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: nowrap;
+  }
+
+  .button {
+    height: 54px;
+    min-width: 0;
+    flex: 1 1 auto;
+    padding: 0 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+
+  .linkedin-button {
+    width: 54px;
+    height: 54px;
+    min-width: 54px;
+    flex: 0 0 54px;
+  }
+
+  .linkedin-button img {
+    width: 54px;
+    height: 54px;
   }
 
   #contact form {
@@ -686,8 +745,8 @@ footer {
   }
 
   #background .back-button-wrapper {
-  top: 1rem;
-  left: 1rem;
+    top: 1rem;
+    left: 1rem;
   }
 }
 
@@ -705,6 +764,10 @@ footer {
   }
 
   .buttons {
+    display: flex;
+    align-items: center;
     justify-content: flex-start;
+    gap: 1.75rem;
+    flex-wrap: nowrap;
   }
 }
