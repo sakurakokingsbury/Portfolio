@@ -17,7 +17,7 @@ body {
   font-family: 'Franklin Gothic Medium', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   line-height: 1.6;
   background-color: var(--gray-dark);
   color: #ddd;
@@ -31,12 +31,12 @@ li,
 .project-item p,
 section p,
 section li {
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   line-height: 1.6;
 }
 
 .intro {
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   line-height: 1.6;
   color: #ddd;
 }
