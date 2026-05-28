@@ -131,7 +131,7 @@
 .challenge-list,
 .project-gallery {
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
  
@@ -140,7 +140,7 @@
 .challenge-item {
   background-color: #282a2b;
   border-radius: var(--radius);
-  padding: 1rem;
+  padding: 0.5rem;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
