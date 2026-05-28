@@ -600,6 +600,24 @@ h2 {
   z-index: 2000;
 }
 
+/* Background page back button */
+#background .project-back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #282a2b;
+  color: #ddd;
+
+  padding: 0.75rem 1.2rem;
+
+  border-radius: var(--radius);
+  text-decoration: none;
+
+  width: fit-content;
+  white-space: nowrap;
+}
+
 /* Footer */
 footer {
   background-color: var(--gray-dark);
@@ -697,6 +715,11 @@ footer {
   #background .back-button-wrapper {
     top: 1rem;
     left: 1rem;
+  }
+  
+  #background .project-back-button {
+    padding: 0.75rem 1.2rem;
+    width: fit-content;
   }
 }
 
