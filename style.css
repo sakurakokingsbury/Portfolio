@@ -229,7 +229,7 @@ header {
 }
 
 .profile-photo {
-  width: auto;
+  width: 450px;
   height: auto;
   object-fit: contain;
   display: block;
