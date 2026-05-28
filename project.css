@@ -4,7 +4,7 @@
   padding: 6rem 2rem 3rem 2rem;
   padding-left: 80px;
   font-family: 'Franklin Gothic Medium', Arial, sans-serif;
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   line-height: 1.6;
   color: #ddd;
 }
@@ -17,7 +17,7 @@
 .project-page .result-card p,
 .project-page .iteration-card p,
 .project-page .challenge-item p {
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   line-height: 1.6;
 }
 
@@ -219,7 +219,7 @@
 
   box-sizing: border-box;
 
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   font-weight: 700;
 
   transition:
