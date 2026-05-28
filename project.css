@@ -251,7 +251,10 @@
   top: 2rem;
   left: 90px;
   z-index: 2000;
-  width: fit-content;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
   background-color: #282a2b;
   color: #ddd;
@@ -259,7 +262,12 @@
   padding: 0.75rem 1.2rem;
 
   border-radius: var(--radius);
+
   text-decoration: none;
+
+  width: fit-content;
+
+  white-space: nowrap;
 }
 
 @media (max-width: 975px) {
