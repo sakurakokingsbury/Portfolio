@@ -113,7 +113,7 @@
 }
 
 .project-section {
-  padding: 3rem 0;
+  padding: 0.5rem 0;
   margin-bottom: 0;
 }
 
@@ -238,7 +238,7 @@
 
 @media (max-width: 790px) {
   .project-page {
-    padding: 1.5rem 1rem;
+    padding: 3rem 1rem;
     padding-left: 1rem;
   }
 
@@ -274,7 +274,7 @@
   }
 
   .project-section {
-    padding: 1.5rem 0;
+    padding: 0.5rem 0;
   }
 
   .project-section h2 {
