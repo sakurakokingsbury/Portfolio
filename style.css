@@ -737,3 +737,30 @@ footer {
     max-width: 420px;
   }
 }
+
+/* FORCE background back button sizing */
+#background .project-back-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  background-color: #282a2b !important;
+  color: #ddd !important;
+
+  padding: 0.75rem 1.2rem !important;
+
+  min-height: 50px !important;
+
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+
+  border-radius: var(--radius) !important;
+
+  text-decoration: none !important;
+
+  width: fit-content !important;
+
+  white-space: nowrap !important;
+
+  box-sizing: border-box !important;
+}
