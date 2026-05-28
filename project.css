@@ -193,23 +193,57 @@
   text-align: center;
 }
 
+/* FIXED BUTTON STYLES */
+
 .project-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .project-links a {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 58px;
+  min-width: 190px;
+  padding: 0 1.5rem;
+
   border-radius: var(--radius);
   text-decoration: none;
+
   border: 1px solid rgba(255,255,255,0.15);
-  transition: 0.2s ease;
+
+  box-sizing: border-box;
+
+  font-size: 1.05rem;
+  font-weight: 700;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .project-links a:hover {
   transform: translateY(-2px);
+}
+
+/* LinkedIn button */
+
+.linkedin-button {
+  width: 58px;
+  min-width: 58px !important;
+  height: 58px;
+  padding: 0 !important;
+}
+
+.linkedin-button img {
+  width: 58px;
+  height: 58px;
+  display: block;
 }
 
 .project-back-button {
@@ -221,7 +255,9 @@
 
   background-color: #282a2b;
   color: #ddd;
+
   padding: 0.75rem 1.2rem;
+
   border-radius: var(--radius);
   text-decoration: none;
 }
@@ -236,6 +272,7 @@
 }
 
 @media (max-width: 790px) {
+
   .project-page {
     padding: 5rem 1rem 3rem 1rem;
     padding-left: 1rem;
@@ -294,12 +331,41 @@
     max-width: 100%;
     box-sizing: border-box;
   }
-  
-  .project-back-button {
-  top: 1rem;
-  left: 1rem;
-  right: auto;
-  width: fit-content;
+
+  /* FIXED MOBILE BUTTONS */
+
+  .project-links {
+    gap: 0.8rem;
+    justify-content: center;
   }
-  
+
+  .project-links a {
+    min-width: 0;
+    flex: 1 1 auto;
+
+    height: 54px;
+
+    font-size: 1rem;
+
+    padding: 0 1rem;
+  }
+
+  .linkedin-button {
+    flex: 0 0 54px;
+
+    width: 54px;
+    height: 54px;
+  }
+
+  .linkedin-button img {
+    width: 54px;
+    height: 54px;
+  }
+
+  .project-back-button {
+    top: 1rem;
+    left: 1rem;
+    right: auto;
+    width: fit-content;
+  }
 }
