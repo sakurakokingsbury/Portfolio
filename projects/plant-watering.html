@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Smart Watering System | Sakurako Kingsbury</title>
+  <title>LeafLink | Sakurako Kingsbury</title>
 
   <link rel="stylesheet" href="../style.css?v=4">
   <link rel="stylesheet" href="../project.css?v=4">
@@ -36,54 +36,38 @@
 
   <a href="../index.html#projects" class="button secondary project-back-button">← Back to All Projects</a>
 
-  <!-- Hero -->
   <section class="project-hero">
     <div class="project-hero-text">
       <p class="project-label">Featured Project</p>
-      <h1>Smart Watering System</h1>
+      <h1>LeafLink: Smart Plant Care System</h1>
       <p class="project-subtitle">
-        Designed and built a compact IoT-enabled indoor plant watering system that monitors
-        soil moisture, air humidity, temperature, and illuminance, then automatically actuates
-        a servo-controlled valve to water the plant when needed.
+        Designed and built an IoT-enabled plant care system that monitors environmental conditions and 
+        automatically waters plants using a servo-actuated valve and real-time sensor feedback.
       </p>
     </div>
 
 <div class="project-hero-image">
   <figure class="project-hero-figure">
     <img src="../images/plant testing.jpeg" alt="Final smart watering system mounted on plant pot">
-    <figcaption class="image-caption">Final Smart Watering System SolidWorks Model</figcaption>
+    <figcaption class="image-caption">LeafLink SolidWorks Model</figcaption>
   </figure>
 </div>
     
   </section>
 
-  <!-- Overview -->
   <section class="project-section">
     <h2>Project Overview</h2>
 
     <p>
-      This project focused on designing, manufacturing, and deploying an automated watering
-      system for small indoor potted plants. The final product combined a custom 3D-printed
-      mechanical structure, embedded sensors, servo-controlled water delivery mechanism, and IoT data
-      publishing to a website accessible on a smartphone or computer.
+      LeafLink is an IoT-enabled plant care system designed to monitor environmental conditions and
+      automatically water indoor plants when needed. Combining embedded sensors, a servo-actuated
+      valve, MQTT-based data publishing, and a custom 3D-printed structure, the system continuously
+      tracks plant health while reducing the need for manual watering. The system monitors and publishes 
+      the soil moisture, atmospheric temperature, air humidity, and illuminance.
     </p>
-
-    <p>
-      The system was designed to monitor four environmental conditions: soil moisture,
-      atmospheric temperature, air humidity, and illuminance. These readings were collected
-      through sensors and published to the Stevens IoT network at 10-second intervals,
-      allowing plant conditions and system performance to be tracked over multiple days.
-    </p>
-
-    <p>
-      A major focus of the project was balancing product design, mechanical packaging,
-      electronics placement, water exposure, 3D-printing time limits, and reliable automated
-      performance. The final system successfully watered the plant when soil moisture dropped
-      below the selected threshold and collected multiple days of data.
-    </p>
+    
   </section>
 
-  <!-- Key Results -->
   <section class="project-section">
     <h2>Key Results</h2>
 
@@ -104,169 +88,77 @@
       </div>
 
       <div class="result-card">
-        <h3>10 sec</h3>
+        <h3>10 seconds</h3>
         <p>IoT sensor publishing interval</p>
       </div>
     </div>
   </section>
 
-  <!-- Contributions -->
 <section class="project-section">
   <h2>Personal Contributions</h2>
 
   <ul class="project-list">
-
-    <li>
-      Led the complete mechanical design and embedded software development of the automated watering system from 
-      initial concept through final deployment.
-    </li>
-    <li>
-      Designed and iterated the selected SolidWorks CAD concept for the compact clamp-on 3D-printed structure, 
-      integrating the water reservoir, valve, servo motor, sensors, wiring, and electronics into a single assembly.
-    </li>
-    <li>
-      Developed the embedded Arduino software responsible for environmental sensing, soil moisture evaluation, 
-      servo-controlled valve actuation, and MQTT-based IoT data publishing.
-    </li>
-    <li>
-      Redesigned the prototype after the first print revealed component-fit issues and insufficient space for the water 
-      container, improving hardware integration and overall manufacturability.
-    </li>
-    <li>
-      Calibrated servo actuation angles and soil moisture thresholds through repeated physical testing to ensure reliable 
-      automated watering behavior.
-    </li>
-    <li>
-      Diagnosed and resolved deployment issues involving sensor reliability and MQTT communication, including debugging the 
-      missing <code>mqtt_loop();</code> call that initially prevented online data publishing.
-    </li>
-    <li>
-      Led final assembly, deployment testing, and multi-day system validation to verify stable environmental monitoring and 
-      autonomous watering performance.
-    </li>
-
+      <li>Led the mechanical design, embedded software development, and system integration of the project.</li>
+      <li>Designed and iterated a compact 3D-printed structure integrating the reservoir, valve, sensors, electronics, and wiring.</li>
+      <li>Developed the Arduino software responsible for environmental sensing, valve actuation, and MQTT-based IoT communication.</li>
+      <li>Performed calibration, debugging, deployment testing, and multi-day system validation.</li>
   </ul>
 </section>
 
-  <!-- Mechanical Design -->
   <section class="project-section">
     <h2>Mechanical Design</h2>
 
     <div class="project-two-column">
       <div>
         <p>
-          The mechanical design was developed as a compact 3D-printed attachment rather than
-          a full replacement pot. This allowed the product to clamp onto an existing indoor plant
-          pot while supporting the water reservoir, valve, servo motor, sensors, and wiring in one
-          integrated structure.
+          The mechanical design was developed as a compact clamp-on attachment rather than a replacement
+          plant pot, allowing the system to integrate with existing indoor planters. The 3D-printed structure
+          housed the reservoir, valve, servo motor, sensors, and electronics within a single assembly while
+          minimizing water exposure to sensitive components.
         </p>
 
         <p>
-          The first prototype had dimensional issues and did not fully account for the water
-          container. The design was revised to fit the plant pot more securely, hold the water
-          supply upright, and organize the electronic components toward the rear of the system
-          to reduce exposure to water.
-        </p>
-
-        <p>
-          The final design used a clamp-on geometry that kept the device compact while still
-          allowing the soil sensor to reach the plant, the valve to control water release, and the
-          electronics to remain accessible during testing and debugging.
-        </p>
-
-        <p>
-          One important mechanical challenge was the valve actuation. The valve had to be
-          partially disassembled and adjusted so the servo motor could rotate it without excessive
-          resistance. This required the mechanical design and servo calibration to be developed
-          together rather than treated as separate parts of the system.
+          Multiple design iterations refined component packaging, reservoir integration, and electronics
+          placement. The final design provided reliable valve actuation, accessible electronics, and secure
+          mounting while maintaining a compact footprint suitable for indoor use.
         </p>
       </div>
 
       <div class="project-image-block">
         <img src="../images/plant exploded view.png" alt="Exploded view of smart watering system design">
-        <p class="image-caption">Exploded Assembly View of Printed Body, Water Spout, and Hardware Layout</p>
+        <p class="image-caption">Exploded Assembly Showing Integrated Components</p>
       </div>
     </div>
   </section>
 
-  <!-- Iteration -->
   <section class="project-section">
   <h2>Design Iteration</h2>
-
-  <p>
-    The project followed an iterative development process that combined mechanical redesign,
-    embedded software refinement, electronics integration, and deployment testing. Each
-    revision addressed issues discovered during physical assembly, sensor testing, and live
-    operation, gradually improving reliability, manufacturability, and autonomous watering
-    performance.
-  </p>
-
   <div class="iteration-grid">
 
     <div class="iteration-card">
-      <h3>Initial Concepts</h3>
+      <h3>Initial Concept</h3>
       <p>
-        Early development began with hand sketches exploring different mounting strategies,
-        component layouts, and water delivery approaches. The selected concept was chosen
-        because it best satisfied the project constraints while providing space for the required
-        sensors, electronics, and water reservoir.
+        Established the overall product architecture, component layout, and watering approach.
       </p>
     </div>
 
     <div class="iteration-card">
-      <h3>Mechanical Prototype Development</h3>
+      <h3>System Development</h3>
       <p>
-        The first CAD prototype established the overall clamp-on structure and component
-        packaging strategy. Initial prints revealed fit issues and insufficient space for the
-        water container, leading to redesigns that improved the clamp fit, hardware integration,
-        and protection of the electronics from water exposure.
+        Refined mechanical packaging, sensor integration, servo actuation, and environmental monitoring.
       </p>
     </div>
-
-    <div class="iteration-card">
-      <h3>Sensor and Control System Development</h3>
-      <p>
-        The embedded software was developed incrementally by testing each subsystem
-        independently before integrating the full control logic. Sensor validation included
-        testing the DHT sensor with temperature changes, submerging the soil sensor to verify
-        moisture readings, and calibrating the photocell illuminance conversion.
-      </p>
-    </div>
-
-    <div class="iteration-card">
-      <h3>Servo and Watering Logic Refinement</h3>
-      <p>
-        The servo-controlled valve system required repeated tuning to achieve reliable
-        watering behavior. Servo open and close angles were experimentally calibrated
-        through physical testing, while the valve mechanism itself was modified to reduce
-        resistance and improve consistency during operation.
-      </p>
-    </div>
-
-    <div class="iteration-card">
-      <h3>IoT Integration and Debugging</h3>
-      <p>
-        Later iterations focused on integrating MQTT-based data publishing and deployment
-        reliability. During final testing, the system successfully collected sensor data locally
-        but initially failed to publish readings online. Debugging identified the missing
-        <code>mqtt_loop();</code> call required to maintain MQTT communication, resolving
-        the issue and enabling stable long-term data collection.
-      </p>
-    </div>
-
+    
     <div class="iteration-card">
       <h3>Final Deployment</h3>
       <p>
-        The final iteration integrated the completed mechanical structure, environmental
-        sensing system, servo-actuated valve, and IoT publishing architecture into a fully
-        functional autonomous watering platform capable of multi-day deployment.
+        Integrated automated watering, MQTT communication, and multi-day environmental monitoring into a complete system.
       </p>
     </div>
-
+    
   </div>
 </section>
 
-  <!-- Electronics -->
   <section class="project-section">
     <h2>Electronics and System Architecture</h2>
 
@@ -280,245 +172,96 @@
           <li>Servo motor for opening and closing the mechanical water valve</li>
           <li>MQTT publishing system for sending sensor readings to the Stevens IoT network</li>
         </ul>
-
-        <p>
-          The system architecture centered on a microcontroller that collected environmental
-          data, evaluated the soil moisture level, and actuated the valve when needed.
-          The device used sensor feedback rather than a fixed watering schedule, allowing the
-          system to respond to the actual condition of the plant.
-        </p>
-
-        <p>
-          Electrical integration was especially important because the system combined water
-          storage, exposed wiring, sensors, and a moving valve mechanism. The final mechanical
-          layout kept the electronics positioned away from the main water path while still allowing
-          access for debugging, rewiring, and deployment testing.
+        
+        <p> 
+          The system architecture centered on an ESP32 microcontroller that monitored environmental conditions,
+          evaluated soil moisture levels, controlled valve actuation, and published sensor data to the Stevens
+          IoT network. Special consideration was given to separating water-handling components from the
+          electronics while maintaining accessibility for testing and maintenance.
         </p>
       </div>
 
       <div class="project-image-block">
         <img src="../images/plant assembly.png" alt="Assembled smart watering system">
-        <p class="image-caption">Final Assembled Watering System Mounted Onto Plant Pot</p>
+        <p class="image-caption">LeafLink Mounted to an Indoor Planter</p>
       </div>
     </div>
+    
   </section>
 
-  <!-- Software -->
   <section class="project-section">
     <h2>Software and Control Logic</h2>
-
+    
     <p>
-      The software collected readings from the soil moisture sensor, DHT sensor, and photocell.
-      Raw analog readings from the soil moisture sensor were mapped into a percentage so the
-      system could compare the current soil condition against a watering threshold. The photocell
-      reading was converted into an illuminance value to monitor light exposure.
+      The control software monitored soil moisture, temperature, humidity, and illuminance while
+      continuously evaluating whether watering was required. When soil moisture dropped below a
+      predefined threshold, the servo motor opened the valve to deliver water before returning to
+      its closed position.
     </p>
 
     <p>
-      The watering behavior was controlled by a threshold-based algorithm. When the soil moisture
-      percentage dropped below the selected limit, the servo motor opened the valve, held it open
-      briefly to release water, then returned to the closed position. The final open and close angles
-      were determined through physical testing because the correct values depended on the printed
-      geometry, servo placement, and valve resistance.
+      Environmental data was published to the Stevens IoT network every 10 seconds using MQTT,
+      enabling remote monitoring and multi-day deployment testing. System reliability was improved
+      through iterative debugging, including resolving communication issues that initially prevented
+      sensor data from publishing online.
     </p>
-
-    <p>
-      The system also published temperature, air humidity, soil humidity, and illuminance readings
-      to MQTT topics on the Stevens IoT network every 10 seconds. This allowed the team to verify
-      that the sensors were working during deployment and collect the required multi-day dataset.
-    </p>
-
-    <p>
-      A major software issue occurred when the device appeared to collect sensor readings locally
-      but failed to publish data online. Debugging showed that the MQTT connection was not being
-      maintained during the loop. Adding the missing <code>mqtt_loop();</code> call resolved the issue
-      and allowed the system to publish data correctly.
-    </p>
+    
   </section>
 
-  <!-- Challenges -->
   <section class="project-section">
     <h2>Challenges and Engineering Decisions</h2>
 
     <div class="challenge-list">
 
       <div class="challenge-item">
-        <h3>Designing Around Physical Components</h3>
+        <h3>Component Packaging</h3>
         <p>
-          The first printed prototype revealed that the CAD model did not fully accommodate all
-          hardware, especially the water container. The final design required more accurate
-          component packaging and a layout that considered the actual dimensions of the bottle,
-          valve, servo, sensors, and wiring.
+          Integrating the reservoir, valve, sensors, electronics, and wiring into a compact printable 
+          structure required multiple design revisions.
         </p>
       </div>
 
       <div class="challenge-item">
-        <h3>Water and Electronics Placement</h3>
+        <h3>Water and Electronics Integration</h3>
         <p>
-          Because the product combined water storage with exposed electronics, the internal layout
-          had to reduce the risk of water contacting the wiring or microcontroller. The final design
-          placed electronics toward the back of the device and separated them from the primary water
-          flow path.
+          The system required careful separation of water-handling components and electronics while 
+          maintaining accessibility and reliability.
         </p>
       </div>
 
       <div class="challenge-item">
-        <h3>Servo and Valve Actuation</h3>
+        <h3>Valve Actuation</h3>
         <p>
-          The valve created too much resistance for the weak servo motor in its original condition.
-          To make the mechanism functional, the valve was partially disassembled and adjusted,
-          then the servo angles were tuned through repeated tests until the valve opened and closed
-          reliably.
-        </p>
-      </div>
-
-      <div class="challenge-item">
-        <h3>Sensor Debugging</h3>
-        <p>
-          The soil moisture sensor worked correctly in an isolated test sketch but produced
-          unreliable readings in the main program. The code had to be reorganized and rebuilt
-          around the working sensor logic so the full system could correctly read soil humidity
-          during deployment.
-        </p>
-      </div>
-
-      <div class="challenge-item">
-        <h3>IoT Publishing Failure</h3>
-        <p>
-          During deployment, the system collected sensor data locally but did not publish it to the
-          IoT server. The issue was traced to a missing MQTT loop call, which prevented the network
-          connection from updating properly. Once fixed, the device published data correctly.
-        </p>
-      </div>
-
-      <div class="challenge-item">
-        <h3>Balancing Function and Manufacturability</h3>
-        <p>
-          The design had to remain compact, printable, and visually clean while still holding all
-          required components. The final print time stayed well below the six-hour limit, which helped
-          meet the manufacturability constraint while preserving functionality.
+          Servo-controlled valve operation required both mechanical modifications and software calibration 
+          to achieve consistent watering behavior.
         </p>
       </div>
 
     </div>
   </section>
 
-  <!-- Performance -->
-  <section class="project-section">
-    <h2>Design Performance</h2>
-
-    <p>
-      The final system met the major design requirements by fitting onto the plant pot, holding the
-      water supply, measuring four environmental variables, actuating the valve when watering was
-      needed, and publishing sensor data to the IoT network. The device successfully collected
-      data over multiple days after the final deployment fix.
-    </p>
-
-    <p>
-      The collected data showed realistic indoor plant behavior. Temperature readings remained
-      relatively stable because the room environment did not change dramatically, while illuminance
-      varied more noticeably with light exposure. Soil moisture and humidity readings changed in
-      response to watering behavior and surrounding conditions.
-    </p>
-
-    <p>
-      The final product demonstrated a complete closed-loop watering system: the sensors measured
-      plant conditions, the code interpreted the data, the servo-controlled valve responded to dry
-      soil, and the IoT system recorded performance over time.
-    </p>
-  </section>
-
-<!-- Future Improvements -->
 <section class="project-section">
   <h2>Future Improvements</h2>
-
-  <p>
-    Although the final system successfully monitored environmental conditions and automated
-    watering behavior, future iterations could significantly improve the product’s usability,
-    appearance, and long-term deployment reliability.
-  </p>
-
   <div class="challenge-list">
 
     <div class="challenge-item">
-      <h3>Improved Electronics Enclosure</h3>
+      <h3>Consumer Product Design</h3>
       <p>
-        The current prototype prioritizes accessibility and rapid development, leaving much of
-        the wiring and electronics exposed. Future versions would incorporate a more refined
-        enclosed housing to improve durability, reduce water exposure risk, and create a cleaner,
-        more aesthetically integrated appearance suitable for indoor environments.
+        Develop a more polished enclosure that conceals electronics and better integrates into indoor environments.
       </p>
     </div>
 
     <div class="challenge-item">
-      <h3>Consumer-Oriented Product Design</h3>
+      <h3>Plant-Specific Intelligence</h3>
       <p>
-        Indoor plant enthusiasts typically value aesthetics alongside functionality, so future
-        designs would focus on making the system visually blend into the plant environment
-        rather than appearing as an exposed electronic prototype. A more compact and polished
-        industrial design approach would improve user appeal and overall product presentation.
-      </p>
-    </div>
-
-    <div class="challenge-item">
-      <h3>Plant-Specific Watering Intelligence</h3>
-      <p>
-        A future software expansion could include a companion mobile application that allows
-        users to input the plant type, pot size, and soil type during setup. The system could then
-        automatically adjust watering thresholds and environmental targets based on the specific
-        needs of the plant rather than relying on generalized moisture settings.
-      </p>
-    </div>
-
-    <div class="challenge-item">
-      <h3>Expanded Environmental Automation</h3>
-      <p>
-        Additional environmental monitoring and automation features could also be integrated,
-        such as adaptive watering schedules, growth analytics, nutrient monitoring, or smart
-        lighting control based on real-time illuminance and plant requirements.
+        Add a companion application capable of adjusting watering behavior based on plant species, soil type, 
+        and growing conditions.
       </p>
     </div>
 
   </div>
 </section>
   
-  <!-- Reflection -->
-  <section class="project-section">
-    <h2>Final Engineering Takeaways</h2>
-
-    <p>
-      This project provided experience designing a complete electromechanical product where
-      the mechanical structure, sensor layout, wiring, software, and physical actuation all depended
-      on one another. Small mechanical decisions, such as valve placement and electronics location,
-      directly affected the reliability of the software-controlled watering behavior.
-    </p>
-
-    <p>
-      The project also strengthened my ability to design around real hardware constraints rather
-      than ideal CAD geometry. Component tolerances, wiring access, water exposure, servo strength,
-      and print limitations all had to be considered before the system could function as a complete
-      product.
-    </p>
-
-    <p>
-      Most importantly, this project showed me how iterative testing connects different engineering
-      disciplines. Debugging the final system required moving between SolidWorks, 3D printing,
-      circuit assembly, Arduino code, MQTT publishing, and physical deployment until the design
-      worked reliably as a full integrated system.
-    </p>
-
-    <p>
-      One aspect of this project that made it especially rewarding was that the engineering
-      decisions directly affected a living plant rather than just a purely technical system.
-      Mechanical layout decisions influenced water delivery reliability, while software and
-      sensor calibration directly affected the plant’s health over multiple days of deployment.
-      That added pressure created a much stronger sense of responsibility during development
-      and reinforced an important engineering mindset for me: designing systems that improve
-      and support life. The project was not only about keeping the plant healthy, but also about
-      reducing the day-to-day responsibility placed on the user through reliable automation.
-    </p>
-  </section>
-
 </main>
   
 <script>
