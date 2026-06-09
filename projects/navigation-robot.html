@@ -6,7 +6,7 @@
   <!-- THIS IS THE MOST IMPORTANT LINE -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Autonomous Navigation Robot | Sakurako Kingsbury</title>
+  <title> NaviBot | Sakurako Kingsbury</title>
 
   <link rel="stylesheet" href="../style.css?v=4">
   <link rel="stylesheet" href="../project.css?v=4">
@@ -43,7 +43,7 @@
   <section class="project-hero">
     <div class="project-hero-text">
       <p class="project-label">Featured Project</p>
-      <h1>Autonomous Navigation Robot</h1>
+      <h1>NaviBot</h1>
       <p class="project-subtitle">
         Designed and built a fully autonomous robot capable of navigating an obstacle course
         using ultrasonic sensing and coordinate-based pathfinding, completing the final course
@@ -54,7 +54,7 @@
     <div class="project-hero-image">
      <figure class="project-hero-figure">
        <img src="../images/navi isometric.jpeg" alt="Final autonomous navigation robot">
-       <figcaption class="image-caption">Final Assembly of Autonomous Navigation Robot</figcaption>
+       <figcaption class="image-caption">Final Assembly of NaviBot</figcaption>
      </figure>
     </div>
   </section>
@@ -63,23 +63,10 @@
   <section class="project-section">
   <h2>Project Overview</h2>
   <p>
-    This project focused on the design, manufacturing, and integration of a fully autonomous
-    navigation robot capable of traversing a maze-like obstacle course.
-    The system combined custom mechanical design, embedded electronics, sensor integration,
-    and autonomous navigation logic into a compact 3" x 5" robot.
-  </p>
-
-  <p>
-    The robot continuously interpreted real-time ultrasonic sensor data to detect walls and
-    obstacles while navigating toward coordinate-based target locations. A major focus of the
-    project was balancing reliable navigation performance with physical constraints such as
-    chassis size, sensor placement, wire management, manufacturability, weight, speed, and overall system stability.
-  </p>
-
-  <p>
-    Throughout development, the design underwent multiple iterations to improve structural mounts,
-    sensor coverage, component integration, and overall performance during testing and the final run.
-    The final robot successfully completed the course autonomously with zero collisions in 1 minute and 21 seconds.
+    NaviBot is a fully autonomous rover designed to navigate an obstacle course using ultrasonic sensing, 
+    coordinate-based pathfinding, and real-time obstacle avoidance. The project combined custom mechanical design, 
+    embedded electronics, sensor integration, and autonomous control software into a compact 3D-printed platform 
+    that completed the final competition course in 1 minute 21 seconds with zero collisions.
   </p>
 </section>
 
@@ -94,7 +81,7 @@
     </div>
 
     <div class="result-card">
-      <h3>0</h3>
+      <h3>ZERO</h3>
       <p>Collisions during final competition run</p>
     </div>
 
@@ -104,8 +91,8 @@
     </div>
 
     <div class="result-card">
-      <h3>Custom</h3>
-      <p>Integrated CAD, embedded systems, PCB, and autonomous navigation platform</p>
+      <h3>MQTT & LiDAR</h3>
+      <p>Integrated real-time position tracking with autonomous navigation</p>
     </div>
   </div>
 </section>
@@ -114,11 +101,10 @@
   <section class="project-section">
     <h2>Personal Contributions</h2>
     <ul class="project-list">
-      <li>Designed and iterated a custom 3D-printed chassis in SolidWorks for compact component integration and manufacturability.</li>
-      <li>Developed integrated mounting features for ultrasonic sensors, microcontroller, PCB, OLED display, and structural supports.</li>
-      <li>Optimized sensor placement and chassis geometry to improve obstacle detection coverage.</li>
-      <li>Improved structural stability, wiring, and component organization to increase consistency during autonomous runs.</li>
-      <li>Contributed to the integration and testing of the robot’s autonomous navigation and obstacle avoidance system.</li>
+      <li>Led the mechanical design and CAD development of the robot chassis in SolidWorks.</li>
+      <li>Designed integrated mounts for sensors, electronics, OLED display, and structural supports.</li>
+      <li>Optimized sensor coverage, wiring organization, and component packaging for reliable operation.</li>
+      <li>Contributed to the integration and testing of the autonomous navigation and obstacle avoidance system.</li>
     </ul>
   </section>
 
@@ -128,29 +114,18 @@
     <div class="project-two-column">
     <div>
       <p>
-        The robot chassis was designed in SolidWorks as a compact, fully integrated platform
-        capable of supporting the mechanical, electrical, and sensing systems required for
-        autonomous navigation. A major design goal was minimizing overall size and weight while still
-        maintaining stability, optimized sensor positioning, and easily accessible component placement.
+        NaviBot was designed in SolidWorks as a compact autonomous rover that integrated
+        the drivetrain, sensors, electronics, and display into a single 3D-printed chassis.
+        Integrated mounting features were built directly into the structure for the ultrasonic
+        sensors, OLED display, motors, PCB, and supporting hardware, reducing assembly complexity
+        while maintaining a lightweight and manufacturable design.
       </p>
+
       <p>
-        The chassis was developed as a single 3D-printed structure to reduce assembly complexity, 
-        improve structural integrity, and simplify manufacturing. Stacked mounting slots were designed 
-        directly into the chassis to simplify ultrasonic sensor installation, reduce screw count, and allow 
-        a third sensor to be added without compromising the size or complexity of the robot. Custom mounting 
-        features were also designed for the OLED display, electronics, motors, and supporting hardware, 
-        reducing the need for additional brackets.
-      </p>
-      <p>
-        Multiple design iterations were required to balance sensor performance, structural integrity,
-        wiring, and consistently reliable navigation. Sensor placement was especially important because
-        small alignment changes significantly affected the accuracy of obstacle detection and wall tracking 
-        during autonomous navigation.
-      </p>
-      <p>
-        The final design incorporated reinforced mounting features, improved motor supports,
-        organized wire management, and a crate-style electronics compartment that allowed
-        the robot to remain compact while securely housing the electronics. 
+        Multiple design iterations refined sensor placement, structural stability, wire routing,
+        and overall system packaging. The final design incorporated reinforced sensor mounts,
+        improved motor supports, and a crate-style electronics compartment that securely housed
+        the PCB and wiring while preserving accessibility for assembly and testing.
       </p>
     </div>
 
@@ -164,59 +139,28 @@
  <!-- Iteration -->
 <section class="project-section">
   <h2>Design Iteration</h2>
-  <p>
-    A major focus of this project was iterative mechanical refinement. The robot chassis
-    underwent multiple redesigns throughout development to improve structural stability,
-    sensor coverage, manufacturability, wiring organization, and overall autonomous performance.
-    Each iteration addressed issues discovered during physical testing and system integration.
-  </p>
-
   <div class="iteration-grid">
-
+    
     <div class="iteration-card">
       <h3>Initial Prototype</h3>
       <p>
-        Early iterations focused on establishing the base chassis dimensions, mounting the
-        drivetrain components, and creating initial sensor mounts for obstacle detection testing.
-        The primary goal during this stage was verifying overall packaging and functionality.
+       Established drivetrain, sensor placement, and overall chassis packaging.
       </p>
     </div>
 
     <div class="iteration-card">
-      <h3>Sensor System Redesign</h3>
+      <h3>Integration Refinement</h3>
       <p>
-        The ultrasonic mounting system was redesigned multiple times to improve alignment,
-        reduce vibration, and increase sensing coverage. Stacked integrated mounting slots
-        were eventually added directly into the chassis geometry, reducing screw count while
-        enabling a third ultrasonic sensor to be added without increasing the robot footprint.
+        Improved sensor coverage, structural stability, wire routing, and electronics 
+        organization through multiple design iterations.
       </p>
     </div>
-
+    
     <div class="iteration-card">
-      <h3>Structural and Layout Improvements</h3>
+      <h3>Final Design</h3>
       <p>
-        Later revisions widened and reinforced portions of the chassis to improve drivetrain
-        stability and reduce motor shifting during movement. Internal layout changes also improved
-        wire routing, reduced interference with moving components, and created a more organized
-        electrical system during repeated testing.
-      </p>
-    </div>
-
-    <div class="iteration-card">
-      <h3>PCB and Electronics Integration</h3>
-      <p>
-        After competition constraints eliminated the use of breadboards, the chassis was redesigned
-        to support a custom PCB layout while maintaining compact packaging. Additional integrated
-        mounting features were developed for the OLED display, electronics, and support hardware.
-      </p>
-    </div>
-
-    <div class="iteration-card">
-      <h3>Final Chassis Refinement</h3>
-      <p>
-        The final iteration introduced a compact crate-style electronics compartment, reinforced
-        sensor mounts, improved component accessibility, and cleaner system integration while
-        maintaining a lightweight and manufacturable design suitable for reliable autonomous operation.
+        Integrated PCB mounting, reinforced sensor supports, and a compact electronics compartment 
+        to improve manufacturability and reliability.
       </p>
     </div>
 
@@ -237,17 +181,10 @@
         </ul>
 
         <p>
-          The system architecture was designed to balance compact packaging, electrical reliability,
-          and maintainability within the limited chassis footprint. Component placement was carefully
-          arranged to minimize wire interference with moving drivetrain components while still allowing
-          accessible routing for debugging and future modifications.
-        </p>
-        <p>
-          As the project evolved, the electrical system transitioned from an initial breadboard-based
-          prototype to a more robust PCB-integrated layout to improve reliability and meet final design
-          constraints. Wiring organization and power distribution were refined throughout development
-          using color-coded wiring, integrated routing paths, and secured connections to reduce electrical
-          clutter and improve system consistency during autonomous operation.
+          The electronics architecture was designed around compact packaging and reliable sensor 
+          integration within a limited chassis footprint. As development progressed, the system 
+          transitioned from a breadboard prototype to a custom PCB layout, improving wiring 
+          organization, maintainability, and overall reliability.
          </p>
         
       </div>
@@ -259,44 +196,27 @@
     </div>
   </section>
 
- <!-- Software -->
 <section class="project-section">
   <h2>Autonomous Navigation Logic</h2>
 
   <p>
-    The robot’s autonomous navigation system combined coordinate-based pathfinding with
-    real-time obstacle avoidance to navigate the arena without human input. Using live
-    position data received through the MQTT network and LiDAR tracking system, the robot
-    continuously calculated its distance and orientation relative to target coordinates while
-    adjusting movement toward the next destination point.
+    NaviBot combined coordinate-based pathfinding with real-time obstacle avoidance to
+    navigate the competition arena without human input. Position data provided through
+    the MQTT network and LiDAR tracking system allowed the robot to continuously determine
+    its location, calculate its orientation relative to target coordinates, and adjust its
+    movement toward each destination.
   </p>
 
   <p>
-    Three ultrasonic sensors were used simultaneously for obstacle detection and wall
-    tracking. One sensor faced forward while two side sensors were mounted at 45-degree
-    angles to expand the robot’s field of view and eliminate blind spots near the front corners
-    of the chassis. Sensor readings were constantly monitored by the control algorithm to
-    detect nearby walls and obstacles and trigger directional corrections when necessary.
-  </p>
-
-  <p>
-    A major challenge during development was balancing the interaction between the
-    pathfinding system and the obstacle avoidance logic. Early versions of the algorithm
-    occasionally allowed target-navigation calculations to override obstacle detection behavior,
-    causing inconsistent movement near walls and corners. Through repeated testing and
-    tuning, movement thresholds, motor values, and sensor distance conditions were refined
-    to prioritize collision avoidance while still maintaining efficient navigation toward targets.
-  </p>
-
-  <p>
-    Additional software refinement focused on compensating for inconsistencies in the LiDAR
-    tracking system and handling occasional arena blind spots where coordinate updates were
-    temporarily lost. The final navigation algorithm successfully guided the robot to multiple
-    target locations while remaining collision-free throughout the final competition run.
+    Three ultrasonic sensors provided obstacle detection and wall-tracking capabilities,
+    allowing the robot to identify nearby obstacles and make directional corrections during
+    navigation. A major software challenge was balancing target-seeking behavior with
+    collision avoidance, requiring iterative tuning of sensor thresholds, motor outputs,
+    and decision logic. The final navigation algorithm successfully guided the robot
+    through the course with zero collisions and a completion time of 1 minute 21 seconds.
   </p>
 </section>
 
-  <!-- Challenges -->
 <section class="project-section">
   <h2>Challenges and Engineering Decisions</h2>
   <div class="challenge-list">
@@ -304,137 +224,26 @@
     <div class="challenge-item">
       <h3>Sensor Stability and Alignment</h3>
       <p>
-        Early ultrasonic sensor mounts lacked sufficient retention and would occasionally
-        loosen or fall out during testing, leading to inconsistent obstacle readings. Multiple
-        mounting revisions were developed, including reinforced support geometry, tighter
-        tolerances, and integrated triangular supports to improve sensor stability and maintain
-        reliable alignment during operation.
+        Improved mounting geometry and retention features to maintain reliable ultrasonic sensing.
       </p>
     </div>
 
     <div class="challenge-item">
-      <h3>Wire Management Around Moving Components</h3>
+      <h3>Electronics Packaging</h3>
       <p>
-        Initial wiring layouts allowed cables to interfere with the drivetrain belts, creating
-        inconsistent movement and causing the robot to drift during navigation. Additional
-        structural barriers and revised wire routing paths were incorporated into the chassis
-        to isolate electronics from moving components and improve long-term reliability.
+        Redesigned internal layouts and wire routing to prevent interference with drivetrain components.
       </p>
     </div>
 
     <div class="challenge-item">
-      <h3>Motor Movement and Chassis Stability</h3>
+      <h3>Pathfinding vs Obstacle Avoidance</h3>
       <p>
-        During repeated arena testing, motor shifting and chassis flex introduced inconsistent
-        driving behavior and reduced navigation repeatability. The chassis geometry was widened
-        and reinforced to better support the motors, improve weight distribution, and minimize
-        unwanted movement during acceleration and turning.
+        Balanced coordinate-based pathfinding with real-time obstacle avoidance through iterative 
+        testing and software tuning.
       </p>
     </div>
-
-    <div class="challenge-item">
-      <h3>Balancing Pathfinding and Obstacle Avoidance</h3>
-      <p>
-        One of the largest software challenges was preventing the coordinate-based pathfinding
-        system from conflicting with the obstacle avoidance logic. Early algorithms occasionally
-        prioritized target movement over nearby obstacle detection, causing unreliable behavior
-        near walls and corners. Extensive tuning of sensor thresholds, motor values, and
-        directional correction logic was required to create stable autonomous navigation.
-      </p>
-    </div>
-
-    <div class="challenge-item">
-      <h3>Transition From Breadboard to PCB Integration</h3>
-      <p>
-        Midway through development, competition constraints required the removal of breadboards
-        from the final design. This forced a redesign of the electronics layout and internal
-        packaging strategy. A compact crate-style compartment and custom PCB integration were
-        developed to maintain organized wiring, accessible components, and a compact overall
-        footprint.
-      </p>
-    </div>
-
-    <div class="challenge-item">
-      <h3>LiDAR Tracking Inconsistencies</h3>
-      <p>
-        The navigation system occasionally encountered arena blind spots where LiDAR position
-        data became unreliable or temporarily unavailable. Additional testing and algorithm
-        refinement were required to improve navigation consistency and reduce the impact of
-        intermittent coordinate loss during autonomous operation.
-      </p>
-    </div>
-
   </div>
 </section>
-
-<!-- Future Improvements -->
-<section class="project-section">
-  <h2>Future Improvements</h2>
-
-  <p>
-    Although the final robot successfully completed the course autonomously with zero collisions,
-    several future improvements could further increase navigation reliability, speed, structural
-    performance, and overall system sophistication.
-  </p>
-
-  <div class="challenge-list">
-
-    <div class="challenge-item">
-      <h3>Improved Electronics Mounting</h3>
-      <p>
-        The crate-style electronics compartment successfully organized the PCB and wiring within
-        the limited robot size, but future iterations could incorporate additional mounting features to further 
-        stabilize the electronics during rapid acceleration and turning.
-      </p>
-    </div>
-
-    <div class="challenge-item">
-      <h3>Weight Reduction and Drivetrain Optimization</h3>
-      <p>
-        Future mechanical refinements could focus on reducing unnecessary mass and
-        optimizing drivetrain gearing to improve acceleration, turning responsiveness, and overall
-        course completion speed while maintaining reliable autonomous behavior.
-      </p>
-    </div>
-
-    <div class="challenge-item">
-      <h3>More Sophisticated Navigation Algorithms</h3>
-      <p>
-        Additional software improvements could include smoother path-planning algorithms,
-        predictive obstacle avoidance, dynamic speed control, and more advanced decision-making
-        logic to improve navigation efficiency and reduce unnecessary corrections during
-        autonomous movement.
-      </p>
-    </div>
-
-  </div>
-</section>
-  
-  <!-- Reflection -->
-  <section class="project-section">
-    <h2>Final Engineering Takeaways</h2>
-    <p>
-      This project provided extensive experience in mechanical design iteration, embedded system
-      integration, autonomous robotics, and real-world engineering problem solving under strict
-      design constraints. Developing a fully autonomous system required balancing manufacturability,
-      structural stability, sensor performance, electrical organization, software reliability, and
-      overall system packaging within a compact platform.
-    </p>
-
-    <p>
-      The project also reinforced the importance of iterative testing and cross-disciplinary
-      integration between mechanical, electrical, and software systems. Small physical changes
-      to sensor placement, wiring layout, chassis geometry, and motor stability often had direct
-      impacts on navigation consistency and autonomous performance, requiring continuous refinement
-      throughout development.
-    </p>
-
-    <p>
-      Beyond the technical work, the project strengthened collaborative engineering skills through
-      rapid prototyping, debugging, time management, and coordinating design decisions under tight
-      development deadlines.
-    </p>
-  </section>
   
 </main>
 
