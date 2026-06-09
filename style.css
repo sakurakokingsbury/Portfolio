@@ -147,6 +147,7 @@ img {
   right: 0;
   height: 100vh;
   width: min(65vw, 430px);
+  overflow-x: hidden;
 
   padding: 5rem 2rem 2rem 2rem;
 
@@ -184,13 +185,16 @@ img {
 
 .mobile-menu a {
   display: block;
-  padding: 1.2rem 0;
+  padding: 1rem 0;
   color: #222;
   text-decoration: none;
-  font-size: 1.4rem;
+  
+  font-size: clamp(1.2rem, 5vw, 1.8rem);
   font-weight: 700;
-  letter-spacing: 0.08rem;
-  white-space: nowrap;
+  letter-spacing: 0.04rem;
+  
+  white-space: normal;
+  overflow-wrap: break-word;
 }
 
 .mobile-menu a:hover {
@@ -221,7 +225,8 @@ img {
   color: #222;
   background: white;
 
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  white-space: nowrap;
   font-weight: 700;
 }
 
