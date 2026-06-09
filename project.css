@@ -313,7 +313,7 @@
   .iteration-grid,
   .challenge-list,
   .project-gallery {
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .project-section {
