@@ -176,7 +176,7 @@ img {
 }
 
 .mobile-menu li {
-  border-bottom: 2px solid #e5e5e5;
+  border-bottom: 2px solid #111212;
 }
 
 .mobile-menu li:last-child {
@@ -186,7 +186,7 @@ img {
 .mobile-menu a {
   display: block;
   padding: 1rem 0;
-  color: #222;
+  color: #ddd;
   text-decoration: none;
   
   font-size: clamp(1.2rem, 5vw, 1.8rem);
@@ -198,7 +198,7 @@ img {
 }
 
 .mobile-menu a:hover {
-  color: var(--red);
+  color: #B8B8B8;
 }
 
 .mobile-menu-footer {
@@ -211,14 +211,14 @@ img {
 }
 
 .mobile-menu-footer .mobile-resume-link {
-  color: #222;
+  color: #ddd;
   font-size: 1.4rem;
   font-weight: 700;
   text-decoration: none;
 
   padding: 0;
   border: none;
-  border-bottom: 2px dotted #777;
+  border-bottom: 2px dotted #ddd;
 
   width: auto;
   height: auto;
@@ -230,13 +230,13 @@ img {
   width: auto;
   border-radius: 0;
   border: none;
-  border-bottom: 2px dotted #777;
+  border-bottom: 2px dotted #ddd;
   background: transparent;
   font-size: 1.4rem;
 }
 
 .mobile-menu-footer a:hover {
-  color: var(--red);
+  color: #B8B8B8;
   background: transparent;
 }
 
