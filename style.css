@@ -213,6 +213,7 @@ img {
   font-weight: 600;
 
   white-space: nowrap;
+  margin: 0;
 }
 
 .mobile-menu-footer .linkedin-button {
