@@ -151,7 +151,7 @@ img {
 
   padding: 5rem 2rem 2rem 2rem;
 
-  background-color: #313233;
+  background-color: #212324;
   color: #ddd;
 
   z-index: 2500;
@@ -206,25 +206,35 @@ img {
   align-items: center;
   justify-content: center;
 
-  height: 30px;
-  padding: 0 0.9rem;
+  height: 38px;
+  min-height: 38px;
+  padding: 0 0.9rem; 
+  margin: 0;
 
-  font-size: 0.5rem;
+  font-size: 0.9rem;
   font-weight: 600;
+  line-height: 1;
 
   border-radius: var(--radius);
 }
 
 .mobile-menu-footer .linkedin-button {
-  width: 30px;
-  height: 30px;
-  min-width: 30px;
-  flex: 0 0 30px;
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  flex: 0 0 38px;
+  margin: 0;
+  padding: 0;
+  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mobile-menu-footer .linkedin-button img {
-  width: 30px;
-  height: 30px;
+  width: 38px;
+  height: 38px;
+  display: block;
 }
 
 .mobile-menu-footer {
