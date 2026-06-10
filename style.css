@@ -383,9 +383,8 @@ header {
   align-items: center;
   justify-content: center;
   
-  width: fit-content;
-  max-width: 100%;
-  min-width: 400px;
+  width: 100%;
+  max-width: 400px;
   
   min-height: 50px;
   padding: 0rem 1.3rem;
