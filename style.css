@@ -424,6 +424,7 @@ header {
 
 .contact-icon {
   width: 50px;
+  min-width: 50px;
   flex-shrink: 0;
   font-size: 1.9rem;
   text-align: center;
@@ -431,10 +432,15 @@ header {
   justify-content: center;
 }
 
+.contact-icon a {
+  display: block;
+}
+
 .contact-icon img {
   width: 32px;
   height: 32px;
   display: block;
+  margin: 0 auto;
 }
 
 #contact form {
