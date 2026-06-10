@@ -146,7 +146,7 @@ img {
   top: 0;
   right: 0;
   height: 100vh;
-  width: min(65vw, 430px);
+  width: min(65vw, 370px);
   overflow-x: hidden;
 
   padding: 5rem 2rem 2rem 2rem;
