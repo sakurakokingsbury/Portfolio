@@ -283,27 +283,36 @@
   const mobileMenu = document.getElementById('mobileMenu');
   const hamburgerBtn = document.getElementById('hamburger');
 
-  if (mobileMenu && hamburgerBtn) {
-    hamburgerBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      mobileMenu.classList.toggle('active');
-    });
-
-    mobileMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.remove('active');
-      });
-    });
-
-    document.addEventListener('click', () => {
-      mobileMenu.classList.remove('active');
-    });
-
-    mobileMenu.addEventListener('click', (e) => {
-      e.stopPropagation();
-    });
+  function closeMobileMenu() {
+    mobileMenu.classList.remove('active');
+    hamburgerBtn.innerHTML = '☰';
   }
-</script>
 
+  function openMobileMenu() {
+    mobileMenu.classList.add('active');
+    hamburgerBtn.innerHTML = '✕';
+  }
+
+  hamburgerBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+
+    if (mobileMenu.classList.contains('active')) {
+      closeMobileMenu();
+    } else {
+      openMobileMenu();
+    }
+  });
+
+  const menuLinks = mobileMenu.querySelectorAll('a');
+  menuLinks.forEach(link => {
+    link.addEventListener('click', closeMobileMenu);
+  });
+
+  document.addEventListener('click', closeMobileMenu);
+
+  mobileMenu.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+</script>
 </body>
 </html>
