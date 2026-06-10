@@ -212,7 +212,6 @@ img {
   font-size: 0.5rem;
   font-weight: 600;
 
-  white-space: nowrap;
   margin: 0;
 }
 
@@ -220,7 +219,7 @@ img {
   width: 30px;
   height: 30px;
   min-width: 30px;
-  flex-basis: 30px;
+  flex: 0 0 30px;
 }
 
 .mobile-menu-footer .linkedin-button img {
