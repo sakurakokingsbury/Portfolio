@@ -140,7 +140,7 @@
 .challenge-item {
   background-color: #282a2b;
   border-radius: var(--radius);
-  padding: 1rem;
+  padding: 0.5rem;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -154,7 +154,7 @@
 .result-card h3,
 .iteration-card h3,
 .challenge-item h3 {
-  margin: 0.5rem 0 0.3rem 0;
+  margin: rem 0 0.3rem 0;
   font-size: 1.2rem;
 }
 
@@ -162,12 +162,13 @@
 .iteration-card p,
 .challenge-item p {
   color: #ccc;
+  margin: 0;
 }
 
 .project-two-column {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: center;
 }
 
