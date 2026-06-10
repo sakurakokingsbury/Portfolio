@@ -686,7 +686,20 @@ h2 {
 
 /* Footer */
 footer {
+  position: relative;
   text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  height: 1px;
+  background: #333;
 }
 
 /* Medium screens */
