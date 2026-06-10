@@ -206,25 +206,25 @@ img {
   align-items: center;
   justify-content: center;
 
-  height: 38px;
+  height: 30px;
   padding: 0 0.9rem;
 
-  font-size: 0.8rem;
+  font-size: 0.5rem;
   font-weight: 600;
 
   white-space: nowrap;
 }
 
 .mobile-menu-footer .linkedin-button {
-  width: 38px;
-  height: 38px;
-  min-width: 38px;
-  flex-basis: 38px;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  flex-basis: 30px;
 }
 
 .mobile-menu-footer .linkedin-button img {
-  width: 38px;
-  height: 38px;
+  width: 30px;
+  height: 30px;
 }
 
 .mobile-menu-footer {
