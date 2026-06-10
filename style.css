@@ -693,6 +693,10 @@ footer {
   line-height: 1;
 }
 
+footer p {
+  margin: 0;
+}
+
 footer::before {
   content: "";
   position: absolute;
