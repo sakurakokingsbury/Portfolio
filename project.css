@@ -140,7 +140,7 @@
 .challenge-item {
   background-color: #282a2b;
   border-radius: var(--radius);
-  /*padding: 0.5rem;*/
+  padding: 0.5rem;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
