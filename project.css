@@ -179,10 +179,12 @@
 }
 
 .project-image-block {
-  flex: 1 1 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex: 1 1 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  align-items: start;
 }
 
 .project-list {
@@ -374,4 +376,9 @@
     right: auto;
     width: fit-content;
   }
+
+  .project-image-block {
+  grid-template-columns: 1fr;
+}
+  
 }
