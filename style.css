@@ -307,8 +307,12 @@ header {
   }
 }
 
-/* Wide two-column: two lines */
+/* Wide two-column: match reference layout — large two-line title */
 @media (min-width: 901px) {
+  .nameblock {
+    --title-size: clamp(2rem, 3.5vw + 1.15rem, 3.5em);
+  }
+
   .title-part-im,
   .title-part-kingsbury {
     display: inline;
@@ -316,6 +320,28 @@ header {
 
   .title-line-2 {
     white-space: nowrap;
+  }
+
+  .header-left {
+    padding-left: clamp(2rem, 5vw, 3rem);
+  }
+
+  header .buttons .button {
+    height: 50px;
+    padding: 0 1.4rem;
+    font-size: 1rem;
+  }
+
+  header .linkedin-button {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    flex: 0 0 50px;
+  }
+
+  header .linkedin-button img {
+    width: 50px;
+    height: 50px;
   }
 }
 
