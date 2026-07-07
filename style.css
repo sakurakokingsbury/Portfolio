@@ -866,6 +866,7 @@ footer::before {
     grid-area: left;
     align-self: stretch;
     padding-top: 1rem;
+    gap: 2rem;
   }
 
   .header-content {
@@ -884,6 +885,27 @@ footer::before {
   .image-container {
     justify-content: flex-end;
     align-self: center;
+  }
+}
+
+/* Slightly scale header buttons down as the title shrinks (750–630px) */
+@media (min-width: 631px) and (max-width: 750px) {
+  header .buttons .button {
+    height: calc(44px + (100vw - 630px) * 0.05);
+    padding: 0 calc(0.65rem + (100vw - 630px) * 0.00625);
+    font-size: calc(0.85rem + (100vw - 630px) * 0.00083);
+  }
+
+  header .linkedin-button {
+    width: calc(44px + (100vw - 630px) * 0.05);
+    height: calc(44px + (100vw - 630px) * 0.05);
+    min-width: calc(44px + (100vw - 630px) * 0.05);
+    flex: 0 0 calc(44px + (100vw - 630px) * 0.05);
+  }
+
+  header .linkedin-button img {
+    width: calc(44px + (100vw - 630px) * 0.05);
+    height: calc(44px + (100vw - 630px) * 0.05);
   }
 }
 
