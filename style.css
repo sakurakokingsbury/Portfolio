@@ -823,25 +823,6 @@ footer::before {
   }
 }
 
-/* Narrow phones — stacked header with centered photo */
-@media (max-width: 380px) {
-  .header-content {
-    grid-template-areas:
-      "name"
-      "image"
-      "buttons";
-    gap: 2rem;
-  }
-
-  .profile-photo {
-    width: min(360px, 82%);
-  }
-
-  .buttons {
-    justify-content: center;
-  }
-}
-
 /* Two-column header — photo on the right */
 @media (min-width: 381px) {
   .header-content {
@@ -860,6 +841,32 @@ footer::before {
   .image-container {
     justify-content: flex-end;
     align-self: start;
+  }
+}
+
+/* Stacked header — phones and very narrow viewports */
+@media (max-width: 480px), (max-width: 540px) and (pointer: coarse) {
+  .header-content {
+    grid-template-columns: unset;
+    grid-template-areas:
+      "name"
+      "image"
+      "buttons";
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .profile-photo {
+    width: min(360px, 82%);
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .image-container {
+    justify-content: center;
+    align-self: auto;
   }
 }
 
