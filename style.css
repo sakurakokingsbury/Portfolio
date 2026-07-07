@@ -279,6 +279,8 @@ header {
   --title-size: clamp(1.85rem, 3.5vw + 1.15rem, 3.5em);
   container-type: inline-size;
   container-name: title;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .header-left {
@@ -300,19 +302,8 @@ header {
   display: block;
 }
 
-/* Two-column: scale title to column width, three lines until wide enough */
-@media (min-width: 631px) {
-  .nameblock {
-    --title-size: clamp(1.85rem, 6cqi + 0.5rem, 3.5em);
-  }
-}
-
-/* Wide two-column: match reference layout — large two-line title */
-@media (min-width: 901px) {
-  .nameblock {
-    --title-size: clamp(2rem, 3.5vw + 1.15rem, 3.5em);
-  }
-
+/* Wide text column: two-line title */
+@container title (min-width: 26rem) {
   .title-part-im,
   .title-part-kingsbury {
     display: inline;
@@ -321,7 +312,22 @@ header {
   .title-line-2 {
     white-space: nowrap;
   }
+}
 
+/* Medium two-column: force three lines so text stays off the photo */
+@media (min-width: 631px) and (max-width: 900px) {
+  .title-part-im,
+  .title-part-kingsbury {
+    display: block;
+  }
+
+  .title-line-2 {
+    white-space: normal;
+  }
+}
+
+/* Wide two-column layout polish */
+@media (min-width: 901px) {
   .header-left {
     padding-left: clamp(2rem, 5vw, 3rem);
   }
@@ -358,13 +364,14 @@ header {
 }
 
 header .header-left .buttons {
-  margin-top: var(--title-size);
+  margin-top: 0;
 }
 
 .subtitle {
   font-size: clamp(0.95rem, 1.5vw + 0.5rem, 2em);
   color: #ccc;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .image-container {
