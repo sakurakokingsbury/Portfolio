@@ -277,6 +277,8 @@ header {
 .nameblock {
   grid-area: name;
   --title-size: clamp(1.85rem, 3.5vw + 1.15rem, 3.5em);
+  container-type: inline-size;
+  container-name: title;
 }
 
 .header-left {
@@ -298,11 +300,34 @@ header {
   display: block;
 }
 
-/* Two-line title: wide two-column and stacked single-column */
-@media (min-width: 851px), (max-width: 630px) {
+/* Two-column: scale title to column width, three lines until wide enough */
+@media (min-width: 631px) {
+  .nameblock {
+    --title-size: clamp(1.85rem, 6cqi + 0.5rem, 3.5em);
+  }
+}
+
+/* Wide two-column: two lines */
+@media (min-width: 901px) {
   .title-part-im,
   .title-part-kingsbury {
     display: inline;
+  }
+
+  .title-line-2 {
+    white-space: nowrap;
+  }
+}
+
+/* Stacked single-column: always two lines */
+@media (max-width: 630px) {
+  .title-part-im,
+  .title-part-kingsbury {
+    display: inline;
+  }
+
+  .title-line-2 {
+    white-space: normal;
   }
 }
 
