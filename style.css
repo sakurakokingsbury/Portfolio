@@ -302,8 +302,8 @@ header {
   display: block;
 }
 
-/* Wide text column: two-line title only when there is room */
-@container title (min-width: 34rem) {
+/* Two-line title on wide layouts */
+@media (min-width: 1166px) {
   .title-part-im,
   .title-part-kingsbury {
     display: inline;
@@ -314,8 +314,8 @@ header {
   }
 }
 
-/* Two-column: three lines until the layout is wide enough */
-@media (min-width: 631px) and (max-width: 1200px) {
+/* Two-column mid range: three lines so text stays off the photo */
+@media (min-width: 631px) and (max-width: 1165px) {
   .title-part-im,
   .title-part-kingsbury {
     display: block;
