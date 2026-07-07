@@ -814,7 +814,7 @@ footer::before {
 }
 
 /* Narrow phones — stacked header with centered photo */
-@media (max-width: 480px) {
+@media (max-width: 380px) {
   .header-content {
     grid-template-areas:
       "name"
@@ -833,7 +833,7 @@ footer::before {
 }
 
 /* Two-column header — photo on the right */
-@media (min-width: 481px) {
+@media (min-width: 381px) {
   .header-content {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
