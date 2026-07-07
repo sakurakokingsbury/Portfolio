@@ -754,14 +754,6 @@ footer::before {
     padding: 2rem 0 1rem 0;
   }
 
-  .header-content {
-    grid-template-areas:
-      "name"
-      "image"
-      "buttons";
-    gap: 2rem;
-  }
-
   .main-name {
     font-size: 2em;
   }
@@ -770,12 +762,7 @@ footer::before {
     font-size: 1.5em;
   }
 
-  .profile-photo {
-    width: min(360px, 82%);
-  }
-
   .buttons {
-    justify-content: center;
     gap: 0.5rem;
   }
 
@@ -826,14 +813,33 @@ footer::before {
   }
 }
 
-/* Desktop */
-@media (min-width: 791px) {
+/* Narrow phones — stacked header with centered photo */
+@media (max-width: 580px) {
+  .header-content {
+    grid-template-areas:
+      "name"
+      "image"
+      "buttons";
+    gap: 2rem;
+  }
+
+  .profile-photo {
+    width: min(360px, 82%);
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}
+
+/* Two-column header — photo on the right */
+@media (min-width: 581px) {
   .header-content {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "name image"
       "buttons image";
-    column-gap: 4rem;
+    column-gap: 2rem;
   }
 
   .header-content > * {
@@ -842,6 +848,12 @@ footer::before {
 
   .image-container {
     justify-content: flex-end;
+  }
+}
+
+@media (min-width: 791px) {
+  .header-content {
+    column-gap: 4rem;
   }
 }
 
