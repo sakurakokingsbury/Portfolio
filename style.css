@@ -302,8 +302,8 @@ header {
   display: block;
 }
 
-/* Wide text column: two-line title */
-@container title (min-width: 26rem) {
+/* Wide text column: two-line title only when there is room */
+@container title (min-width: 34rem) {
   .title-part-im,
   .title-part-kingsbury {
     display: inline;
@@ -314,8 +314,8 @@ header {
   }
 }
 
-/* Medium two-column: force three lines so text stays off the photo */
-@media (min-width: 631px) and (max-width: 900px) {
+/* Two-column: three lines until the layout is wide enough */
+@media (min-width: 631px) and (max-width: 1200px) {
   .title-part-im,
   .title-part-kingsbury {
     display: block;
@@ -948,7 +948,10 @@ footer::before {
     align-self: stretch;
     padding-top: 1rem;
     padding-left: clamp(1.25rem, 4vw, 2.5rem);
+    padding-right: clamp(0.75rem, 2vw, 1.5rem);
     gap: 0;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .header-content {
@@ -956,7 +959,7 @@ footer::before {
     grid-template-areas:
       "left image"
       "left image";
-    column-gap: clamp(1rem, 4vw, 4rem);
+    column-gap: clamp(1.5rem, 4vw, 4rem);
     align-items: center;
   }
 
@@ -967,6 +970,8 @@ footer::before {
   .image-container {
     justify-content: flex-end;
     align-self: center;
+    padding: clamp(0.75rem, 2vw, 1.5rem);
+    box-sizing: border-box;
   }
 }
 
