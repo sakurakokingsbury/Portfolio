@@ -7,7 +7,8 @@
   --link: #7D0505;
   --link-hover: #590707;
   --radius: 0.5rem;
-} 
+  --layout-collapse: 630px;
+}
  
 * {
   box-sizing: border-box;
@@ -275,6 +276,10 @@ header {
 
 .nameblock {
   grid-area: name;
+}
+
+.header-left {
+  display: contents;
 }
 
 .main-name {
@@ -756,8 +761,8 @@ footer::before {
   }
 }
 
-/* Mobile */
-@media (max-width: 790px) {
+/* Collapsed layout — stacked header, hamburger nav */
+@media (max-width: 630px) {
   .sidebar {
     display: none;
   }
@@ -772,6 +777,36 @@ footer::before {
     padding-right: 1rem;
   }
 
+  .header-content {
+    grid-template-columns: unset;
+    grid-template-areas:
+      "name"
+      "image"
+      "buttons";
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .profile-photo {
+    width: min(360px, 82%);
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .image-container {
+    justify-content: center;
+    align-self: auto;
+  }
+
+  #background .back-button-wrapper {
+    left: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 790px) {
   .buttons {
     gap: 0.5rem;
   }
@@ -814,7 +849,6 @@ footer::before {
 
   #background .back-button-wrapper {
     top: 1rem;
-    left: 1rem;
   }
   
   #background .project-back-button {
@@ -824,14 +858,23 @@ footer::before {
 }
 
 /* Two-column header — photo on the right */
-@media (min-width: 381px) {
+@media (min-width: 631px) {
+  .header-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: left;
+    align-self: stretch;
+    padding-top: 1rem;
+  }
+
   .header-content {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "name image"
-      "buttons image";
+      "left image"
+      "left image";
     column-gap: clamp(1rem, 4vw, 4rem);
-    align-items: start;
+    align-items: center;
   }
 
   .header-content > * {
@@ -840,33 +883,7 @@ footer::before {
 
   .image-container {
     justify-content: flex-end;
-    align-self: start;
-  }
-}
-
-/* Stacked header — phones and very narrow viewports */
-@media (max-width: 480px), (max-width: 540px) and (pointer: coarse) {
-  .header-content {
-    grid-template-columns: unset;
-    grid-template-areas:
-      "name"
-      "image"
-      "buttons";
-    gap: 2rem;
-    align-items: center;
-  }
-
-  .profile-photo {
-    width: min(360px, 82%);
-  }
-
-  .buttons {
-    justify-content: center;
-  }
-
-  .image-container {
-    justify-content: center;
-    align-self: auto;
+    align-self: center;
   }
 }
 

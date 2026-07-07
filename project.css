@@ -287,8 +287,8 @@
 @media (max-width: 790px) {
 
   .project-page {
-    padding: 5rem 1rem 3rem 1rem;
-    padding-left: 1rem;
+    padding: 5rem 1rem 3rem 2rem;
+    padding-left: 80px;
   }
 
   .project-hero {
@@ -372,7 +372,6 @@
 
   .project-back-button {
     top: 1rem;
-    left: 1rem;
     right: auto;
     width: fit-content;
   }
@@ -381,4 +380,15 @@
   grid-template-columns: 1fr;
 }
   
+}
+
+@media (max-width: 630px) {
+  .project-page {
+    padding: 5rem 1rem 3rem 1rem;
+    padding-left: 1rem;
+  }
+
+  .project-back-button {
+    left: 1rem;
+  }
 }
