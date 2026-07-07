@@ -276,6 +276,7 @@ header {
 
 .nameblock {
   grid-area: name;
+  --title-size: clamp(1.85rem, 3.5vw + 1.15rem, 3.5em);
 }
 
 .header-left {
@@ -283,9 +284,30 @@ header {
 }
 
 .main-name {
-  font-size: clamp(1.85rem, 3.5vw + 1.15rem, 3.5em);
+  font-size: var(--title-size);
   margin: 0;
   line-height: 1.15;
+}
+
+.title-line {
+  display: block;
+}
+
+.title-part-im,
+.title-part-kingsbury {
+  display: block;
+}
+
+/* Two-line title: wide two-column and stacked single-column */
+@media (min-width: 851px), (max-width: 630px) {
+  .title-part-im,
+  .title-part-kingsbury {
+    display: inline;
+  }
+}
+
+header .header-left .buttons {
+  margin-top: var(--title-size);
 }
 
 .subtitle {
@@ -867,7 +889,7 @@ footer::before {
     align-self: stretch;
     padding-top: 1rem;
     padding-left: clamp(1.25rem, 4vw, 2.5rem);
-    gap: 2rem;
+    gap: 0;
   }
 
   .header-content {
