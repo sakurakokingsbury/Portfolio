@@ -367,7 +367,7 @@ header .header-left .buttons {
   font-size: clamp(0.95rem, 1.5vw + 0.5rem, 2em);
   color: #ccc;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .image-container {
