@@ -303,14 +303,14 @@ header {
 }
 
 /* Two-line title on wide layouts */
-@media (min-width: 1100px) {
+@media (min-width: 631px) and (max-width: 1099px) {
   .title-part-im,
   .title-part-kingsbury {
-    display: inline;
+    display: block;
   }
 
   .title-line-2 {
-    white-space: normal; /* was nowrap */
+    white-space: normal;
   }
 }
 
@@ -937,22 +937,17 @@ footer::before {
 /* Two-column header — photo on the right */
 @media (min-width: 631px) {
   .header-left {
-    overflow: visible; /* was hidden */
-  }
-
-  .header-content {
-    grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
-    column-gap: clamp(2rem, 5vw, 5rem);
-  }
-
-  .main-name {
-    font-size: clamp(2rem, 4.2vw, 4.2rem);
-    overflow-wrap: normal;
-    word-break: normal;
-  }
-
-  .title-line-2 {
-    white-space: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: left;
+    align-self: stretch;
+    padding-top: 1rem;
+    padding-left: 0;
+    padding-right: clamp(0.75rem, 2vw, 1.5rem);
+    gap: 0;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   .header-content {
