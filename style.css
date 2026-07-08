@@ -293,36 +293,25 @@ header {
   line-height: 1.15;
 }
 
-.title-line {
-  display: block;
-}
-
+/* Default: safer 3-line title */
 .title-part-im,
 .title-part-kingsbury {
   display: block;
 }
 
-/* Two-line title on wide layouts */
-@media (min-width: 631px) and (max-width: 1099px) {
-  .title-part-im,
-  .title-part-kingsbury {
-    display: block;
-  }
-
-  .title-line-2 {
-    white-space: normal;
-  }
+.title-line-2 {
+  white-space: normal;
 }
 
-/* Two-column mid range: three lines so text stays off the photo */
-@media (min-width: 631px) and (max-width: 1099px) {
+/* Large screens: 2-line title */
+@media (min-width: 1300px) {
   .title-part-im,
   .title-part-kingsbury {
-    display: block;
+    display: inline;
   }
 
   .title-line-2 {
-    white-space: normal;
+    white-space: nowrap;
   }
 }
 
