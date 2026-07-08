@@ -304,7 +304,7 @@ header {
 }
 
 /* Large screens: 2-line title */
-@media (min-width: 1300px) {
+@media (min-width: 1170px) {
   .title-part-im,
   .title-part-kingsbury {
     display: inline;
