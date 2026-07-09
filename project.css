@@ -284,6 +284,15 @@
   }
 }
 
+@media (max-width: 450px) {
+  .results-grid,
+  .iteration-grid,
+  .challenge-list,
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 790px) {
 
   .project-page {
@@ -375,11 +384,6 @@
     right: auto;
     width: fit-content;
   }
-
-  .project-image-block {
-  grid-template-columns: 1fr;
-}
-  
 }
 
 @media (max-width: 630px) {
@@ -391,4 +395,8 @@
   .project-back-button {
     left: 1rem;
   }
+
+   .project-image-block {
+  grid-template-columns: 1fr;
+   }
 }
