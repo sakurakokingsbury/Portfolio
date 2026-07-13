@@ -2,21 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  
-  <!-- THIS IS THE MOST IMPORTANT LINE -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title> NaviBot: Autonomous Navigator | Sakurako Kingsbury</title>
 
-  <link rel="stylesheet" href="../style.css?v=5">
+  <link rel="stylesheet" href="../style.css?v=4">
   <link rel="stylesheet" href="../project.css?v=5">
 
   <link rel="icon" type="image/png" href="../images/favicon.png">
 </head>
 
 <body>
-  
-<nav class="sidebar" id="sidebar">
+
+ <nav class="sidebar" id="sidebar">
   <ul>
     <li><a href="../index.html#about"><span class="icon">👤</span><span class="label">About</span></a></li>
     <li><a href="../experience.html"><span class="icon">📄</span><span class="label">Experience</span></a></li>
@@ -24,7 +23,7 @@
     <li><a href="../index.html#contact"><span class="icon">✉️</span><span class="label">Contact</span></a></li>
   </ul>
 </nav>
-  
+
   <button class="hamburger" id="hamburger">&#9776;</button>
 <nav class="mobile-menu" id="mobileMenu">
   <ul>
@@ -33,13 +32,14 @@
     <li><a href="../index.html#projects">Featured Projects</a></li>
     <li><a href="../index.html#contact">Contact</a></li>
   </ul>
-  
-   <div class="mobile-menu-footer">
+
+     <div class="mobile-menu-footer">
       <a href="../images/Sakurako Kingsbury Resume.pdf" target="_blank" class="button primary mobile-resume-link">Resume</a>      
       <a href="https://www.linkedin.com/in/sakurakokingsbury/" class="linkedin-button" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"> <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/linkedin-app-white-icon.png" alt="LinkedIn">
       </a>  
     </div>
 </nav>
+
 
 <main class="project-page">
 
@@ -49,17 +49,19 @@
   <section class="project-hero">
     <div class="project-hero-text">
       <p class="project-label">Featured Project</p>
-      <h1>NaviBot: Autonomous Navigator </h1>
+      
+      <h1>NaviBot: Autonomous Navigator</h1>
       <p class="project-subtitle">
-        Designed and built a fully autonomous robot capable of navigating an obstacle course
-        using ultrasonic sensing and coordinate-based pathfinding, completing the final course
-        in <strong>1 minute 21 seconds with zero collisions</strong>.
+        Designed and rapidly prototyped a fully autonomous navigation robot through
+        <strong>six major iterations</strong>, integrating ultrasonic obstacle avoidance,
+        LiDAR-based position tracking, and coordinate-based pathfinding to complete the final
+        course in <strong>1 minute 21 seconds with zero collisions</strong>.
       </p>
     </div>
 
     <div class="project-hero-image">
      <figure class="project-hero-figure">
-       <img src="../images/navi isometric.jpeg" alt="Final autonomous navigation robot">
+       <img src="../images/navi assembly.jpg" alt="Final autonomous navigation robot">
        <figcaption class="image-caption">Final Assembly of NaviBot</figcaption>
      </figure>
     </div>
@@ -67,106 +69,150 @@
 
   <!-- Overview -->
   <section class="project-section">
-  <h2>Project Overview</h2>
+  <h2>Overview</h2>
   <p>
-    NaviBot is a fully autonomous robot designed to navigate an obstacle course using ultrasonic sensing, 
-    coordinate-based pathfinding, and real-time obstacle avoidance. The project combined custom mechanical design, 
-    embedded electronics, sensor integration, and autonomous control software into a compact 3D-printed platform 
-    that completed the final competition course in 1 minute 21 seconds with zero collisions.
+    NaviBot is a fully autonomous robot developed through a 5-week rapid-prototyping
+    process to navigate a smart obstacle course without human control. The system combined
+    ultrasonic obstacle detection, MQTT-delivered LiDAR position data, coordinate-based
+    pathfinding, and a custom 3D-printed chassis into a compact mobile platform.
+  </p>
+
+  <p>
+    Six major chassis iterations were designed, fabricated, assembled, and tested as the
+    project progressed through increasingly complex navigation challenges. Each prototype
+    addressed problems discovered during physical testing, including sensor alignment,
+    drivetrain stability, wire interference, electronics packaging, and component retention.
+    The final robot reached four assigned target locations in 1 minute 21 seconds while
+    completing the course with zero collisions.
   </p>
 </section>
 
   <!-- Key Results -->
 <section class="project-section">
   <h2>Key Results</h2>
-
   <div class="results-grid">
+
     <div class="result-card">
       <h3>1:21</h3>
       <p>Final autonomous course completion time</p>
     </div>
 
     <div class="result-card">
-      <h3>ZERO</h3>
-      <p>Collisions during final competition run</p>
+      <h3>Zero Collisions</h3>
+      <p>Complete navigation without error</p>
     </div>
 
     <div class="result-card">
-      <h3>6</h3>
-      <p>Major chassis design iterations developed and tested</p>
+      <h3>6 Iterations</h3>
+      <p>Prototypes designed, assembled, and tested</p>
     </div>
 
     <div class="result-card">
-      <h3>MQTT & LiDAR</h3>
-      <p>Integrated real-time position tracking with autonomous navigation</p>
+      <h3>Real-time Position Tracking</h3>
+      <p>Autonomous navigation utilizing MQTT & LiDAR</p>
     </div>
+
   </div>
 </section>
 
   <!-- Contributions -->
   <section class="project-section">
-    <h2>Personal Contributions</h2>
-    <ul class="project-list">
-      <li>Led the mechanical design and CAD development of the robot chassis in SolidWorks.</li>
-      <li>Designed integrated mounts for sensors, electronics, OLED display, and structural supports.</li>
-      <li>Optimized sensor coverage, wiring organization, and component packaging for reliable operation.</li>
-      <li>Contributed to the integration and testing of the autonomous navigation and obstacle avoidance system.</li>
-    </ul>
-  </section>
+  <h2>My Contributions</h2>
+  <ul class="project-list">
+    <li>
+      Led the mechanical design and rapid prototyping of six major chassis iterations in SOLIDWORKS.
+    </li>
+    <li>
+      Designed integrated mounting features for the drivetrain, three ultrasonic sensors, OLED display, LiDAR 
+      tracking float, microcontroller, motor driver, and power distribution board.
+    </li>
+    <li>
+      Evaluated each prototype through dimensional inspection, assembly, and physical
+      road testing, then revised the design to improve sensor retention, drivetrain stability,
+      wire routing, component packaging, and manufacturability.
+    </li>
+    <li>
+      Contributed to system assembly, autonomous-navigation testing, and iterative tuning
+      of the pathfinding and obstacle-avoidance system.
+    </li>
+  </ul>
+</section>
 
   <!-- Mechanical Design -->
   <section class="project-section">
     <h2>Mechanical Design</h2>
-    <div class="project-two-column">
+
+    <div class="mechanical-design text">
     <div>
       <p>
-        NaviBot was designed in SolidWorks as a compact autonomous robot that integrated
-        the drivetrain, sensors, electronics, and display into a single 3D-printed chassis.
-        Integrated mounting features were built directly into the structure for the ultrasonic
-        sensors, OLED display, motors, PCB, and supporting hardware, reducing assembly complexity
-        while maintaining a lightweight and manufacturable design.
+        NaviBot was designed in SOLIDWORKS as a compact, single-piece chassis mounted
+        above a Pololu Zumo drivetrain. Integrated features supported the ultrasonic sensors,
+        OLED display, LiDAR tracking float, motor driver, WeMos microcontroller, and power
+        distribution board while keeping the complete chassis within the four-hour printing limit.
       </p>
 
       <p>
-        Multiple design iterations refined sensor placement, structural stability, wire routing,
-        and overall system packaging. The final design incorporated reinforced sensor mounts,
-        improved motor supports, and a crate-style electronics compartment that securely housed
-        the PCB and wiring while preserving accessibility for assembly and testing.
+        The mechanical architecture was developed through repeated build-test-redesign cycles.
+        Physical testing revealed issues that were not apparent in CAD, including loose sensor
+        mounts, drivetrain movement, wires interfering with the tracks, uneven weight distribution,
+        and insufficient electronics space. Each successive prototype incorporated targeted
+        changes before being fabricated and evaluated in the next road test.
       </p>
     </div>
 
-      <div class="project-image-block">
+      <div class="mechanical-image-row">
+        <figure>
+        <img src="../images/navi isometric.jpeg" alt="Real Robot" />
+        </figure>
+
+        <figure>
         <img src="../images/navi cad drawing.png" alt="Engineering drawing of final robot chassis" />
-        <p class="image-caption">Final Chassis Drawing and Integrated Mounting Features</p>
-      </div>
+        </figure>
+    </div>
     </div>
   </section>
 
  <!-- Iteration -->
 <section class="project-section">
-  <h2>Design Iteration</h2>
+  <h2>Rapid Prototyping and Design Iteration</h2>
+
+  <p>
+    Six chassis models were produced throughout four major stages. Each model printed as a single part, assembled with 
+    the robot hardware, and evaluated through physical testing before the next revision was developed.
+  </p>
+
   <div class="iteration-grid">
-    
+
     <div class="iteration-card">
-      <h3>Initial Prototype</h3>
+      <h3>Initial Platform</h3>
       <p>
-       Established drivetrain, sensor placement, and overall chassis packaging.
+        Began with an experimental base plate used to establish the drivetrain interface,
+        chassis dimensions, bolt locations, and first ultrasonic sensor mount.
       </p>
     </div>
 
     <div class="iteration-card">
-      <h3>Integration Refinement</h3>
+      <h3>First Road-Test Chassis</h3>
       <p>
-        Improved sensor coverage, structural stability, wire routing, and electronics 
-        organization through multiple design iterations.
+        Corrected the sensor fit and raised the WeMos mounting position to create space for
+        the motor controller, producing the first fully integrated road-test prototype.
       </p>
     </div>
-    
+
     <div class="iteration-card">
-      <h3>Final Design</h3>
+      <h3>Three-Sensor Integration</h3>
       <p>
-        Integrated PCB mounting, reinforced sensor supports, and a compact electronics compartment 
-        to improve manufacturability and reliability.
+        Added two 45-degree ultrasonic sensor mounts, expanded the electronics area, stabilized
+        the motors, separated wiring from the tracks, and incorporated the LiDAR tracking-float mount.
+      </p>
+    </div>
+
+    <div class="iteration-card">
+      <h3>Final Chassis</h3>
+      <p>
+        Replaced the peg-based board mounts with a compact crate-style compartment, tightened
+        the sensor interfaces, and added an angled OLED mount to improve packaging,
+        accessibility, wire management, and reliability.
       </p>
     </div>
 
@@ -176,29 +222,31 @@
   <!-- Electronics -->
   <section class="project-section">
     <h2>Electronics and System Architecture</h2>
-    <div class="project-two-column">
-      <div>
+
         <ul class="project-list">
           <li>Wemos D1R1 (ESP8266) microcontroller for autonomous navigation control</li>
           <li>Three ultrasonic sensors for real-time obstacle detection and wall tracking</li>
           <li>DC drivetrain motors with motor driver integration for autonomous movement</li>
           <li>OLED display for live coordinate and navigation feedback</li>
-          <li>Custom PCB for organized power and signal distribution</li>
+          <li>Perfboard for organized power and signal distribution</li>
         </ul>
 
+    <div class="electronics-detail-row">
+      <div class="electronics-detail-text">
         <p>
-          The electronics architecture was designed around compact packaging and reliable sensor 
-          integration within a limited chassis footprint. As development progressed, the system 
-          transitioned from a breadboard prototype to a custom PCB layout, improving wiring 
-          organization, maintainability, and overall reliability.
+          The electronics architecture integrated the WeMos D1R1 microcontroller, motor driver,
+          three ultrasonic sensors, OLED display, drivetrain motors, and a soldered power-distribution
+          board within the compact chassis. Development initially relied on temporary wiring before
+          transitioning to a soldered board for the final assembly, providing additional power and
+          ground connections while improving organization and reliability. Color-coded wiring and
+          zip ties were used to simplify troubleshooting and prevent cables from interfering with
+          the drivetrain.
          </p>
-        
       </div>
 
-      <div class="project-image-block">
+      <figure class="electronics-detail-image">
         <img src="../images/navi wiring.png" alt="Navigation robot wiring diagram" />
-        <p class="image-caption">System Wiring and Board-to-Sensor Connections</p>
-      </div>
+      </figure>
     </div>
   </section>
 
@@ -223,6 +271,7 @@
   </p>
 </section>
 
+<!--
 <section class="project-section">
   <h2>Challenges and Engineering Decisions</h2>
   <div class="challenge-list">
@@ -250,14 +299,13 @@
     </div>
   </div>
 </section>
+-->
 </main>
   
 <footer>
   <p>© 2026 Sakurako Kingsbury</p>  
   <p><small>Built with HTML, CSS, and JavaScript</small></p>
 </footer>
-  
-
 
 <script>
   const mobileMenu = document.getElementById('mobileMenu');
