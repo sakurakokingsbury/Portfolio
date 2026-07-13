@@ -17,7 +17,7 @@
 .project-page .result-card p,
 .project-page .iteration-card p,
 .project-page .challenge-item p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 1.6;
 }
 
@@ -208,8 +208,8 @@
 .iteration-card h3,
 .challenge-item h3 {
   margin: 0 0 0.5rem 0;
-  font-size: 1.2rem;
-  line-height: 1.3;
+  font-size: 1rem;
+  line-height: 1.2;
   
 }
 
