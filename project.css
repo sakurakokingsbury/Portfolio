@@ -61,11 +61,64 @@
   padding: 0;
 }
 
-@media (max-width: 790px) {
-  .project-hero-figure {
-    max-width: 100%;
-    width: 100%;
-  }
+.mechanical-design-text {
+  width: 100%;
+  max-width: 850px;
+}
+
+.mechanical-image-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.mechanical-image-row figure {
+  margin: 0;
+  min-width: 0;
+}
+
+.mechanical-image-row img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
+}
+
+.electronics-list {
+  width: 100%;
+  max-width: 850px;
+  margin-bottom: 1.75rem;
+}
+
+.electronics-detail-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(400px, 0.9fr);
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+}
+
+.electronics-detail-text {
+  min-width: 0;
+}
+
+.electronics-detail-text p {
+  margin: 0;
+}
+
+.electronics-detail-image {
+  width: 100%;
+  margin: 0;
+  min-width: 0;
+}
+
+.electronics-detail-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius);
 }
 
 .project-hero-image img,
@@ -380,6 +433,19 @@
     top: 1rem;
     right: auto;
     width: fit-content;
+  }
+
+  .project-hero-figure {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .mechanical-image-row,
+  .electronics-detail-row {
+    grid-template-columns: 1fr;
+  }
+  .electronics-detail-image {
+    width: 100%;
   }
 }
 
