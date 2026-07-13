@@ -198,6 +198,7 @@
           <li>Arduino microcontroller for autonomous behavior and emotional state control</li>
           <li>Ultrasonic sensor for obstacle detection and autonomous movement</li>
           <li>LCD display for facial expressions and emotional feedback</li>
+          <li>PCF8574 I2C LCD interface module for reduced two-wire LCD communication</li>
           <li>RGB LED for additional emotional state indication</li>
           <li>Push buttons and photoresistor for interactive user input</li>
           <li>DC motors and drivetrain system for autonomous roaming behavior</li>
@@ -206,10 +207,13 @@
     <div class="electronics-detail-row">
       <div class="electronics-detail-text">
         <p>
-          The electronics architecture prioritized compact packaging and reliable integration within 
-          the limited chassis volume. The system was initially developed in Tinkercad before physical 
-          implementation, with wiring layout, power distribution, and component placement refined 
-          throughout testing to improve reliability and maintainability.
+          The electronics architecture prioritized compact packaging, efficient I/O utilization, and 
+          reliable integration within the limited chassis volume. The system was first developed and 
+          validated in Tinkercad before physical implementation, allowing the circuitry and software 
+          to be tested prior to assembly. To overcome the Arduino Uno's limited GPIO resources, a 
+          PCF8574-based I2C interface module reduced the LCD connection from six pins to two, 
+          freeing additional I/O for the ultrasonic sensor, RGB LED, push buttons, and other system 
+          functions while simplifying the overall wiring architecture.
         </p>
       </div>
 
