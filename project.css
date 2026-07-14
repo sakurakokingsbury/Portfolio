@@ -86,6 +86,13 @@
   border-radius: var(--radius);
 }
 
+.limited-height-image {
+  max-height: 400px;
+  max-width: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
 .electronics-list {
   width: 100%;
   max-width: 850px;
