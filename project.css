@@ -87,7 +87,7 @@
 }
 
 .limited-height-image {
-  max-height: 400px;
+  max-height: 700px;
   max-width: 100%;
   width: auto;
   object-fit: contain;
