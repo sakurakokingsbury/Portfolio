@@ -92,6 +92,7 @@
   width: auto;
   object-fit: contain;
   border-radius: var(--radius);
+  overflow: hidden;
 }
 
 .electronics-list {
