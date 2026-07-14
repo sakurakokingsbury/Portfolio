@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>LeafLink | Sakurako Kingsbury</title>
+  <title> LeafLink: Smart Plant Care System | Sakurako Kingsbury</title>
 
   <link rel="stylesheet" href="../style.css?v=4">
-  <link rel="stylesheet" href="../project.css?v=4">
+  <link rel="stylesheet" href="../project.css?v=5">
+
   <link rel="icon" type="image/png" href="../images/favicon.png">
 </head>
 
 <body>
-  
-<nav class="sidebar" id="sidebar">
+
+ <nav class="sidebar" id="sidebar">
   <ul>
     <li><a href="../index.html#about"><span class="icon">👤</span><span class="label">About</span></a></li>
     <li><a href="../experience.html"><span class="icon">📄</span><span class="label">Experience</span></a></li>
@@ -21,7 +23,7 @@
     <li><a href="../index.html#contact"><span class="icon">✉️</span><span class="label">Contact</span></a></li>
   </ul>
 </nav>
-  
+
   <button class="hamburger" id="hamburger">&#9776;</button>
 <nav class="mobile-menu" id="mobileMenu">
   <ul>
@@ -38,110 +40,148 @@
     </div>
 </nav>
 
+
 <main class="project-page">
 
   <a href="../index.html#projects" class="button secondary project-back-button">← Back to All Projects</a>
 
+  <!-- Hero -->
   <section class="project-hero">
     <div class="project-hero-text">
       <p class="project-label">Featured Project</p>
       <h1>LeafLink: Smart Plant Care System</h1>
       <p class="project-subtitle">
-        Designed and built an IoT-enabled plant care system that monitors environmental conditions and 
-        automatically waters plants using a servo-actuated valve and real-time sensor feedback.
+        Designed and built an IoT-enabled plant care system that monitored four environmental conditions, 
+        automatically dispensed water through a servo-actuated valve, and published real-time sensor data 
+        during a <strong>four-day deployment</strong>.
       </p>
     </div>
 
 <div class="project-hero-image">
   <figure class="project-hero-figure">
-    <img src="../images/plant testing.jpeg" alt="Final smart watering system mounted on plant pot">
-    <figcaption class="image-caption">LeafLink SolidWorks Model</figcaption>
+    <img src="../images/plant assembly.jpg" alt="Automatic Plant Watering System">
   </figure>
 </div>
-    
   </section>
 
+  <!-- Overview -->
   <section class="project-section">
-    <h2>Project Overview</h2>
+  <h2>Overview</h2>
 
-    <p>
-      LeafLink is an IoT-enabled plant care system designed to monitor environmental conditions and
-      automatically water indoor plants when needed. Combining embedded sensors, a servo-actuated
-      valve, MQTT-based data publishing, and a custom 3D-printed structure, the system continuously
-      tracks plant health while reducing the need for manual watering. The system monitors and publishes 
-      the soil moisture, atmospheric temperature, air humidity, and illuminance.
-    </p>
-    
-  </section>
+  <p>
+    LeafLink is an automated plant care system designed to reduce manual watering
+    while remotely monitoring the conditions surrounding an indoor plant. An ESP32
+    collected soil moisture, air temperature, relative humidity, and illuminance data,
+    publishing each measurement to an MQTT-based IoT network at ten-second intervals.
+  </p>
 
-  <section class="project-section">
-    <h2>Key Results</h2>
+  <p>
+    When the measured soil moisture fell below a calibrated threshold, the system
+    actuated a mechanical valve to release water from an integrated reservoir. The
+    electronics, valve, servo, water supply, and supporting structure were combined
+    into a compact 3D-printed assembly that attached directly to the side of an
+    existing plant pot rather than requiring a custom planter.
+  </p>
+</section>
 
-    <div class="results-grid">
-      <div class="result-card">
-        <h3>4</h3>
-        <p>Environmental data streams collected</p>
-      </div>
-
-      <div class="result-card">
-        <h3>4 days</h3>
-        <p>Successful final deployment data collection</p>
-      </div>
-
-      <div class="result-card">
-        <h3>2h 16m</h3>
-        <p>Final 3D print time</p>
-      </div>
-
-      <div class="result-card">
-        <h3>10 seconds</h3>
-        <p>IoT sensor publishing interval</p>
-      </div>
-    </div>
-  </section>
-
+  <!-- Key Results -->
 <section class="project-section">
-  <h2>Personal Contributions</h2>
+  <h2>Key Results</h2>
+  <div class="results-grid">
+
+    <div class="result-card">
+      <h3>4 Measurements</h3>
+      <p>Soil moisture, air temperature, relative humidity, and illuminance</p>
+    </div>
+
+    <div class="result-card">
+      <h3>4-Day Deployment</h3>
+      <p>Continuous environmental monitoring and automated watering</p>
+    </div>
+
+    <div class="result-card">
+      <h3>2 hr 16 min</h3>
+      <p>Final single-print manufacturing time</p>
+    </div>
+
+    <div class="result-card">
+      <h3>10 Seconds</h3>
+      <p>MQTT sensor-data publishing interval</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contributions -->
+<section class="project-section">
+  <h2>My Contributions</h2>
 
   <ul class="project-list">
-      <li>Led the mechanical design, embedded software development, and system integration of the project.</li>
-      <li>Designed and iterated a compact 3D-printed structure integrating the reservoir, valve, sensors, electronics, and wiring.</li>
-      <li>Developed the Arduino software responsible for environmental sensing, valve actuation, and MQTT-based IoT communication.</li>
-      <li>Performed calibration, debugging, deployment testing, and multi-day system validation.</li>
+    <li>
+      Led the mechanical design and product integration, developing the selected concept into the final 
+      SOLIDWORKS assembly, manufacturing drawings, and 3D-printed prototype.
+    </li>
+
+    <li>
+      Designed a compact clamp-on structure that integrated the water reservoir, mechanical valve, servo 
+      motor, sensors, electronics, and wiring while separating water-handling components from the electrical 
+      system.
+    </li>
+
+    <li>
+      Co-developed the ESP32 software for environmental sensing, threshold-based valve actuation, sensor 
+      conversion, and MQTT communication.
+    </li>
+
+    <li>
+      Calibrated the valve actuation angles, debugged sensor and network communication issues, and completed 
+      the final four-day deployment and system validation.
+    </li>
   </ul>
 </section>
 
-  <section class="project-section">
-    <h2>Mechanical Design</h2>
+  <!-- Mechanical Design -->
+ <section class="project-section">
+  <h2>Mechanical Design</h2>
 
-    <div class="project-two-column">
-      <div>
-        <p>
-          The mechanical design was developed as a compact clamp-on attachment rather than a replacement
-          plant pot, allowing the system to integrate with existing indoor planters. The 3D-printed structure
-          housed the reservoir, valve, servo motor, sensors, and electronics within a single assembly while
-          minimizing water exposure to sensitive components.
-        </p>
+  <div class="mechanical-design-text">
+    <div>
+      <p>
+        LeafLink was designed in SOLIDWORKS as a compact attachment that slid over
+        the edge of an existing indoor plant pot. This approach avoided replacing
+        the planter while creating an integrated support for the water reservoir,
+        servo-actuated valve, sensors, electronics, and associated wiring.
+      </p>
 
-        <p>
-          Multiple design iterations refined component packaging, reservoir integration, and electronics
-          placement. The final design provided reliable valve actuation, accessible electronics, and secure
-          mounting while maintaining a compact footprint suitable for indoor use.
-        </p>
-      </div>
+      <p>
+        The structure separated the water-handling components from the electronics
+        by positioning the reservoir and valve toward the front while routing the
+        control hardware and wiring behind them. The initial print revealed dimensional
+        errors around the valve and lacked sufficient space for the water container,
+        so the design was revised before the final 2-hour-16-minute print.
+      </p>
 
-      <div class="project-image-block">
+      <p>
+        The final assembly fit the plant pot securely and provided reliable alignment
+        between the servo and valve. To reduce the torque required from the small servo,
+        the valve was partially disassembled and modified by removing its internal spring
+        before final calibration.
+      </p>
+    </div>
+
+      <div class="mechanical-image-row">
+        <figure>
         <img src="../images/plant exploded view.png" alt="Exploded view of smart watering system design">
-        <p class="image-caption">Exploded Assembly Showing Integrated Components</p>
-      </div>
+        </figure>
+
+        <figure>
+          <img src="../images/plant testing.jpeg" alt="Final smart watering system mounted on plant pot">
+        </figure>
+      
+    </div>
     </div>
   </section>
-
-<div class="project-image-block">
-        <img src="../videos/plant.mov" alt="Device testing">
-        <p class="image-caption">LeafLink Valve Actuator </p>
-      </div>
-  
+  <!--
   <section class="project-section">
   <h2>Design Iteration</h2>
   <div class="iteration-grid">
@@ -169,56 +209,70 @@
     
   </div>
 </section>
-
+-->
   <section class="project-section">
     <h2>Electronics and System Architecture</h2>
 
-    <div class="project-two-column">
-      <div>
-        <ul class="project-list">
-          <li>ESP32-based microcontroller for sensor reading, servo control, and IoT communication</li>
-          <li>Soil moisture sensor for determining when the plant required water</li>
-          <li>DHT sensor for atmospheric temperature and air humidity monitoring</li>
-          <li>Photocell sensor for measuring plant light exposure through illuminance</li>
-          <li>Servo motor for opening and closing the mechanical water valve</li>
-          <li>MQTT publishing system for sending sensor readings to the Stevens IoT network</li>
+        <ul class="project-list electronics-list">
+          <li>ESP32 microcontroller for sensor acquisition, valve control, and IoT communication</li>
+          <li>Capacitive soil-moisture sensor for determining when watering was required</li>
+          <li>DHT11 sensor for air-temperature and relative-humidity monitoring</li>
+         <li>Photocell and voltage-divider circuit for estimating illuminance</li>
+          <li>Servo motor and modified mechanical valve for controlling water flow</li>
+          <li>MQTT client for publishing environmental data to the Stevens IoT network</li>
         </ul>
         
-        <p> 
-          The system architecture centered on an ESP32 microcontroller that monitored environmental conditions,
-          evaluated soil moisture levels, controlled valve actuation, and published sensor data to the Stevens
-          IoT network. Special consideration was given to separating water-handling components from the
-          electronics while maintaining accessibility for testing and maintenance.
+    <div class="electronics-detail-row">
+      <div class="electronics-detail-text">
+        <p>
+          The system architecture centered on an ESP32 that sampled each environmental
+          sensor, converted the raw measurements into usable values, evaluated the soil
+          moisture against a watering threshold, and commanded the servo-actuated valve.
+          Sensor readings were then transmitted to separate MQTT topics for remote
+          monitoring and deployment analysis.
+        </p>
+
+        <p>
+          Component placement was arranged to reduce the risk of water reaching the
+          breadboard and control electronics while keeping the wiring accessible for
+          calibration and troubleshooting. Faulty connections and inconsistent photocell
+          readings were resolved through component replacement and circuit rewiring
+          during integration.
         </p>
       </div>
 
-      <div class="project-image-block">
+      <figure class="electronics-detail-image">
         <img src="../images/plant assembly.png" alt="Assembled smart watering system">
-        <p class="image-caption">LeafLink Mounted to an Indoor Planter</p>
-      </div>
+      </figure>
     </div>
-    
   </section>
 
   <section class="project-section">
-    <h2>Software and Control Logic</h2>
-    
-    <p>
-      The control software monitored soil moisture, temperature, humidity, and illuminance while
-      continuously evaluating whether watering was required. When soil moisture dropped below a
-      predefined threshold, the servo motor opened the valve to deliver water before returning to
-      its closed position.
-    </p>
+  <h2>Software and Control Logic</h2>
 
-    <p>
-      Environmental data was published to the Stevens IoT network every 10 seconds using MQTT,
-      enabling remote monitoring and multi-day deployment testing. System reliability was improved
-      through iterative debugging, including resolving communication issues that initially prevented
-      sensor data from publishing online.
-    </p>
-    
-  </section>
+  <p>
+    The ESP32 sampled the soil-moisture sensor, DHT11, and photocell to determine
+    soil moisture percentage, air temperature, relative humidity, and illuminance.
+    Raw photocell voltage was converted into an estimated lux value, while the soil
+    sensor was mapped between experimentally determined wet and dry calibration limits.
+  </p>
 
+  <p>
+    When soil moisture fell below 45%, the controller rotated the servo from its
+    closed position at 0° to its calibrated open position at 100°. The valve remained
+    open for two seconds before closing, allowing the system to dispense a controlled
+    quantity of water rather than leaving the reservoir continuously open.
+  </p>
+
+  <p>
+    Each environmental measurement was published to the Stevens IoT network every
+    ten seconds using MQTT. During the initial deployment, the sensors continued
+    producing valid local readings but no data appeared online. Debugging identified
+    a missing MQTT client-loop call, and restoring it enabled continuous publication
+    throughout the final four-day deployment.
+  </p>
+</section>
+<!--
   <section class="project-section">
     <h2>Challenges and Engineering Decisions</h2>
 
@@ -272,7 +326,8 @@
 
   </div>
 </section>
-  
+-->
+
 </main>
 
   <footer>
