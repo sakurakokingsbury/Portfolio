@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Automotive-Themed Playground | Sakurako Kingsbury</title>
+
+  <link rel="stylesheet" href="../style.css?v=4">
+  <link rel="stylesheet" href="../project.css?v=5">
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+</head>
+
+<body>
+
+<nav class="sidebar" id="sidebar">
+  <ul>
+    <li><a href="../index.html#about"><span class="icon">👤</span><span class="label">About</span></a></li>
+    <li><a href="../experience.html"><span class="icon">📄</span><span class="label">Experience</span></a></li>
+    <li><a href="../index.html#projects"><span class="icon">⚙️</span><span class="label">Featured Projects</span></a></li>
+    <li><a href="../index.html#contact"><span class="icon">✉️</span><span class="label">Contact</span></a></li>
+  </ul>
+</nav>
+
+<button class="hamburger" id="hamburger">&#9776;</button>
+
+<nav class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="../index.html#about">About</a></li>
+    <li><a href="../experience.html">Experience</a></li>
+    <li><a href="../index.html#projects">Featured Projects</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+
+  <div class="mobile-menu-footer">
+    <a href="../images/Sakurako Kingsbury Resume.pdf" target="_blank"
+       class="button primary mobile-resume-link">Resume</a>
+  </div>
+</nav>
+
+
+<main class="project-page">
+
+  <a href="../index.html#projects"
+     class="button secondary project-back-button">
+    ← Back to All Projects
+  </a>
+
+
+  <!-- Hero -->
+  <section class="project-hero">
+
+    <div class="project-hero-text">
+
+      <p class="project-label">CAD & Mechanical Design</p>
+
+      <h1>Automotive Playground Design</h1>
+
+      <p class="project-subtitle">
+        A complete SOLIDWORKS playground assembly designed around
+        safety, structural requirements, and an automotive theme for
+        children ages 2-5.
+      </p>
+
+    </div>
+
+    <div class="project-hero-image">
+      <figure class="project-hero-figure">
+        <img src="../images/auto double.jpg"
+             alt="Complete automotive playground CAD assembly">
+      </figure>
+    </div>
+
+  </section>
+
+
+  <!-- Overview -->
+  <section class="project-section">
+
+    <h2>Overview</h2>
+
+    <p>
+      This project focused on the mechanical design of a residential
+      playground combining a slide, tire climbing wall, and free-hanging
+      tire swing into one complete assembly. The structure was modeled
+      in SOLIDWORKS with an automotive theme and designed around the
+      dimensional and safety requirements for children ages 2-5.
+    </p>
+
+    <p>
+      The final design incorporated pressure-treated lumber, HDPE,
+      steel hardware, and repurposed tires while considering component
+      placement, accessibility, structural loading, and guidelines from the 
+      U.S. Consumer Product Safety Commission (CPSC) Outdoor Home Playground
+      Safety Handbook.
+    </p>
+
+    <p>
+      Reference:
+      <a href="https://www.cpsc.gov/s3fs-public/324.pdf"
+          target="_blank"
+          rel="noopener noreferrer">
+         CPSC Outdoor Home Playground Safety Handbook
+       </a>
+     </p>
+
+  </section>
+
+
+  <!-- Contributions -->
+  <section class="project-section">
+
+    <h2>My Contributions</h2>
+    
+    <ul class="project-list">
+      <li>Designed and modeled the complete playground structure in SOLIDWORKS, including all components and final assembly.</li>
+      <li>Created the main deck, staircase, slide, tire climbing wall, swing structure, safety railings, and automotive themed features.</li>
+      <li>Produced engineering drawings, assembly visuals, and presentation renders from the completed CAD model.</li>
+      <li>Contributed to structural analysis and design validation.</li>
+    </ul>
+
+  </section>
+
+
+  <!-- Mechanical Design -->
+  <section class="project-section">
+
+    <h2>Mechanical Design</h2>
+
+    <p>
+      I designed the complete playset in SOLIDWORKS, including the main deck,
+      staircase, slide, tire climbing wall, swing structure, safety railings,
+      and automotive-themed features. Individual components and subassemblies
+      were developed and integrated into the final assembly while accounting
+      for clearances, accessibility, and structural support.
+    </p>
+
+    <p>
+      Key dimensions and component placement were developed using guidance from
+      the U.S. Consumer Product Safety Commission (CPSC) Outdoor Home Playground
+      Safety Handbook, including platform and barrier heights, stair and handrail
+      protection, equipment spacing, and fall protection.
+    </p>
+
+    <div class="mechanical-image-row">
+
+      <figure>
+        <img src="../images/auto quad.jpg"
+             alt="Playground deck SOLIDWORKS model">
+      </figure>
+
+      <figure>
+        <img src="../images/auto swing.jpg"
+             alt="Playground engineering drawing">
+      </figure>
+
+    </div>
+
+  </section>
+
+
+  <!-- Engineering Analysis -->
+  <section class="project-section">
+
+    <h2>Engineering Analysis</h2>
+
+    <p>
+      Structural analysis was used alongside the CAD design to evaluate
+      the playground under expected loading. For the slide, an 80 lb child
+      load and a dynamic load factor were used to evaluate bending
+      moment, bending stress, shear stress, and material suitability.
+    </p>
+
+    <p>
+      The analysis was used to verify the selected HDPE geometry and
+      demonstrate how mechanical design decisions could be supported
+      through analytical calculations before fabrication.
+    </p>
+
+  </section>
+
+</main>
+
+
+<footer>
+  <p>© 2026 Sakurako Kingsbury</p>
+  <p><small>Built with HTML, CSS, and JavaScript</small></p>
+</footer>
+
+
+<script>
+  const mobileMenu = document.getElementById('mobileMenu');
+  const hamburgerBtn = document.getElementById('hamburger');
+
+  function closeMobileMenu() {
+    mobileMenu.classList.remove('active');
+    hamburgerBtn.innerHTML = '☰';
+  }
+
+  function openMobileMenu() {
+    mobileMenu.classList.add('active');
+    hamburgerBtn.innerHTML = '✕';
+  }
+
+  hamburgerBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+
+    if (mobileMenu.classList.contains('active')) {
+      closeMobileMenu();
+    } else {
+      openMobileMenu();
+    }
+  });
+
+  const menuLinks = mobileMenu.querySelectorAll('a');
+
+  menuLinks.forEach(link => {
+    link.addEventListener('click', closeMobileMenu);
+  });
+
+  document.addEventListener('click', closeMobileMenu);
+
+  mobileMenu.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+</script>
+
+</body>
+</html>
